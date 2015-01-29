@@ -9,17 +9,21 @@ If you want an example project, check out [Hafnia Times][hafnia].
 Code
 ----
  Format | Linter
-:-------|:-----------------------
+:-------|:-----------------------------------------
  Python | `pip install pep8`
  CSS    | `npm install csslint`
  SASS   | `gem install scss-lint`
+ JS     | `npm install jscs && `npm install jshint`
 
+Sublime Text Packages
+---------------------
+* Bracket Highlighter
+* SCSS
+* SublimeLinter
 
-Sublime Text
-------------
-### MacBook Air (OS X) ###
-- [x] General user settings
-- [ ] Linter packages
+### Linter ###
+* [SublimeLinter-scss-lint](https://github.com/attenzione/SublimeLinter-scss-lint)
+* [SublimeLinter-jscs](https://github.com/SublimeLinter/SublimeLinter-jscs)
 
 
 [hafnia]: https://github.com/hafniatimes/hafniatimes.github.io
