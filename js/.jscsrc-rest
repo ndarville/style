@@ -19,6 +19,7 @@
     "disallowSpaceAfterBinaryOperators": false,
     "disallowSpaceAfterKeywords": false,
     "disallowSpaceAfterLineComment": false,
+    // "disallowSpaceAfterObjectKeys": true,
     "disallowSpaceBeforeBinaryOperators": false,
     "disallowSpaceBeforeBlockStatements": false,
     "disallowSpaceBeforeKeywords": false,
@@ -41,6 +42,7 @@
     "requireFunctionDeclarations": false,
     // "requireKeywordsOnNewLine"
     "requireLineFeedAtFileEnd": false,
+    // "requireMultipleVarDecl": true,
     "requireNewlineBeforeBlockStatements": false,
     "requireOperatorBeforeLineBreak": false,
     "requirePaddingNewlinesBeforeKeywords": false,
