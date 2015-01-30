@@ -13,7 +13,7 @@ Code
  Python | `pip install pep8`
  CSS    | `npm install csslint`
  SASS   | `gem install scss-lint`
- JS     | `npm install jscs && `npm install jshint`
+ JS     | `npm install jscs && npm install jshint`
 
 Sublime Text Packages
 ---------------------
