@@ -2,6 +2,7 @@
     "color_scheme": "Packages/Color Scheme - Default/Twilight.tmTheme",
     "default_line_ending": "unix",
     "detect_slow_plugins": true,
+    "show_encoding": true,
     "draw_centered": true,
     "ensure_newline_at_eof_on_save": true,
     "font_size": 12.0,
