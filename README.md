@@ -50,11 +50,14 @@ Sublime Text Packages
 ### Linters ###
 * [SublimeLinter-scss-lint](https://github.com/attenzione/SublimeLinter-scss-lint)
 * [SublimeLinter-jscs](https://github.com/SublimeLinter/SublimeLinter-jscs)
+* (SublimeLinter-jshint)
 * (Python)
 
 Status
 ------
-- [x] JavaScript linter
+- [ ] JavaScript linter
+    - [x] jscs
+    - [ ] jshint
 - [x] SASS linter
 - [ ] Python linter
 
