@@ -32,7 +32,7 @@ $ npm install ndarville/style
 # Install Python packages
 $ curl https://raw.githubusercontent.com/ndarville/style/master/requirements.txt > requirements.txt
 
-# Download linter rules
+# Download linter rules to your project folder
 $ curl https://raw.githubusercontent.com/ndarville/style/master/js/.jscsrc > .jscsrc
 $ curl https://raw.githubusercontent.com/ndarville/style/master/sass/.scss-lint.yml > .scss-lint.yml
 $ curl https://raw.githubusercontent.com/ndarville/style/master/python/.pep8 > .pep8
