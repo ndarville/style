@@ -55,7 +55,7 @@ Sublime Text Packages
 Status
 ------
 - [x] JavaScript linter
-- [ ] SASS linter
+- [x] SASS linter
 - [ ] Python linter
 
 
