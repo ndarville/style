@@ -34,6 +34,7 @@ $ wget https://raw.githubusercontent.com/ndarville/style/master/requirements.txt
 
 # Download linter rules to your project folder
 $ wget https://raw.githubusercontent.com/ndarville/style/master/js/.jscsrc
+$ wget https://raw.githubusercontent.com/ndarville/style/master/js/.jshintrc
 $ wget https://raw.githubusercontent.com/ndarville/style/master/sass/.scss-lint.yml
 $ wget https://raw.githubusercontent.com/ndarville/style/master/python/.pep8
 ```
@@ -50,7 +51,7 @@ Sublime Text Packages
 ### Linters ###
 * [SublimeLinter-scss-lint](https://github.com/attenzione/SublimeLinter-scss-lint)
 * [SublimeLinter-jscs](https://github.com/SublimeLinter/SublimeLinter-jscs)
-* (SublimeLinter-jshint)
+* [SublimeLinter-jshint](https://github.com/SublimeLinter/SublimeLinter-jshint)
 * (Python)
 
 Linter Rules
@@ -62,9 +63,9 @@ Linter Rules
 
 Status
 ------
-- [ ] JavaScript linter
+- [x] JavaScript linter
     - [x] jscs
-    - [ ] jshint
+    - [x] jshint
 - [x] SASS linter
 - [ ] Python linter
 
