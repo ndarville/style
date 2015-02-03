@@ -23,19 +23,19 @@ First, install the packages. You can do this using the command line like so:
 # ( Go to the root of your project; code for this not included )
 
 # Instal Ruby packages
-$ curl https://raw.githubusercontent.com/ndarville/style/master/Gemfile > Gemfile
+$ wget https://raw.githubusercontent.com/ndarville/style/master/Gemfile
 $ bundle install
 
 # Install NPM packages
 $ npm install ndarville/style
 
 # Install Python packages
-$ curl https://raw.githubusercontent.com/ndarville/style/master/requirements.txt > requirements.txt
+$ wget https://raw.githubusercontent.com/ndarville/style/master/requirements.txt
 
 # Download linter rules to your project folder
-$ curl https://raw.githubusercontent.com/ndarville/style/master/js/.jscsrc > .jscsrc
-$ curl https://raw.githubusercontent.com/ndarville/style/master/sass/.scss-lint.yml > .scss-lint.yml
-$ curl https://raw.githubusercontent.com/ndarville/style/master/python/.pep8 > .pep8
+$ wget https://raw.githubusercontent.com/ndarville/style/master/js/.jscsrc
+$ wget https://raw.githubusercontent.com/ndarville/style/master/sass/.scss-lint.yml
+$ wget https://raw.githubusercontent.com/ndarville/style/master/python/.pep8
 ```
 
 Afterwards, download the required Sublime Text 3 packages:
