@@ -68,7 +68,7 @@ Status
     - [x] jshint
 - [x] SASS linter
 - [ ] Python linter
-- [ ] HTML linter
+- [ ] HTML linter
 
 
 [hafnia]: https://github.com/hafniatimes/hafniatimes.github.io
