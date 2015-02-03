@@ -1,0 +1,13 @@
+{
+//  "camelcase": true,
+    "curly": true,
+    "eqeqeq": true,
+//  "indent": 4,
+    "freeze": true,
+    "noempty": true,
+    "nonbsp": true,
+    "nonew": true,
+    "notypeof": true,
+    "quotmark": "double",
+    "unused": true
+}

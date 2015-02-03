@@ -53,6 +53,13 @@ Sublime Text Packages
 * (SublimeLinter-jshint)
 * (Python)
 
+Linter Rules
+------------
+* [`sass-lint`](https://github.com/causes/scss-lint/blob/master/lib/scss_lint/linter/README.md)
+* [`jscs`](http://jscs.info/rules)
+* [`jshint`](http://jshint.com/docs/options/)
+* (pep8)
+
 Status
 ------
 - [ ] JavaScript linter
