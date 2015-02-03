@@ -20,7 +20,7 @@ Installation
 First, install the packages. You can do this using the command line like so:
 
 ```sh
-# ( Go to the root of your project; code for this not included )
+# ( Go to the root of your project; code for doing this not included )
 
 # Instal Ruby packages
 $ wget https://raw.githubusercontent.com/ndarville/style/master/Gemfile
