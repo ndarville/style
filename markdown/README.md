@@ -7,12 +7,12 @@ Elements
 Element   | Right       | Wrong
 ----------|-------------|----------
 Emphasis  | `**Foo**`   | `_Foo_`
-Strong    | `*Foo**     | `__Foo__`
+Strong    | `*Foo**`    | `__Foo__`
 Footnote* | `Foo[^bar]` | `Foo[^1]`
 
 ### `<pre>` ###
 
-* Use backticks `(```)`, not tildes `(~~~)`.
+* Use backticks, `, not tildes, ~.
 * Use them regardless of whether syntax-highlighting is applied; do not indent.
 
 ### Unordered Lists  ###
