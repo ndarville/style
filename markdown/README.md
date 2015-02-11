@@ -1,6 +1,24 @@
 Style Guide for Markdown
 ========================
 
+* [Elements][]
+    - [Links][]
+    - [`<pre>`][pre]
+    - [Unordered Lists][ul]
+    - [Horizontal Rules][hr]
+    - [Headers][]
+* [Notes][]
+
+
+[elements]: https://github.com/ndarville/style/tree/master/markdown#elements
+[links]: https://github.com/ndarville/style/tree/master/markdown#links
+[pre]: https://github.com/ndarville/style/tree/master/markdown#pre
+[ul]: https://github.com/ndarville/style/tree/master/markdown#unordered-lists
+[hr]: https://github.com/ndarville/style/tree/master/markdown#horizontal-rules
+[headers]: https://github.com/ndarville/style/tree/master/markdown#headers
+[notes]: https://github.com/ndarville/style/tree/master/markdown#notes
+
+
 Elements
 --------
 
@@ -39,7 +57,7 @@ Not
 
 Deeper levels are up to the writer and can be situational.
 
-### Horizontal Rule ###
+### Horizontal Rules ###
 
 ```md
 * * * *
