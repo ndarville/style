@@ -55,7 +55,7 @@ Links are straightforward, but follow these guidelines:
 
 ([Syntax support][pre-support].)
 
-### Unordered Lists  ###
+### Unordered Lists ###
 
 Use `*` for the first level:
 
