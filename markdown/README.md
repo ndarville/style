@@ -10,6 +10,13 @@ Emphasis  | `**Foo**`   | `_Foo_`
 Strong    | `*Foo**`    | `__Foo__`
 Footnote* | `Foo[^bar]` | `Foo[^1]`
 
+### Links ###
+
+Links are fairly straightforward, but these guidelines should be followed:
+
+* Use the `[Foo][]` shorthand whenever convenient, as it eschews cruft.
+* Use the `[Foo][bar]` syntax in the remaining cases, when readability is improved.
+
 ### `<pre>` ###
 
 * Use backticks, `, not tildes, ~.
@@ -31,6 +38,14 @@ Not
 ```
 
 Deeper levels are up to the writer and can be situational.
+
+### Horizontal Rule ###
+
+```md
+* * * *
+```
+
+No any other characters can be used, nor should there be fewer or more asterisks than shown.
 
 ### Headers ###
 
