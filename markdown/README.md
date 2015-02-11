@@ -30,15 +30,15 @@ Footnote* | `Foo[^bar]` | `Foo[^1]`
 
 ### Links ###
 
-Links are fairly straightforward, but these guidelines should be followed:
+Links are straightforward, but follow these guidelines:
 
 * Use the `[Foo][]` shorthand whenever convenient, as it eschews cruft.
-* Use the `[Foo][bar]` syntax in the remaining cases, when readability is improved.
+* Use the `[Foo][bar]` syntax in the remaining cases, when it improves readability.
 
 ### `<pre>` ###
 
 * Use backticks, `, not tildes, ~.
-* Use them regardless of whether syntax-highlighting is applied; do not indent.
+* Use them regardless of whether you apply syntax-highlighting; do not indent.
 
 ### Unordered Lists  ###
 
@@ -63,7 +63,7 @@ Deeper levels are up to the writer and can be situational.
 * * * *
 ```
 
-No any other characters can be used, nor should there be fewer or more asterisks than shown.
+Do not use any other characters, nor should there be fewer or more asterisks than shown.
 
 ### Headers ###
 
