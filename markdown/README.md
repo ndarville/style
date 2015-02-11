@@ -34,11 +34,23 @@ Links are straightforward, but follow these guidelines:
 
 * Use the `[Foo][]` shorthand whenever convenient, as it eschews cruft.
 * Use the `[Foo][bar]` syntax in the remaining cases, when it improves readability.
+* Leave two empty lines above the link definitions:
+
+    ```md
+    Lorem ipsum dolor sit [amet][].
+
+
+    [amet]: http://example.com
+    ```
+
+([Syntax support][link-support].)
 
 ### `<pre>` ###
 
 * Use backticks, `, not tildes, ~.
 * Use them regardless of whether you apply syntax-highlighting; do not indent.
+
+([Syntax support][pre-support].)
 
 ### Unordered Lists  ###
 
@@ -55,7 +67,9 @@ Not
 + Bar
 ```
 
-Deeper levels are up to the writer and can be situational.
+Deeper levels are up to the writer and can be situational. I tend to use `-` for the first sublevel.
+
+([Syntax support][ul-support].)
 
 ### Horizontal Rules ###
 
@@ -64,6 +78,8 @@ Deeper levels are up to the writer and can be situational.
 ```
 
 Do not use any other characters, nor should there be fewer or more asterisks than shown.
+
+([Syntax support][hr-support].)
 
 ### Headers ###
 
@@ -107,6 +123,15 @@ Wrong:
 ##### Heading
 ```
 
+([Syntax support][header-support].)
+
 Notes
 -----
 *The footnote syntax is a part of Markdown Extra, not vanilla Markdown. Use vanilla syntax in the cases where Markdown Extra is not available.
+
+
+[link-support]: http://johnmacfarlane.net/babelmark2/?normalize=1&text=%5BFoo%5D%5B%5D%0A%0A%5BBar%5D%5Bbaz%5D%0A%0A%0A%5Bfoo%5D%3A+http%3A%2F%2Fexample.com%2F1%2F%0A%5Bbaz%5D%3A+http%3A%2F%2Fexample.com%2F2%2F
+[pre-support]: http://johnmacfarlane.net/babelmark2/?normalize=1&text=%60%60%60%0ALorem+ipsum%0A%60%60%60%0A%0A%60%60%60md%0ALorem+**ipsum**.%0A%60%60%60
+[ul-support]: http://johnmacfarlane.net/babelmark2/?normalize=1&text=*+Foo%0A*+Bar%0A++++-+Baz%0A*+Qux
+[hr-support]: http://johnmacfarlane.net/babelmark2/?normalize=1&text=*+*+*+*
+[header-support]: http://johnmacfarlane.net/babelmark2/?normalize=1&text=Foo%0A%3D%3D%3D%0A%0ABar%0A---%0A%0A%23%23%23+Baz+%23%23%23%0A%23%23%23%23+Qux+%23%23%23%23%0A%23%23%23%23%23+Quux+%23%23%23%23%23
