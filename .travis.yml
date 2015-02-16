@@ -1,0 +1,27 @@
+language: ruby
+
+rvm:
+  - 1.9.3
+
+env:
+  global:
+    - HTML_FOLDER="_site/"
+    - HTML_EXCLUDES=""
+    - STYLE_FOLDER="static/css"
+    - CSS_FILES="static/css/style.css"
+    - CSS_EXCLUDES=""
+    - JS_FOLDER="static/js/"
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # Speeds up htmlproof
+
+install:
+  - bundle install --quiet
+  - npm install
+  - brew update && brew tap homebrew/dupes && brew install homebrew/dupes/tidy --HEAD
+
+before_script:
+  - cat Gemfile.lock
+
+notifications:
+  email:
+    on_success: change
+    on_failure: always
