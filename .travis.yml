@@ -21,6 +21,12 @@ install:
 before_script:
   - cat Gemfile.lock
 
+script:
+  - echo "Build your files here"
+
+after_script:
+  - echo "Run your linters on the files"
+
 notifications:
   email:
     on_success: change
