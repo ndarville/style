@@ -103,7 +103,7 @@ Status
 - [x] JavaScript linter
     - [x] jscs
     - [x] jshint
-- [x] HTML (tentative)
+- [x] HTML (tentative)
 - [ ] Python linter
 - [ ] Go linter
     - [ ] golint
