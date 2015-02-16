@@ -1,6 +1,6 @@
 Style Guide
 ===========
-[![Dependency Status](https://gemnasium.com/ndarville/style.svg)](https://gemnasium.com/ndarville/style) [![devDependency Status](https://david-dm.org/ndarville/style/dev-status.svg)](https://david-dm.org/ndarville/style#info=devDependencies)
+[![Build Status](https://travis-ci.org/ndarville/style.svg)](https://travis-ci.org/ndarville/style) [![Dependency Status](https://gemnasium.com/ndarville/style.svg)](https://gemnasium.com/ndarville/style) [![devDependency Status](https://david-dm.org/ndarville/style/dev-status.svg)](https://david-dm.org/ndarville/style#info=devDependencies)
 
 A list of styles for different linters.
 
@@ -117,4 +117,4 @@ Related Services
 - [linthub](https://linthub.io). Automates linting for pull requests.
 
 
-[Hafnia Times]: https://github.com/hafniatimes/hafniatimes.github.io
+[Hafnia Times]: https://github.com/ndarville/style
