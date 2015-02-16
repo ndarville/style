@@ -108,7 +108,7 @@ Status
 - [ ] Go linter
     - [ ] golint
     - [ ] govet
-- [ ] Markdown linter
+- [ ] Markdown linter
     - [x] mdl
     - [ ] Personal linter
 
