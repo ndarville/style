@@ -52,6 +52,7 @@ Links are straightforward, but follow these guidelines:
 
 * Use backticks, `, not tildes, ~.
 * Use them regardless of whether you apply syntax-highlighting; do not indent.
+* Always add a newline around the block.
 
 ([Syntax support][pre-support].)
 
@@ -114,7 +115,9 @@ Right:
 
 ```md
 ### Heading ###
+
 #### Heading ####
+
 ##### Heading #####
 ```
 
@@ -122,8 +125,26 @@ Wrong:
 
 ```md
 ### Heading
+
 #### Heading
+
 ##### Heading
+```
+
+Always add a newline around a hash heading; it is optional to do it on `=`and `-` headings:
+
+```md
+### Heading ###
+
+Lorem ipsum.
+
+#### Heading ####
+
+Dolor sit amet.
+
+##### Heading #####
+
+Consectetur adipiscing elit.
 ```
 
 ([Syntax support][header-support].)
@@ -138,4 +159,4 @@ Notes
 [pre-support]: http://johnmacfarlane.net/babelmark2/?normalize=1&text=%60%60%60%0ALorem+ipsum%0A%60%60%60%0A%0A%60%60%60md%0ALorem+**ipsum**.%0A%60%60%60
 [ul-support]: http://johnmacfarlane.net/babelmark2/?normalize=1&text=*+Foo%0A*+Bar%0A++++-+Baz%0A*+Qux
 [hr-support]: http://johnmacfarlane.net/babelmark2/?normalize=1&text=*+*+*+*
-[header-support]: http://johnmacfarlane.net/babelmark2/?normalize=1&text=Foo%0A%3D%3D%3D%0A%0ABar%0A---%0A%0A%23%23%23+Baz+%23%23%23%0A%23%23%23%23+Qux+%23%23%23%23%0A%23%23%23%23%23+Quux+%23%23%23%23%23
+[header-support]: http://johnmacfarlane.net/babelmark2/?normalize=1&text=Foo%0A%3D%3D%3D%0A%0ABar%0A---%0A%0A%23%23%23+Baz+%23%23%23%0A%0A%23%23%23%23+Qux+%23%23%23%23%0A%0A%23%23%23%23%23+Quux+%23%23%23%23%23
