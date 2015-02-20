@@ -14,8 +14,8 @@ env:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # Speeds up htmlproof
 
 install:
-  - bundle install --quiet
-  - npm install
+  - bundle install --verbose
+  - npm install --verbose
 # - brew update && brew tap homebrew/dupes && brew install homebrew/dupes/tidy --HEAD
 
 before_script:
