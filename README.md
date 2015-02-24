@@ -66,6 +66,7 @@ Sublime Text Packages
 * GitCommitMsg
 * Modific
 * Emmet
+* Markdown Extended
 
 ### Linters ###
 * [SublimeLinter-scss-lint](https://github.com/attenzione/SublimeLinter-scss-lint)
