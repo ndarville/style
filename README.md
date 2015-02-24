@@ -69,6 +69,7 @@ Sublime Text Packages
 * Markdown Extended
 
 ### Linters ###
+
 * [SublimeLinter-scss-lint](https://github.com/attenzione/SublimeLinter-scss-lint)
 * [SublimeLinter-jscs](https://github.com/SublimeLinter/SublimeLinter-jscs)
 * [SublimeLinter-jshint](https://github.com/SublimeLinter/SublimeLinter-jshint)
@@ -79,6 +80,7 @@ Sublime Text Packages
 * (SublimeLinter-contrib-golint)
 
 #### A Note on CSS ####
+
 I have left out [SublimeLinter-csslint](https://github.com/SublimeLinter/SublimeLinter-csslint), because:
 
 * It only works on CSS files; when used with HTML files, it mistakenly lints JavaScript and returns some wrong errors.

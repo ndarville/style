@@ -1,6 +1,5 @@
 Style Guide for Markdown
 ========================
-
 * [Elements][]
     - [Links][]
     - [`<pre>`][pre]
@@ -21,7 +20,6 @@ Style Guide for Markdown
 
 Elements
 --------
-
 Element   | Right       | Wrong
 ----------|-------------|----------
 Emphasis  | `**Foo**`   | `_Foo_`
@@ -87,6 +85,8 @@ Do not use any other characters, nor should there be fewer or more asterisks tha
 
 ### Headers ###
 
+#### Dashes and Hashes ####
+
 Right:
 
 ```md
@@ -108,6 +108,8 @@ Wrong:
 
 ### Heading 3 ###
 ```
+
+#### Both Sides ####
 
 Always add hashes on both sides of the heading, not just the left.
 
@@ -131,7 +133,9 @@ Wrong:
 ##### Heading
 ```
 
-Always add a newline around a hash heading; it is optional to do it on `=`and `-` headings:
+#### Newlines ###
+
+Always leave a newline around a hash heading; never leave one below `=` and `-` headings, *except* if two headings follow each other:
 
 ```md
 ### Heading ###
