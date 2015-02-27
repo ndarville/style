@@ -75,7 +75,7 @@ Sublime Text Packages
 * [SublimeLinter-jshint](https://github.com/SublimeLinter/SublimeLinter-jshint)
 * [SublimeLinter-html-tidy](https://github.com/SublimeLinter/SublimeLinter-html-tidy)
 * [SublimeLinter-contrib-write-good](https://github.com/ckaznocha/SublimeLinter-contrib-write-good/)
-* (Python)
+* [SublimeLinter-pep8](https://github.com/SublimeLinter/SublimeLinter-pep8)
 * (SublimeLinter-contrib-govet)
 * (SublimeLinter-contrib-golint)
 
@@ -96,7 +96,7 @@ Linter Rules
 * [`jshint`](http://jshint.com/docs/options)
 * [`tidy`](http://www.html-tidy.org/quickref)
 * [`mdl`](https://github.com/mivok/markdownlint/blob/master/docs/RULES.md)
-* (pep8)
+* [`pep8`](https://www.python.org/dev/peps/)
 * (golint)
 * (govet)
 
@@ -107,7 +107,7 @@ Status
     - [x] jscs
     - [x] jshint
 - [x] HTML (tentative)
-- [ ] Python linter
+- [x] Python linter
 - [ ] Go linter
     - [ ] golint
     - [ ] govet
