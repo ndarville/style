@@ -15,6 +15,7 @@ Overview of Packages for Each Language
  JS       | `npm install jscs && npm install jshint`
  Markdown | `gem install mdl`
  Python   | `pip install pep8`
+ CSV      | `gem install csvlint`
  Go       | `go get -u github.com/golang/lint/golint`
 
 Installation
@@ -108,6 +109,7 @@ Status
     - [x] jshint
 - [x] HTML (tentative)
 - [x] Python linter
+- [x] CSV linter
 - [ ] Go linter
     - [ ] golint
     - [ ] govet

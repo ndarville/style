@@ -1,22 +1,45 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    activesupport (4.2.0)
+      i18n (~> 0.7)
+      json (~> 1.7, >= 1.7.7)
+      minitest (~> 5.1)
+      thread_safe (~> 0.3, >= 0.3.4)
+      tzinfo (~> 1.1)
+    addressable (2.3.7)
+    colorize (0.7.2)
+    csvlint (0.0.1)
+      activesupport
+      addressable
+      colorize
+      mime-types
+      open_uri_redirections
+    i18n (0.7.0)
+    json (1.8.2)
     kramdown (1.5.0)
     mdl (0.1.0)
       kramdown (~> 1.5, >= 1.5.0)
       mixlib-cli (~> 1.5, >= 1.5.0)
       mixlib-config (~> 2.1, >= 2.1.0)
+    mime-types (1.25.1)
+    minitest (5.5.1)
     mixlib-cli (1.5.0)
     mixlib-config (2.1.0)
+    open_uri_redirections (0.1.4)
     rainbow (2.0.0)
     sass (3.4.9)
     scss-lint (0.32.0)
       rainbow (~> 2.0)
       sass (~> 3.4.1)
+    thread_safe (0.3.4)
+    tzinfo (1.2.2)
+      thread_safe (~> 0.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  csvlint
   mdl (~> 0.1.0)
   scss-lint (~> 0.32.0)
