@@ -67,7 +67,9 @@ Sublime Text Packages
 * GitCommitMsg
 * Modific
 * Emmet
+* cobalt2
 * Markdown Extended
+* Advanved CSV
 
 ### Linters ###
 

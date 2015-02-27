@@ -1,5 +1,6 @@
 {
     "color_scheme": "Packages/Color Scheme - Default/Twilight.tmTheme",
+    "theme": "Cobalt2.sublime-theme",
     "default_line_ending": "unix",
     "detect_slow_plugins": true,
     "show_encoding": true,
