@@ -16,7 +16,7 @@ env:
 install:
   - bundle install --verbose
   - npm install --verbose
-  - pip install -r requirements.txt
+  - sudo pip install --verbose -r requirements.txt
 # - brew update && brew tap homebrew/dupes && brew install homebrew/dupes/tidy --HEAD
 
 before_script:
