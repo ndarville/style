@@ -2,6 +2,7 @@ Style Guide for Markdown
 ========================
 * [Elements][]
     - [Links][]
+    - [Blockquotes][]
     - [`<pre>`][pre]
     - [Unordered Lists][ul]
     - [Horizontal Rules][hr]
@@ -11,6 +12,7 @@ Style Guide for Markdown
 
 [elements]: https://github.com/ndarville/style/tree/master/markdown#elements
 [links]: https://github.com/ndarville/style/tree/master/markdown#links
+[blockquotes]: https://github.com/ndarville/style/tree/master/markdown#blockquotes
 [pre]: https://github.com/ndarville/style/tree/master/markdown#pre
 [ul]: https://github.com/ndarville/style/tree/master/markdown#unordered-lists
 [hr]: https://github.com/ndarville/style/tree/master/markdown#horizontal-rules
@@ -45,6 +47,24 @@ Links are straightforward, but follow these guidelines:
     ```
 
 ([Syntax support][link-support].)
+
+### Blockquotes ###
+
+Use a space after the `>` character.
+
+Good:
+
+```md
+> This
+> Way
+```
+
+Bad:
+
+```md
+>Not this
+>Way
+```
 
 ### `<pre>` ###
 
