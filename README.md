@@ -71,6 +71,7 @@ Sublime Text Packages
 * Markdown Extended
 * Advanved CSV
 * Babel
+* Autoprefixer
 
 ### Linters ###
 

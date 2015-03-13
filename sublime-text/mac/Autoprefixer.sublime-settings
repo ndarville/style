@@ -1,0 +1,6 @@
+
+{
+    "browsers": ["last 2 versions", "> 20%", "ie 8"]
+    "cascade": true,
+    "remove": false
+}
