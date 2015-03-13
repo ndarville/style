@@ -70,6 +70,7 @@ Sublime Text Packages
 * cobalt2
 * Markdown Extended
 * Advanved CSV
+* Babel
 
 ### Linters ###
 
