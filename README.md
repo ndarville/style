@@ -77,12 +77,15 @@ Sublime Text Packages
 
 * [SublimeLinter-scss-lint](https://github.com/attenzione/SublimeLinter-scss-lint)
 * [SublimeLinter-jscs](https://github.com/SublimeLinter/SublimeLinter-jscs)
+    - [JSCS-Formatter](https://github.com/TheSavior/SublimeJSCSFormatter)
 * [SublimeLinter-jshint](https://github.com/SublimeLinter/SublimeLinter-jshint)
 * [SublimeLinter-html-tidy](https://github.com/SublimeLinter/SublimeLinter-html-tidy)
 * [SublimeLinter-contrib-write-good](https://github.com/ckaznocha/SublimeLinter-contrib-write-good/)
 * [SublimeLinter-pep8](https://github.com/SublimeLinter/SublimeLinter-pep8)
 * (SublimeLinter-contrib-govet)
 * (SublimeLinter-contrib-golint)
+
+`jscs` now has [auto-fixing support][jscs-formatter]. You can using by either running the command with the `-x` option or by installing the ST3 jscs-formatter listed above.
 
 #### A Note on CSS ####
 
@@ -127,3 +130,4 @@ Related Services
 
 
 [Hafnia Times]: https://github.com/ndarville/style
+[jscs-formatter]: https://github.com/jscs-dev/node-jscs/releases/tag/v1.12.0
