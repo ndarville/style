@@ -17,8 +17,8 @@ GEM
       open_uri_redirections
     i18n (0.7.0)
     json (1.8.2)
-    kramdown (1.5.0)
-    mdl (0.1.0)
+    kramdown (1.6.0)
+    mdl (0.2.1)
       kramdown (~> 1.5, >= 1.5.0)
       mixlib-cli (~> 1.5, >= 1.5.0)
       mixlib-config (~> 2.1, >= 2.1.0)
@@ -41,5 +41,5 @@ PLATFORMS
 
 DEPENDENCIES
   csvlint
-  mdl (~> 0.1.0)
+  mdl (~> 0.2.1)
   scss-lint (~> 0.32.0)
