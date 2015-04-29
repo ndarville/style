@@ -69,6 +69,7 @@
     "requireSpaceBetweenArguments": true,
     "requireSpacesInConditionalExpression": true,
     "requireSpacesInForStatement": true,
+    "validateAlignedFunctionParameters": false,
     // "validateIndentation": 4,
     // "validateLineBreaks": "CRLF",
     "validateQuoteMarks": "\"",
