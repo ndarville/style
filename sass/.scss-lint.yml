@@ -75,6 +75,16 @@ linters:
       - color
       - background
       - background-color
+      - background-image
+      - background-size
+      - opacity
+      - filter
+      # SVG
+      - fill
+      - stroke
+      - stroke-width
+      - stroke-dasharray
+      - shape-rendering
       - # Display types and positioning
       - content
       - list-style
