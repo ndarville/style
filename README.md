@@ -4,7 +4,7 @@ Style Guide
 
 A list of styles for different linters.
 
-If you want an example project, check out [Hafnia Times][].
+If you want an example project, check out [Hafnia Times][hafnia-times].
 
 Overview of Packages for Each Language
 --------------------------------------
@@ -72,6 +72,7 @@ Sublime Text Packages
 * Advanved CSV
 * Babel
 * Autoprefixer
+* [GhostText][]
 
 ### Linters ###
 
@@ -129,5 +130,6 @@ Related Services
 - [linthub](https://linthub.io). Automates linting for pull requests.
 
 
-[Hafnia Times]: https://github.com/ndarville/style
+[hafnia-times]: https://github.com/ndarville/style
+[ghosttext]: http://christiannaths.com/#code-pen-plus-sublime-text
 [jscs-formatter]: https://github.com/jscs-dev/node-jscs/releases/tag/v1.12.0
