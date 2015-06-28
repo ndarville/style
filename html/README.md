@@ -97,3 +97,18 @@ You can optionally wrap the links in `<span>`. You can also give the `<nav>` ele
 
 * `<link rel="alternate" hreflang="da_DK" href="/da" />`
 * `property="og:locale:alternate" content="da_DK"`
+
+Language Codes
+--------------
+There are three types of language metadata:
+
+1. `<html lang="">`
+2. `<link rel="alternate" hreflang=""> /`
+3. `<meta property="og:locale" content="" />` [#][hreflang]
+    - (And of course `og:locale:alternate`)
+
+Unless required by specificity, stick to the [`ISO 639-1` language format][iso].
+
+
+[hreflang]: https://support.google.com/webmasters/answer/189077?hl=en
+[iso]: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
