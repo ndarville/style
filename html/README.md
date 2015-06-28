@@ -27,6 +27,7 @@ Use HTML5 containers like
 * `<header role="banner">`
 * `<section role="region">`
 * `<nav role="navigation">`
+* `<footer role="contentinfo">`
 
 ### Navigation ###
 
