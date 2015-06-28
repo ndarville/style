@@ -95,8 +95,8 @@ You can optionally wrap the links in `<span>`. You can also give the `<nav>` ele
 
 #### Alternate Languages ####
 
-* `<link rel="alternate" hreflang="da_DK" href="/da" />`
-* `property="og:locale:alternate" content="da_DK"`
+* `<link rel="alternate" hreflang="da" href="/da" />`
+* `property="og:locale:alternate" content="da"`
 
 Language Codes
 --------------
