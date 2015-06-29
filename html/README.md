@@ -86,6 +86,7 @@ You can optionally wrap the links in `<span>`. You can also give the `<nav>` ele
 ### Twitter (Optional) ###
 
 * `name="twitter:creator" content="@pessimism"`
+* `name="twitter:site" content="@HafniaTimes"`
 * `name="twitter:card" content="summary_large_image"`
 
 ### Language ###
