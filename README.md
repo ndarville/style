@@ -16,6 +16,7 @@ Overview of Packages for Each Language
  Markdown | `gem install mdl`
  Python   | `pip install pep8`
  CSV      | `gem install csvlint`
+ Shell    | `brew install shellcheck`
  Go       | `go get -u github.com/golang/lint/golint`
 
 Installation
@@ -83,6 +84,7 @@ Sublime Text Packages
 * [SublimeLinter-html-tidy](https://github.com/SublimeLinter/SublimeLinter-html-tidy)
 * [SublimeLinter-contrib-write-good](https://github.com/ckaznocha/SublimeLinter-contrib-write-good/)
 * [SublimeLinter-pep8](https://github.com/SublimeLinter/SublimeLinter-pep8)
+* [SublimeLinter-shellcheck](https://github.com/SublimeLinter/SublimeLinter-shellcheck)
 * (SublimeLinter-contrib-govet)
 * (SublimeLinter-contrib-golint)
 
