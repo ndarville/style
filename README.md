@@ -17,6 +17,7 @@ Overview of Packages for Each Language
  Python   | `pip install pep8`
  CSV      | `gem install csvlint`
  Shell    | `brew install shellcheck`
+ YAML     | `gem install kwalify`
  Go       | `go get -u github.com/golang/lint/golint`
 
 Installation
@@ -126,6 +127,8 @@ Status
 - [ ] Markdown linter
     - [x] mdl
     - [ ] Personal linter
+- [x] Shell linter
+- [x] YAML linter
 
 Related Services
 ----------------
