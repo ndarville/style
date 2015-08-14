@@ -64,6 +64,21 @@ Two significant differences between the two:
 
 You can optionally wrap the links in `<span>`. You can also give the `<nav>` element an id.
 
+Images
+------
+```html
+<picture>
+    <source
+        srcset="image.jpeg 1x, image@2x.jpeg 2x"
+        type="image/jpeg" />
+    <img
+        class="image"
+        src="image.jpeg"
+        alt="Alt text"
+        title="Title text" />
+</picture>
+```
+
 `<meta>`
 --------
 * `name="description" content="{{ page.description }}"`
