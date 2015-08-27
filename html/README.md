@@ -17,8 +17,6 @@ Attribute Order
 * (checked), (selected), (disabled), (required), (autofocus)
 * aria-*, role
 
-hreflang
-
 HTML5 Containers
 ----------------
 Use HTML5 containers like
