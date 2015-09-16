@@ -11,7 +11,7 @@ Attribute Order
 * class
 * id, name
 * rel, data-*, hreflang
-* src, for, type, href, value
+* src, for, type, sizes, href, value
 * step
 * title, alt, placeholder
 * (checked), (selected), (disabled), (required), (autofocus)
