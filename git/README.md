@@ -13,7 +13,7 @@ Example:
 > `README: change to British-English cf. #7`
 
 1. Max **50** characters
-2. Wrap body y characters (72?)
+2. Wrap body **72** characters
 3. Use subject and body sections divided by a blank line
     - Use `CTRL + Shift + P` + `commit` from the Git package for this
 
