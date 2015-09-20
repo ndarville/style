@@ -75,6 +75,7 @@ Sublime Text Packages
 * Babel
 * Autoprefixer
 * [GhostText][]
+* Git
 
 ### Linters ###
 
