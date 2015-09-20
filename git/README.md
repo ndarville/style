@@ -1,5 +1,8 @@
-Style Guide for Git
-===================
+Style Guide for Git Commits
+===========================
+
+Messages
+--------
 * Capitalize
 * Imperative verb
 * No periods at the end
@@ -12,13 +15,13 @@ Example:
 
 > `README: change to British-English cf. #7`
 
-1. Max **50** characters
-2. Wrap body **72** characters
+1. Limit subject text to **50** characters
+2. Limit body text to **72** characters
 3. Use subject and body sections divided by a blank line
     - Use `CTRL + Shift + P` + `commit` from the Git package for this
 
-Commit Template
----------------
+### Message Template ###
+
 The template by Tim Pope is the standard; this is the one most people will go by:
 
     Short (50 chars or less) summary of changes
@@ -52,8 +55,8 @@ Inspection Commands
 * `git log --oneline -5 --author ndarville`
 * `git log --no-merges`
 
-CONTRIBUTING
-------------
+Grouping and Atomizing Commits
+------------------------------
 1. Atomize changes instead of grouping them into one commit. Think one issue per change.
 
     Learn to use `git add -p` (with `s` for splicing and `e` for manual picking).
