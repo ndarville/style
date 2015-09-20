@@ -6,6 +6,12 @@ General
 1. 4-space indentation
 2. Use slashes in self-closing elements (eg `<img />`, `<hr />`), including `<meta>`
 
+URIs
+----
+In accordance with [RFC3986 Section 3][rfc3986]:
+
+> `foo://example.com:8042/over/there?name=ferret#nose`
+
 Attribute Order
 ---------------
 * class
@@ -124,5 +130,6 @@ There are three types of language metadata:
 Unless required by specificity, stick to the [`ISO 639-1` language format][iso].
 
 
+[rfc3986]: http://tools.ietf.org/html/rfc3986#section-3
 [hreflang]: https://support.google.com/webmasters/answer/189077?hl=en
 [iso]: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
