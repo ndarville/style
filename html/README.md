@@ -12,6 +12,28 @@ In accordance with [RFC3986 Section 3][rfc3986]:
 
 > `foo://example.com:8042/over/there?name=ferret#nose`
 
+Link Text
+---------
+In accordance with [section 6.1 of HTML Techniques for Web Content Accessibility Guidelines 1.0][link-text].
+
+Do **not** use `click here` as link text.
+
+Do **not** use call-to-action verbs like `go to our page`.
+
+Use the page or content your are linking to as the text instead.
+
+Bad:
+
+> [Click here] to visit GitHub.
+
+Also bad:
+
+> Click here to [visit GitHub].
+
+Good:
+
+> Click here to visit [GitHub].
+
 Attribute Order
 ---------------
 * class
@@ -131,5 +153,6 @@ Unless required by specificity, stick to the [`ISO 639-1` language format][iso].
 
 
 [rfc3986]: http://tools.ietf.org/html/rfc3986#section-3
+[link-text]: http://www.w3.org/QA/Tips/noClickHere
 [hreflang]: https://support.google.com/webmasters/answer/189077?hl=en
 [iso]: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
