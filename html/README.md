@@ -8,13 +8,13 @@ General
 
 URIs
 ----
-In accordance with [RFC3986 Section 3][rfc3986]:
+In accordance with [RFC3986, Section 3][rfc3986]:
 
 > `foo://example.com:8042/over/there?name=ferret#nose`
 
 Link Text
 ---------
-In accordance with [section 6.1 of HTML Techniques for Web Content Accessibility Guidelines 1.0][link-text].
+In accordance with [HTML Techniques for Web Content Accessibility Guidelines 1.0, Section 6.1][link-text].
 
 Do **not** use `click here` as link text.
 
