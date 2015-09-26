@@ -35,14 +35,16 @@ Footnote* | `Foo[^bar]` | `Foo[^1]`
 Links are straightforward, but follow these guidelines:
 
 * Use the `[Foo][]` shorthand whenever convenient, as it eschews cruft.
+    - It works for multiple words, too.
 * Use the `[Foo][bar]` syntax in the remaining cases, when it improves readability.
 * Do not leave empty lines between list items, except for nested lists.
 * Leave two empty lines above the link definitions:
 
     ```md
-    Lorem ipsum dolor sit [amet][].
+    [Lorem ipsum][] dolor sit [amet][].
 
 
+    [Lorem ipsum]: http://example.com
     [amet]: http://example.com
     ```
 
