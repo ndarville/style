@@ -16,9 +16,9 @@ Link Text
 ---------
 In accordance with [HTML Techniques for Web Content Accessibility Guidelines 1.0, Section 6.1][link-text].
 
-Do **not** use `click here` as link text.
+**Do not** use `click here` as link text.
 
-Do **not** use call-to-action verbs like `go to our page`.
+**Do not** use call-to-action verbs like `go to our page`.
 
 Use the page or content your are linking to as the text instead.
 
