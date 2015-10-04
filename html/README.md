@@ -106,6 +106,49 @@ Images
 </picture>
 ```
 
+Optimizations and Enhancements
+------------------------------
+
+### Prefetching and Prerendering ###
+
+`<meta http-equiv="x-dns-prefetch-control" content="on" />`
+
+* [prefetch][]: prefetch resource for **future** page
+* subresource: higher priority than prefetch for **current** page
+* [prerender][]: prerender future page in background
+* [dns-prefetch][]: advance DNS lookup for **current** page
+
+#### Others ####
+
+* [preconnect][]: start connection handshake early
+* preload: forced prefetching
+
+#### Examples ####
+
+Place your pre-* tags at the very top, preface them with `http-equiv="x-dns-prefetch-control"`, and group them together based on URIs.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="x-dns-prefetch-control" content="on" />
+        <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+        <link rel="preconnect" href="//fonts.gstatic.com" crossorigin />
+        <link rel="dns-prefetch" href="//brick.a.ssl.fastly.net" />
+        <link rel="preconnect" href="//brick.a.ssl.fastly.net" crossorigin />
+```
+
+#### Further Reading ###
+
+1. [Preconnect, prefetch, prerender ...
+][pre-slides]
+    - [This chart][pre-chart] explains it particularly well.
+2. [Prefetching, preloading, prebrowsing][pre-css]
+
+### `next` and `prev` ###
+
+Remember to use `<link rel="next" />` and `<link rel="prev" />`, if there is a sequential relation between two of your pages.
+
 `<meta>`
 --------
 * `name="description" content="{{ page.description }}"`
@@ -156,4 +199,11 @@ Unless required by specificity, stick to the [`ISO 639-1` language format][iso].
 [rfc3986]: http://tools.ietf.org/html/rfc3986#section-3
 [link-text]: http://www.w3.org/QA/Tips/noClickHere
 [hreflang]: https://support.google.com/webmasters/answer/189077?hl=en
+[prefetch]: http://caniuse.com/#feat=link-rel-prefetch
+[prerender]: http://caniuse.com/#feat=link-rel-prerender
+[dns-prefetch]: http://caniuse.com/#search=dns-prefetch
+[preconnect]: http://caniuse.com/#feat=link-rel-preconnect
+[pre-slides]: https://docs.google.com/presentation/d/18zlAdKAxnc51y_kj-6sWLmnjl6TLnaru_WH0LJTjP-o/present?slide=id.p19
+[pre-chart]: https://docs.google.com/presentation/d/18zlAdKAxnc51y_kj-6sWLmnjl6TLnaru_WH0LJTjP-o/present?slide=id.gc03305a_0106
+[pre-css]: https://css-tricks.com/prefetching-preloading-prebrowsing/
 [iso]: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
