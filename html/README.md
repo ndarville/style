@@ -37,12 +37,13 @@ Good:
 Attribute Order
 ---------------
 * class
-* id, name
+* id, name, content
 * rel, data-*, hreflang
-* src, for, type, sizes, href, value
+* src, for, type, sizes, href, media, value
 * step
 * title, alt, placeholder
 * (checked), (selected), (disabled), (required), (autofocus)
+* integrity, crossorigin
 * aria-*, role
 
 HTML5 Containers
