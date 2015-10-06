@@ -135,6 +135,10 @@ Related Services
 ----------------
 - [linthub][]: automates linting for pull requests.
 
+Examples
+--------
+My website [ndarville.com][] and project at [Hafnia Times][] try to conform to the style guidelines. The latter is open source, which makes it easier for you to inspect the code.
+
 
 [Build Status]: https://travis-ci.org/ndarville/style.svg
 [Dependency Status]: https://gemnasium.com/ndarville/style.svg
@@ -163,3 +167,5 @@ Related Services
 [pep8]: https://www.python.org/dev/peps/
 
 [linthub]: https://linthub.io
+
+[ndarville.com]: https://ndarville.com
