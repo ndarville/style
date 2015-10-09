@@ -107,6 +107,58 @@ Images
 </picture>
 ```
 
+Scripts
+-------
+For externally loaded content, always use a checksum hash (`integrity` for scripts, ie **S**ub**r**esource **I**ntegrity Hash) and `crossorigin="anonymous"`. See [srihash.org][].
+
+### `async` and `defer` ###
+
+`defer` and `async` only work for `<script>` tags where `src` is defined.
+
+The two boolean attributes exist to prevent blocking.
+
+async vs defer vs async+defer
+
+#### `async` ####
+
+1. Download in the background without blocking
+2. When finished downloading,
+    - block and execute
+3. Rendering resumes
+
+#### `defer` ####
+
+1. Download in the background without blocking
+2. When finished downloading,
+    - block and execute *according to the order specified in the DOM*
+3. Rendering resumes
+
+Unfortunately, browsers use `defer` differently, which usually makes it run similarly to `async`.
+
+#### `async defer` ####
+
+`async` overrides `defer`, so using `<script async defer>` is equivalent to `async` with better browser support.
+
+#### Further Reading ####
+
+* [Stack Overflow on `async` and `defer`][a-d]
+
+### Example Script ###
+
+```js
+<script
+    id="github-bjs"
+    type="text/javascript" charset="utf-8"
+    src="//buttons.github.io/buttons.js"
+    async defer
+    integrity="sha384-egYe2iLG/VUblwMVWC7scltVz2CuhgfU0q4mfHYmtuemlb5VSNAyNCpMxbH5uLxJ" crossorigin="anonymous">
+</script>
+```
+
+### Further Reading ###
+
+* [HTML spec on scripting][scripting]
+
 Optimizations and Enhancements
 ------------------------------
 
@@ -200,6 +252,9 @@ Unless required by specificity, stick to the [`ISO 639-1` language format][iso].
 [rfc3986]: http://tools.ietf.org/html/rfc3986#section-3
 [link-text]: http://www.w3.org/QA/Tips/noClickHere
 [hreflang]: https://support.google.com/webmasters/answer/189077?hl=en
+[srihash.org]: https://srihash.org
+[a-d]: //stackoverflow.com/a/10731231
+[scripting]: https://html.spec.whatwg.org/#scripting-2
 [prefetch]: http://caniuse.com/#feat=link-rel-prefetch
 [prerender]: http://caniuse.com/#feat=link-rel-prerender
 [dns-prefetch]: http://caniuse.com/#search=dns-prefetch
