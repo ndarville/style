@@ -39,7 +39,7 @@ Attribute Order
 * class
 * id, name, content
 * rel, data-*, hreflang
-* src, for, type, charset, sizes, href, media, value
+* src, srcset, for, type, charset, sizes, href, media, value
 * step
 * title, alt, placeholder
 * (checked), (selected), (disabled)
@@ -97,8 +97,8 @@ Images
 ```html
 <picture>
     <source
-        srcset="image.jpeg 1x, image@2x.jpeg 2x"
-        type="image/jpeg" />
+        type="image/jpeg"
+        srcset="image.jpeg 1x, image@2x.jpeg 2x" />
     <img
         class="image"
         src="image.jpeg"
