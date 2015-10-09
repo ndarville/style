@@ -39,11 +39,12 @@ Attribute Order
 * class
 * id, name, content
 * rel, data-*, hreflang
-* src, for, type, sizes, href, media, value
+* src, for, type, charset, sizes, href, media, value
 * step
 * title, alt, placeholder
-* (checked), (selected), (disabled), (required), (autofocus)
-* integrity, crossorigin
+* (checked), (selected), (disabled)
+* (required), (autocapitalize), (autofocus)
+* async, defer, integrity, crossorigin
 * aria-*, role
 
 HTML5 Containers
