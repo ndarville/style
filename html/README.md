@@ -117,8 +117,6 @@ For externally loaded content, always use a checksum hash (`integrity` for scrip
 
 The two boolean attributes exist to prevent blocking.
 
-async vs defer vs async+defer
-
 #### `async` ####
 
 1. Download in the background without blocking
