@@ -12,6 +12,13 @@ In accordance with [RFC3986, Section 3][rfc3986]:
 
 > `foo://example.com:8042/over/there?name=ferret#nose`
 
+### `//` vs `https://` ###
+
+Protocol-relative URLs (`//`) are now considered an antipattern. Use `https://` and `http://` instead.
+
+* [Eric Mill on this][eric-mill]
+* [Paul Irish][]
+
 Link Text
 ---------
 In accordance with [HTML Techniques for Web Content Accessibility Guidelines 1.0, Section 6.1][link-text].
@@ -147,7 +154,7 @@ Unfortunately, browsers use `defer` differently, which usually makes it run simi
 <script
     id="github-bjs"
     type="text/javascript" charset="utf-8"
-    src="//buttons.github.io/buttons.js"
+    src="https://buttons.github.io/buttons.js"
     async defer
     integrity="sha384-egYe2iLG/VUblwMVWC7scltVz2CuhgfU0q4mfHYmtuemlb5VSNAyNCpMxbH5uLxJ" crossorigin="anonymous">
 </script>
@@ -183,10 +190,10 @@ Place your pre-* tags at the very top, preface them with `http-equiv="x-dns-pref
 <html lang="en">
     <head>
         <meta http-equiv="x-dns-prefetch-control" content="on" />
-        <link rel="dns-prefetch" href="//fonts.gstatic.com" />
-        <link rel="preconnect" href="//fonts.gstatic.com" crossorigin />
-        <link rel="dns-prefetch" href="//brick.a.ssl.fastly.net" />
-        <link rel="preconnect" href="//brick.a.ssl.fastly.net" crossorigin />
+        <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="dns-prefetch" href="https://brick.a.ssl.fastly.net" />
+        <link rel="preconnect" href="https://brick.a.ssl.fastly.net" crossorigin />
 ```
 
 #### Further Reading ###
@@ -247,16 +254,18 @@ There are three types of language metadata:
 Unless required by specificity, stick to the [`ISO 639-1` language format][iso].
 
 
-[rfc3986]: //tools.ietf.org/html/rfc3986#section-3
-[link-text]: //www.w3.org/QA/Tips/noClickHere
+[rfc3986]: https://tools.ietf.org/html/rfc3986#section-3
+[eric-mill]: https://github.com/konklone/cdns-to-https
+[Paul Irish]: http://www.paulirish.com/2010/the-protocol-relative-url/
+[link-text]: http://www.w3.org/QA/Tips/noClickHere
 [hreflang]: https://support.google.com/webmasters/answer/189077?hl=en
 [srihash.org]: https://srihash.org
-[a-d]: //stackoverflow.com/a/10731231
+[a-d]: https://stackoverflow.com/a/10731231
 [scripting]: https://html.spec.whatwg.org/#scripting-2
-[prefetch]: //caniuse.com/#feat=link-rel-prefetch
-[prerender]: //caniuse.com/#feat=link-rel-prerender
-[dns-prefetch]: //caniuse.com/#search=dns-prefetch
-[preconnect]: //caniuse.com/#feat=link-rel-preconnect
+[prefetch]: https://caniuse.com/#feat=link-rel-prefetch
+[prerender]: https://caniuse.com/#feat=link-rel-prerender
+[dns-prefetch]: https://caniuse.com/#search=dns-prefetch
+[preconnect]: https://caniuse.com/#feat=link-rel-preconnect
 [pre-slides]: https://docs.google.com/presentation/d/18zlAdKAxnc51y_kj-6sWLmnjl6TLnaru_WH0LJTjP-o/present?slide=id.p19
 [pre-chart]: https://docs.google.com/presentation/d/18zlAdKAxnc51y_kj-6sWLmnjl6TLnaru_WH0LJTjP-o/present?slide=id.gc03305a_0106
 [pre-css]: https://css-tricks.com/prefetching-preloading-prebrowsing/
