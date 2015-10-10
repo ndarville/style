@@ -36,9 +36,9 @@ GEM
     open_uri_redirections (0.2.1)
     rainbow (2.0.0)
     sass (3.4.19)
-    scss_lint (0.42.2)
+    scss_lint (0.40.1)
       rainbow (~> 2.0)
-      sass (~> 3.4.15)
+      sass (~> 3.4.1)
     thread_safe (0.3.5)
     typhoeus (0.8.0)
       ethon (>= 0.8.0)
@@ -52,4 +52,4 @@ PLATFORMS
 DEPENDENCIES
   csvlint (~> 0.2.2)
   mdl (~> 0.2.1)
-  scss_lint (~> 0.42.2)
+  scss_lint (~> 0.40.1)
