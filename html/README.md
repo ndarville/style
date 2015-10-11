@@ -83,7 +83,7 @@ Instead, use
     <a href="#">Home</a>
     <a href="#">About</a>
     <a href="#">404</a>
-</ul>
+</nav>
 ```
 
 Two significant differences between the two:
