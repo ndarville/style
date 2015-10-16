@@ -93,7 +93,7 @@ Two significant differences between the two:
 
     The argument for this is that a screenreader will read the first case as
 
-    >List item 1: Home; List item 2: About; List item 3: 404.
+    > List item 1: Home; List item 2: About; List item 3: 404.
 
     Which is *way* too belaboured for a user. The latter example is better UX.
 
@@ -101,6 +101,7 @@ You can optionally wrap the links in `<span>`. You can also give the `<nav>` ele
 
 Images
 ------
+
 ```html
 <picture>
     <source
