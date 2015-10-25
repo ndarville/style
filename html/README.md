@@ -143,19 +143,6 @@ Alerts
 
 Forms
 -----
-A basic template for an input button.
-
-´´´html
-<input
-    type="text"
-    placeholder="First name"
-    value=""
-    required
-    aria-required="true"
-    role="button"
-/>
-´´´
-
 Always use `for` in `<label>` and `id` in `<input>`. When sending data to a webserver, include `name` in your `<input>`.
 
 > * All form control tags should have an associated label.
