@@ -106,7 +106,6 @@ Footnotes
 * Be sure to namespace the footnote IDs, if several footnotes exist on the same page in different contexts, eg different blog posts on a front page.
 * Wrap block footnotes in `<aside>`.
 
-
 ```html
 The bad example implies a 100% certainty betrayed by factors like variance and methodology.<sup id="fn-link-1"><a href="#fn-text-1">1</a></sup>
 
