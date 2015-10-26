@@ -1,0 +1,11 @@
+{
+    // save before running commands
+    "save_first": false,
+    // Annotations default to being on for all files. Can be slow in some cases.
+    "annotations": false,
+
+    // statusbar
+    "statusbar_branch": false,
+    // Symbols for quick git status in status bar
+    "statusbar_status": false
+}
