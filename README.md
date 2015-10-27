@@ -41,6 +41,7 @@ wget https://raw.githubusercontent.com/ndarville/style/master/requirements.txt
 go get -u github.com/golang/lint/golint
 
 # Download linter rules to your project folder
+wget https://raw.githubusercontent.com/ndarville/style/master/html/.tidyrc
 wget https://raw.githubusercontent.com/ndarville/style/master/sass/.scss-lint.yml
 wget https://raw.githubusercontent.com/ndarville/style/master/css/.csslintrc
 wget https://raw.githubusercontent.com/ndarville/style/master/javascript/.jscsrc
