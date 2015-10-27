@@ -10,6 +10,7 @@ Overview of Packages for Each Language
 --------------------------------------
  Format   | Linter
 :---------|:-----------------------------------------
+ HTML     | `brew install tidy-html5`
  SASS     | `gem install scss-lint`
  CSS      | `npm install csslint`
  JS       | `npm install jscs && npm install jshint`
