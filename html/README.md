@@ -29,15 +29,15 @@ In accordance with [HTML Techniques for Web Content Accessibility Guidelines 1.0
 
 Use the page or content your are linking to as the text instead.
 
-Bad:
+### Bad ###
 
 > [Click here] to visit GitHub.
 
-Also bad:
+### Also bad ###
 
 > Click here to [visit GitHub].
 
-Good:
+### Good ###
 
 > Click here to visit [GitHub].
 
