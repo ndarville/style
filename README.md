@@ -10,7 +10,7 @@ Overview of Packages for Each Language
 --------------------------------------
  Format   | Linter
 :---------|:-----------------------------------------
- HTML     | `brew install tidy-html5`
+ HTML     | `npm install htmlhint` && `brew install tidy-html5`
  SASS     | `gem install scss-lint`
  CSS      | `npm install csslint`
  JS       | `npm install jscs && npm install jshint`
@@ -42,6 +42,7 @@ wget https://raw.githubusercontent.com/ndarville/style/master/requirements.txt
 go get -u github.com/golang/lint/golint
 
 # Download linter rules to your project folder
+wget https://raw.githubusercontent.com/ndarville/style/master/html/.htmlhintrc
 wget https://raw.githubusercontent.com/ndarville/style/master/html/.tidyrc
 wget https://raw.githubusercontent.com/ndarville/style/master/sass/.scss-lint.yml
 wget https://raw.githubusercontent.com/ndarville/style/master/css/.csslintrc
@@ -85,6 +86,7 @@ Sublime Text Packages
 * [SublimeLinter-jscs][]
     - [JSCS-Formatter][]
 * [SublimeLinter-jshint][]
+* [SublimeLinter-contrib-htmlhint][]
 * [SublimeLinter-html-tidy][]
 * [SublimeLinter-contrib-write-good][]
 * [SublimeLinter-pep8][]
@@ -153,6 +155,7 @@ My website [ndarville.com][] and project at [Hafnia Times][] try to conform to t
 [SublimeLinter-jscs]: https://github.com/SublimeLinter/SublimeLinter-jscs
 [JSCS-Formatter]: https://github.com/TheSavior/SublimeJSCSFormatter
 [SublimeLinter-jshint]: https://github.com/SublimeLinter/SublimeLinter-jshint
+[SublimeLinter-contrib-htmlhint]: https://github.com/mmaday/SublimeLinter-contrib-htmlhint
 [SublimeLinter-html-tidy]: https://github.com/SublimeLinter/SublimeLinter-html-tidy
 [SublimeLinter-contrib-write-good]: https://github.com/ckaznocha/SublimeLinter-contrib-write-good
 [SublimeLinter-pep8]: https://github.com/SublimeLinter/SublimeLinter-pep8
