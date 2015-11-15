@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Style by ndarville</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Style</h1>
+      <h2 class="project-tagline">A list of styles for different linters.</h2>
+      <a href="https://github.com/ndarville/style" class="btn">View on GitHub</a>
+      <a href="https://github.com/ndarville/style/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/ndarville/style/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="style-guide" class="anchor" href="#style-guide" aria-hidden="true"><span class="octicon octicon-link"></span></a>Style Guide</h1>
+
+<p><a href="https://travis-ci.org/ndarville/style"><img src="https://travis-ci.org/ndarville/style.svg" alt="Build Status"></a> <a href="https://gemnasium.com/ndarville/style"><img src="https://gemnasium.com/ndarville/style.svg" alt="Dependency Status"></a> <a href="https://david-dm.org/ndarville/style#info=devDependencies"><img src="https://david-dm.org/ndarville/style/dev-status.svg" alt="devDependency Status"></a></p>
+
+<p>A list of styles for different linters.</p>
+
+<p>If you want an example project, check out <a href="https://github.com/ndarville/style">Hafnia Times</a>.</p>
+
+<h2>
+<a id="overview-of-packages-for-each-language" class="anchor" href="#overview-of-packages-for-each-language" aria-hidden="true"><span class="octicon octicon-link"></span></a>Overview of Packages for Each Language</h2>
+
+<table>
+<thead>
+<tr>
+<th align="left">Format</th>
+<th align="left">Linter</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">HTML</td>
+<td align="left">
+<code>npm install htmlhint</code> &amp;&amp; <code>brew install tidy-html5</code>
+</td>
+</tr>
+<tr>
+<td align="left">SASS</td>
+<td align="left"><code>gem install scss-lint</code></td>
+</tr>
+<tr>
+<td align="left">CSS</td>
+<td align="left"><code>npm install csslint</code></td>
+</tr>
+<tr>
+<td align="left">JS</td>
+<td align="left"><code>npm install jscs &amp;&amp; npm install jshint</code></td>
+</tr>
+<tr>
+<td align="left">Markdown</td>
+<td align="left"><code>gem install mdl</code></td>
+</tr>
+<tr>
+<td align="left">Python</td>
+<td align="left"> <code>pip install pep8</code>
+</td>
+</tr>
+<tr>
+<td align="left">CSV</td>
+<td align="left"><code>gem install csvlint</code></td>
+</tr>
+<tr>
+<td align="left">Shell</td>
+<td align="left"><code>brew install shellcheck</code></td>
+</tr>
+<tr>
+<td align="left">YAML</td>
+<td align="left"><code>gem install kwalify</code></td>
+</tr>
+<tr>
+<td align="left">Go</td>
+<td align="left"><code>go get -u github.com/golang/lint/golint</code></td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>First, install the packages. You can do this using the command line like so:</p>
+
+<div class="highlight highlight-source-shell"><pre><span class="pl-c"># ( Go to the root of your project; code for doing this not included )</span>
+
+<span class="pl-c"># Instal Ruby packages</span>
+wget https://raw.githubusercontent.com/ndarville/style/master/Gemfile
+bundle install
+
+<span class="pl-c"># Install NPM packages</span>
+npm install ndarville/style
+
+<span class="pl-c"># Install Python packages</span>
+wget https://raw.githubusercontent.com/ndarville/style/master/requirements.txt
+
+<span class="pl-c"># Install Go packages</span>
+go get -u github.com/golang/lint/golint
+
+<span class="pl-c"># Download linter rules to your project folder</span>
+wget https://raw.githubusercontent.com/ndarville/style/master/html/.htmlhintrc
+wget https://raw.githubusercontent.com/ndarville/style/master/html/.tidyrc
+wget https://raw.githubusercontent.com/ndarville/style/master/sass/.scss-lint.yml
+wget https://raw.githubusercontent.com/ndarville/style/master/css/.csslintrc
+wget https://raw.githubusercontent.com/ndarville/style/master/javascript/.jscsrc
+wget https://raw.githubusercontent.com/ndarville/style/master/javascript/.jshintrc
+wget https://raw.githubusercontent.com/ndarville/style/master/python/.pep8
+wget https://raw.githubusercontent.com/ndarville/style/master/markdown/.mdlrc</pre></div>
+
+<p>To install tidy  the HTML5 linter, which is only tentatively supported for now:</p>
+
+<div class="highlight highlight-source-shell"><pre>brew tap homebrew/dupes
+brew install homebrew/dupes/tidy --HEAD
+wget https://raw.githubusercontent.com/ndarville/style/master/html/.tidyrc
+tidy -config .tidyrc</pre></div>
+
+<p>Afterwards, download the required Sublime Text 3 packages:</p>
+
+<h2>
+<a id="sublime-text-packages" class="anchor" href="#sublime-text-packages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sublime Text Packages</h2>
+
+<ul>
+<li>Package Control</li>
+<li>Bracket Highlighter</li>
+<li>SCSS</li>
+<li>SublimeLinter</li>
+<li>GitCommitMsg</li>
+<li>Modific</li>
+<li>Emmet</li>
+<li>cobalt2</li>
+<li>Markdown Extended</li>
+<li>Advanved CSV</li>
+<li>Babel</li>
+<li>Autoprefixer</li>
+<li><a href="http://christiannaths.com/#code-pen-plus-sublime-text">GhostText</a></li>
+<li>Git</li>
+</ul>
+
+<h3>
+<a id="linters" class="anchor" href="#linters" aria-hidden="true"><span class="octicon octicon-link"></span></a>Linters</h3>
+
+<ul>
+<li><a href="https://github.com/attenzione/SublimeLinter-scss-lint">SublimeLinter-scss-lint</a></li>
+<li>
+<a href="https://github.com/SublimeLinter/SublimeLinter-jscs">SublimeLinter-jscs</a>
+
+<ul>
+<li><a href="https://github.com/jscs-dev/node-jscs/releases/tag/v1.12.0">JSCS-Formatter</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/SublimeLinter/SublimeLinter-jshint">SublimeLinter-jshint</a></li>
+<li><a href="https://github.com/mmaday/SublimeLinter-contrib-htmlhint">SublimeLinter-contrib-htmlhint</a></li>
+<li><a href="https://github.com/SublimeLinter/SublimeLinter-html-tidy">SublimeLinter-html-tidy</a></li>
+<li><a href="https://github.com/ckaznocha/SublimeLinter-contrib-write-good">SublimeLinter-contrib-write-good</a></li>
+<li><a href="https://github.com/SublimeLinter/SublimeLinter-pep8">SublimeLinter-pep8</a></li>
+<li><a href="https://github.com/SublimeLinter/SublimeLinter-shellcheck">SublimeLinter-shellcheck</a></li>
+<li>(SublimeLinter-contrib-govet)</li>
+<li>(SublimeLinter-contrib-golint)</li>
+</ul>
+
+<p><code>jscs</code> now has <a href="https://github.com/jscs-dev/node-jscs/releases/tag/v1.12.0">auto-fixing support</a>. You can using by either running the command with the <code>-x</code> option or by installing the ST3 jscs-formatter listed above.</p>
+
+<h4>
+<a id="a-note-on-css" class="anchor" href="#a-note-on-css" aria-hidden="true"><span class="octicon octicon-link"></span></a>A Note on CSS</h4>
+
+<p>I have left out <a href="https://github.com/SublimeLinter/SublimeLinter-csslint">SublimeLinter-csslint</a>, because:</p>
+
+<ul>
+<li>It only works on CSS files; when used with HTML files, it mistakenly lints JavaScript and returns some wrong errors.</li>
+<li>It does not support CSS specific to SVG.</li>
+</ul>
+
+<p>You are better off writing your CSS in SASS and linking externally to the compiled CSS file.</p>
+
+<h2>
+<a id="linter-rules" class="anchor" href="#linter-rules" aria-hidden="true"><span class="octicon octicon-link"></span></a>Linter Rules</h2>
+
+<ul>
+<li><a href="https://github.com/causes/scss-lint/blob/master/lib/scss_lint/linter/README.md">sass-lint</a></li>
+<li>css</li>
+<li><a href="http://jscs.info/rules">jscs</a></li>
+<li><a href="http://jshint.com/docs/options">jshint</a></li>
+<li><a href="http://www.html-tidy.org/quickref">tidy</a></li>
+<li><a href="https://github.com/mivok/markdownlint/blob/master/docs/RULES.md">mdl</a></li>
+<li><a href="https://www.python.org/dev/peps/">pep8</a></li>
+<li>(golint)</li>
+<li>(govet)</li>
+</ul>
+
+<h2>
+<a id="status" class="anchor" href="#status" aria-hidden="true"><span class="octicon octicon-link"></span></a>Status</h2>
+
+<ul>
+<li>[x] SASS linter</li>
+<li>[x] JavaScript linter
+
+<ul>
+<li>[x] jscs</li>
+<li>[x] jshint</li>
+</ul>
+</li>
+<li>[x] HTML (tentative)</li>
+<li>[x] Python linter</li>
+<li>[x] CSV linter</li>
+<li>[ ] Go linter
+
+<ul>
+<li>[ ] golint</li>
+<li>[ ] govet</li>
+</ul>
+</li>
+<li>[ ] Markdown linter
+
+<ul>
+<li>[x] mdl</li>
+<li>[ ] Personal linter</li>
+</ul>
+</li>
+<li>[x] Shell linter</li>
+<li>[x] YAML linter</li>
+</ul>
+
+<h2>
+<a id="related-services" class="anchor" href="#related-services" aria-hidden="true"><span class="octicon octicon-link"></span></a>Related Services</h2>
+
+<ul>
+<li>
+<a href="https://linthub.io">linthub</a>: automates linting for pull requests.</li>
+</ul>
+
+<h2>
+<a id="examples" class="anchor" href="#examples" aria-hidden="true"><span class="octicon octicon-link"></span></a>Examples</h2>
+
+<p>My website <a href="https://ndarville.com">ndarville.com</a> and project at <a href="https://github.com/ndarville/style">Hafnia Times</a> try to conform to the style guidelines. The latter is open source, which makes it easier for you to inspect the code.</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/ndarville/style">Style</a> is maintained by <a href="https://github.com/ndarville">ndarville</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
