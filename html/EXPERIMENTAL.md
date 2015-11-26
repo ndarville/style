@@ -128,7 +128,7 @@ This solution will result in, brief, FOUT (see below), but between FOIT and FOUT
         U+002D;      // -
 ```
 
-Read more about this and *all the many caveats* in ["Bulletproof `@font-face` syntax"][fontface-syntax] by Paul Irish.
+Read more about this and *all the many caveats* in [“Bulletproof `@font-face` syntax”][fontface-syntax] by Paul Irish.
 
 ### FOUT, FOIT, FOFT ###
 
