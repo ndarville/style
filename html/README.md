@@ -369,8 +369,6 @@ Place your pre-* tags at the very top, preface them with `http-equiv="x-dns-pref
         <meta http-equiv="x-dns-prefetch-control" content="on" />
         <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link rel="dns-prefetch" href="https://brick.a.ssl.fastly.net" />
-        <link rel="preconnect" href="https://brick.a.ssl.fastly.net" crossorigin />
 ```
 
 #### Further Reading ###
