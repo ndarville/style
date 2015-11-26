@@ -87,7 +87,7 @@ Just place the `preconnect` immediately before the font loading to parallelize t
 
 #### Local Loading ####
 
-Or serve load them locally using [localfont.com][].
+Or load them locally using [localfont.com][].
 
 ```html
 <link rel="stylesheet" type="text/css" href="/static/typefaces/css/fonts.css" media="deferred" onload="if(media!='all')media='all'" />
