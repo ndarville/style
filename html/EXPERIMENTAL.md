@@ -118,7 +118,7 @@ This solution will result in, brief, FOUT (see below), but between FOIT and FOUT
     src: local("EB Garamond"),
          local("EBGaramond"),
 }
-         url("EBGaramond12-Regular.eot?") format("eot"),  // "?" for IE
+         url("EBGaramond12-Regular.eot?") format("embedded-opentype"), // "?" for IE
          url("EBGaramond12-Regular.ttf") format("truetype"),
          url("EBGaramond12-Regular.woff2") format("woff2"),
          url("EBGaramond12-Regular.woff") format("woff");
