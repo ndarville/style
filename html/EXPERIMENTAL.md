@@ -76,7 +76,7 @@ Either retrieve web fonts from Google Fonts:
 ```html
 <!-- Preconnect to external font -->
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<!-- Note that fonts take up a lot of size -->
+<!-- Delay download of font until document is loaded -->
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" media="deferred" onload="if(media!='all')media='all'" />
 <noscript><link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" media="all" /></noscript>
 ```
@@ -85,20 +85,23 @@ Just place the `preconnect` immediately before the font loading to parallelize t
 
 * For more on [preconnecting][] with examples and data
 
+You can explore using `dns-prefetch` as well.
+
 #### Local Loading ####
 
 Or load them locally using [localfont.com][].
 
 ```html
+<!-- Delay download of font until document is loaded -->
 <link rel="stylesheet" type="text/css" href="/static/typefaces/css/fonts.css" media="deferred" onload="if(media!='all')media='all'" />
 <noscript><link rel="stylesheet" type="text/css" href="/static/typefaces/css/fonts.css" media="all" /></noscript>
 ```
 
 #### What’s with the Media Type? ####
 
-It defers the downloading (ie blocking) of the fonts, until the page has finished loading. That way, the fonts won’t block the rendering of the page.
+It defers the downloading (ie blocking) of the fonts, until the page has finished loading. That way, the fonts won’t block the rendering of the page; fonts are often the bottleneck in loading a page.
 
-It will result in FOUT (see below), but between FOIT and FOUT, the latter is clearly preferable.
+This solution will result in, brief, FOUT (see below), but between FOIT and FOUT, the latter is preferable, unless the target audience always uses a high-speed Internet connection.
 
 ### `@font-face` Example ###
 
@@ -108,13 +111,14 @@ It will result in FOUT (see below), but between FOIT and FOUT, the latter is cle
     font-style: normal;
     font-weight: 400;
 @if $avoid-local-font == true {
-    src: local("☺"︎),
+    src: local("☺"︎);
 } @else {
-    // PostScript font name for Safari `local`
+    // PostScript font name for Safari `local`,
     // Full font name for rest
-    src: local("EB Garamond"), local("EBGaramond"),
+    src: local("EB Garamond"),
+         local("EBGaramond"),
 }
-         url("EBGaramond12-Regular.eot?"), format("eot");  // "?" for IE
+         url("EBGaramond12-Regular.eot?"), format("eot"),  // "?" for IE
          url("EBGaramond12-Regular.ttf"), format("truetype"),
          url("EBGaramond12-Regular.woff2") format("woff2"),
          url("EBGaramond12-Regular.woff") format("woff");
