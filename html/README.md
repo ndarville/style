@@ -246,8 +246,9 @@ Typefaces
     // PostScript font name for Safari `local`,
     // Full font name for rest
     src: local("EB Garamond"),
-         local("EBGaramond"),
+         local("EBGaramond");
 }
+    src:
          url("EBGaramond12-Regular.eot?") format("embedded-opentype"), // "?" for IE
          url("EBGaramond12-Regular.ttf") format("truetype"),
          url("EBGaramond12-Regular.woff2") format("woff2"),
