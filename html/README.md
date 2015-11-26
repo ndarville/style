@@ -248,11 +248,11 @@ Typefaces
     src: local("EB Garamond"),
          local("EBGaramond");
 }
-    src:
-         url("EBGaramond12-Regular.eot?") format("embedded-opentype"), // "?" for IE
-         url("EBGaramond12-Regular.ttf") format("truetype"),
-         url("EBGaramond12-Regular.woff2") format("woff2"),
-         url("EBGaramond12-Regular.woff") format("woff");
+    src: url("EB-Garamond-regular.eot"); // IE9 compat mode
+    src: url("EB-Garamond-regular.eot?") format("embedded-opentype"), // "?" for IE6-IE8
+         url("EB-Garamond-regular.ttf") format("truetype"),
+         url("EB-Garamond-regular.woff2") format("woff2"),
+         url("EB-Garamond-regular.woff") format("woff");
     unicode-range: // Optional for limiting characters
         U+0061-007A, // a-z
         U+0041-005A, // A-Z
