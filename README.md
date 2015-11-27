@@ -79,6 +79,7 @@ Sublime Text Packages
 * Autoprefixer
 * [GhostText][]
 * Git
+* ColorConvert
 
 ### Linters ###
 
