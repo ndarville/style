@@ -84,6 +84,7 @@ Sublime Text Packages
 ### Linters ###
 
 * [SublimeLinter-scss-lint][]
+* [CSSLint][]
 * [SublimeLinter-jscs][]
     - [JSCS-Formatter][]
 * [SublimeLinter-jshint][]
@@ -121,6 +122,7 @@ Linter Rules
 Status
 ------
 - [x] SASS linter
+- [x] CSS linter
 - [x] JavaScript linter
     - [x] jscs
     - [x] jshint
@@ -153,6 +155,7 @@ My website [ndarville.com][] and project at [Hafnia Times][] try to conform to t
 [ghosttext]: http://christiannaths.com/#code-pen-plus-sublime-text
 
 [SublimeLinter-scss-lint]: https://github.com/attenzione/SublimeLinter-scss-lint
+[CSSLint]: https://github.com/austinhappel/sublime-csslint
 [SublimeLinter-jscs]: https://github.com/SublimeLinter/SublimeLinter-jscs
 [JSCS-Formatter]: https://github.com/TheSavior/SublimeJSCSFormatter
 [SublimeLinter-jshint]: https://github.com/SublimeLinter/SublimeLinter-jshint
