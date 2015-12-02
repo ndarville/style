@@ -263,6 +263,8 @@ Read more about this and *all the many caveats* in [“Bulletproof `@font-face` 
 
 ### Performance and Optimization ###
 
+#### Defeating FOIT ####
+
 Change your stylesheet from including the custom font that looks like so:
 
 ```css
@@ -298,7 +300,9 @@ At the bottom of the HTML body, add the following using [Font Face Observer][]:
 
 This defeats **FOIT** (see below) by loading the fallback fonts first and then applying the custom fonts, once they’ve finished downloading.
 
-#### External Loading ####
+#### Deferred Font Loading ####
+
+##### External #####
 
 Either retrieve web fonts from Google Fonts:
 
@@ -316,7 +320,7 @@ Just place the `preconnect` immediately before the font loading to parallelize t
 
 You can explore using `dns-prefetch` as well.
 
-#### Local Loading ####
+##### Local #####
 
 Or load them locally using [localfont.com][].
 
