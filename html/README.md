@@ -293,8 +293,8 @@ At the bottom of the HTML body, add the following using [Font Face Observer][]:
         raleway400.check(),
         raleway600.check()
     ]).then(function() {
-            document.documentElement.className += "fonts-loaded";
-        });
+        document.documentElement.className += "fonts-loaded";
+    });
 </script>
 ```
 
