@@ -1,4 +1,4 @@
-language: ruby
+sudo: false
 
 rvm:
   - 1.9.3
@@ -16,7 +16,7 @@ env:
 install:
   - bundle install --verbose
   - npm install --verbose
-  - sudo pip install --verbose -r requirements.txt
+  - pip install --verbose -r requirements.txt
 # - brew update && brew tap homebrew/dupes && brew install homebrew/dupes/tidy --HEAD
 
 before_script:
