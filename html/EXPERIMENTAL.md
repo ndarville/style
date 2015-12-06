@@ -46,7 +46,7 @@ Here is what this would look like with videos that improve load performance vast
         <source type="video/mp4"
                 src="example.mp4" />
         <source type="video/webm"
-                src="example.og" />
+                src="example.webm" />
         <source type="video/ogg"
                 src="example.ogg" />
         <img alt="Example animation" src="example.gif" />
