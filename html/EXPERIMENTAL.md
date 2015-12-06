@@ -71,13 +71,13 @@ Let’s break that down, shall we?
 
 * `-i example.gif`: Input file
 * `-c:v libvpx`: Decoder name
-* `-crf 12`: Exponential range of quantizer scale from `0–51
+* `-crf 12`: Exponential range of quantizer scale from `0–51`
     - `0` is lossless, and `51` is, well, lossy
     - `18` is considered “visually lossless”
 
     As you can probably infer, you want to use as high a scale as possible with an acceptable quality.
 
-    > You can use `-qp 0` or `-crf 0` to encode a lossless output. Use of `-qp` is recommended over `-crf` for lossless because 8-bit and 10-bit x264 use different `-crf values for lossless.
+    > You can use `-qp 0` or `-crf 0` to encode a lossless output. Use of `-qp` is recommended over `-crf` for lossless because 8-bit and 10-bit x264 use different `-crf` values for lossless.
 * `-b:v 500K`: Average bit rate (kB/s)
 * `example.webm`: Output file
 
