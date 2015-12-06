@@ -29,8 +29,80 @@ Use input elements by defaults and use buttons for a separate purpose or behavio
 * ["When To Use The Button Element"][csstricks-buttons]
 * ["The Difference Between Anchors, Inputs and Buttons"][davidwalsh-buttons]
 
+Video and GIF
+-------------
+
+Here is a GIF:
+
+```html
+<img alt="Example animation" src="example.gif" />
+```
+
+Here is what this would look like with videos that improve load performance vastly:
+
+```html
+<figure>
+    <video loop controls>
+        <source type="video/mp4"
+                src="example.mp4" />
+        <source type="video/webm"
+                src="example.og" />
+        <source type="video/ogg"
+                src="example.ogg" />
+        <img alt="Example animation" src="example.gif" />
+        <figcaption>Example animation.</figcaption>
+    </video>
+</figure>
+```
+
+### Converting a GIF to Video ###
+
+```sh
+brew reinstall ffmpeg --with-libvpx --with-theora --with-libogg --with-libvorbis
+```
+
+#### GIF to WebM ####
+
+```sh
+ffmpeg -i example.gif -c:v libvpx -crf 12 -b:v 500K example.webm
+```
+
+Let’s break that down, shall we?
+
+* `-i example.gif`: Input file
+* `-c:v libvpx`: Decoder name
+* `-crf 12`: Exponential range of quantizer scale from `0–51
+    - `0` is lossless, and `51` is, well, lossy
+    - `18` is considered “visually lossless”
+
+    As you can probably infer, you want to use as high a scale as possible with an acceptable quality.
+
+    > You can use `-qp 0` or `-crf 0` to encode a lossless output. Use of `-qp` is recommended over `-crf` for lossless because 8-bit and 10-bit x264 use different `-crf values for lossless.
+* `-b:v 500K`: Average bit rate (kB/s)
+* `example.webm`: Output file
+
+~ [ffmpeg guide][]
+
+#### WebM to MP4 ####
+
+```sh
+ffmpeg -i example.webm example.mp4 # -c:v libx264
+# Use -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" if you get a size error
+# cf. stackoverflow.com/a/20848224
+```
+
+#### WebM to OGG ####
+
+```sh
+ffmpeg -i example.webm example.ogg
+```
+
+You can also use [Miro Converter][] to convert the WebM file to MP4 and OGG.
+
 
 [18F on tables]: https://playbook.cio.gov/designstandards/tables/
 [mdn]: https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_button_role
 [csstricks-buttons]: https://css-tricks.com/use-button-element
 [davidwalsh-buttons]: http://davidwalsh.name/html5-buttons
+[ffmpeg guide]: https://trac.ffmpeg.org/wiki/Encode/H.264
+[Miro Converter]: http://www.mirovideoconverter.com
