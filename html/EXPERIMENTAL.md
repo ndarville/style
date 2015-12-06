@@ -57,9 +57,15 @@ Here is what this would look like with videos that improve load performance vast
 
 ### Converting a GIF to Video ###
 
+#### Set-up ####
+
+Install ffmpeg with Homebrew:
+
 ```sh
-brew reinstall ffmpeg --with-libvpx --with-theora --with-libogg --with-libvorbis
+brew install ffmpeg --with-libvpx --with-theora --with-libogg --with-libvorbis
 ```
+
+If you have ffmpeg, but haven’t installed the additional codecs, use `brew reinstall` instead.
 
 #### GIF to WebM ####
 
