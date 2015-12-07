@@ -55,6 +55,15 @@ Here is what this would look like with videos that improve load performance vast
 </figure>
 ```
 
+Failing that, here’s an image-based alternative:
+
+```html
+<figure>
+    <a href="example.gif"><img alt="Example animation" src="example.png" /></a>
+    <figcaption>Example animation.</figcaption>
+</figure>
+```
+
 ### Converting a GIF to Video ###
 
 #### Set-up ####
