@@ -89,6 +89,13 @@ Let’s break that down, shall we?
 
 ~ [ffmpeg guide][]
 
+So if you wanted a lossless conversion instead of a good-enough conversion, do
+
+```sh
+ffmpeg -i example.gif -c:v libvpx -qp 0 example.webm
+```
+
+
 #### WebM to MP4 ####
 
 ```sh
