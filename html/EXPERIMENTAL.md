@@ -48,7 +48,7 @@ Here is what this would look like with videos that improve load performance vast
         <source type="video/webm"
                 src="example.webm" />
         <source type="video/ogg"
-                src="example.ogg" />
+                src="example.ogv" />
         <img alt="Example animation" src="example.gif" />
         <figcaption>Example animation.</figcaption>
     </video>
@@ -116,7 +116,7 @@ ffmpeg -i example.webm example.mp4 # -c:v libx264
 #### WebM to OGG ####
 
 ```sh
-ffmpeg -i example.webm example.ogg
+ffmpeg -i example.webm example.ogv
 ```
 
 You can also use [Miro Converter][] to convert the WebM file to MP4 and OGG.
