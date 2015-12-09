@@ -42,7 +42,7 @@ Here is what this would look like with videos that improve load performance vast
 
 ```html
 <figure>
-    <video loop controls>
+    <video loop controls poster="thumbnail.png">
         <source type="video/mp4"
                 src="example.mp4" />
         <source type="video/webm"
@@ -59,7 +59,7 @@ Failing that, here’s an image-based alternative:
 
 ```html
 <figure>
-    <a href="example.gif"><img alt="Example animation" src="example.png" /></a>
+    <a href="example.gif"><img alt="Example animation" src="thumbnail.png" /></a>
     <figcaption>Example animation.</figcaption>
 </figure>
 ```
