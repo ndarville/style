@@ -298,7 +298,7 @@ At the bottom of the HTML body, add the following using [Font Face Observer][]:
 </script>
 ```
 
-This defeats **FOIT** (see below) by loading the fallback fonts first and then applying the custom fonts, once they’ve finished downloading.
+This defeats **FOIT** (see below) by loading the fallback fonts first and then applying the custom fonts, once, and only once, they’ve finished downloading.
 
 #### Deferred Font Loading ####
 
