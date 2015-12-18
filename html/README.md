@@ -404,12 +404,13 @@ Remember to use `<link rel="next" />` and `<link rel="prev" />`, if there is a s
 #### Optional ####
 
 * `property="og:type" content="article"`
-* `property="og:image" content="image.png"`
+* `property="og:image" content="https://ndarville.com/image.png"`
 
 ### Twitter (Optional) ###
 
 * `name="twitter:creator" content="@pessimism"`
 * `name="twitter:site" content="@HafniaTimes"`
+* `name="twitter:image" content="https://ndarville.com/image.png"`
 * `name="twitter:card" content="summary_large_image"`
 
 ### Language ###
