@@ -404,13 +404,17 @@ Remember to use `<link rel="next" />` and `<link rel="prev" />`, if there is a s
 #### Optional ####
 
 * `property="og:type" content="article"`
-* `property="og:image" content="https://ndarville.com/image.png"`
+* If HTTPS: `property="og:image:secure_url" content="https://ndarville.com/image.png"`
+* If HTTP: `property="og:image" content="https://ndarville.com/image.png"`
+* `property="og:image:type" content="image/png"`
+* `property="og:image:width" content="192"`
+* `property="og:image:height" content="192"`
 
 ### Twitter (Optional) ###
 
 * `name="twitter:creator" content="@pessimism"`
 * `name="twitter:site" content="@HafniaTimes"`
-* `name="twitter:image" content="https://ndarville.com/image.png"`
+* `name="twitter:description" content="A Danish publication in English promoting open data and transparency in tech and politics."`
 * `name="twitter:card" content="summary_large_image"`
 
 ### Language ###
