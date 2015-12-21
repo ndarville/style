@@ -6,11 +6,16 @@
     "show_encoding": true,
     "draw_centered": true,
     "ensure_newline_at_eof_on_save": true,
+    "folder_exclude_patterns":
+    [
+        "_site/*",
+        "node_modules/*"
+    ],
     "font_size": 12.0,
+    "open_files_in_new_window": false,
     "scroll_past_end": true,
     "tab_size": 4,
     "translate_tabs_to_spaces": true,
     "trim_trailing_white_space_on_save": true,
-    "wrap_width:": 78,
-    "folder_exclude_patterns": ["node_modules/*"]
+    "wrap_width:": 78
 }
