@@ -65,6 +65,7 @@ Use HTML5 containers like
 * `<section role="region">`
 * `<nav role="navigation">`
 * `<footer role="contentinfo">`
+* `<aside role="complementary">`
 
 ### Navigation ###
 
@@ -113,7 +114,7 @@ The bad example implies a 100% certainty betrayed by factors like variance and m
 
 <!--***-->
 
-<aside>
+<aside role="complementary">
     <ol class="footnotes">
         <li><sup id="fn-text-1"><a href="#fn-link-1">1</a></sup> To gain a better understanding of all the caveats of conducting a poll and interpreting the results, check out the <a href="https://ndarville.com/projects/metapoll">Metapoll</a> project.</li>
     </ol>
