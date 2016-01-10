@@ -156,6 +156,8 @@ Figures
 </figure>
 ```
 
+- [W3C WAI on `<figure>`][figure]
+
 Alerts
 ------
 > * Use the ARIA `role="alert"` to inform assistive technologies of a time-sensitive and important message that is not interactive. If the message is interactive, use the `alertdialogue` role instead.
@@ -467,6 +469,7 @@ Unless required by specificity, stick to the [`ISO 639-1` language format][iso].
 [link-text]: http://www.w3.org/QA/Tips/noClickHere
 [hreflang]: https://support.google.com/webmasters/answer/189077?hl=en
 [18F on alerts]: https://playbook.cio.gov/designstandards/alerts/
+[figure]: http://www.w3.org/WAI/tutorials/page-structure/content/#figures
 [aria-describedby]: https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-describedby_attribute
 [18F on form controls]: https://playbook.cio.gov/designstandards/form-controls/
 [18F on form templates]: https://playbook.cio.gov/designstandards/form-templates/
