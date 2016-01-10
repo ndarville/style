@@ -55,7 +55,6 @@ Attribute Order
 * aria-*, role
 * style
 
-
 HTML5 Containers
 ----------------
 Use HTML5 containers like
