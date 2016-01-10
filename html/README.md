@@ -53,6 +53,8 @@ Attribute Order
 * (required), (autocapitalize), (autofocus)
 * async, defer, integrity, crossorigin
 * aria-*, role
+* style
+
 
 HTML5 Containers
 ----------------
