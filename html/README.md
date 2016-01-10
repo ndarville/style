@@ -136,6 +136,26 @@ Images
 </picture>
 ```
 
+Figures
+-------
+`<figure>` is an easy way to wrap media, tables or lists contexually, especially for labelling purposes.
+
+```html
+<figure aria-labelledby="fig-cap1" role="group">
+    <picture>
+        <source
+            type="image/jpeg"
+            srcset="image.jpeg 1x, image@2x.jpeg 2x" />
+        <img
+            class="image"
+            src="image.jpeg"
+            alt="Alt text"
+            title="Title text" />
+    </picture>
+    <figcaption id="fig-cap1">Description.</figcaption>
+</figure>
+```
+
 Alerts
 ------
 > * Use the ARIA `role="alert"` to inform assistive technologies of a time-sensitive and important message that is not interactive. If the message is interactive, use the `alertdialogue` role instead.
