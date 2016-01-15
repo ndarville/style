@@ -136,6 +136,8 @@ Images
 </picture>
 ```
 
+- [W3C WAI on images][]
+
 Figures
 -------
 `<figure>` is an easy way to wrap media, tables or lists contexually, especially for labelling purposes.
@@ -203,6 +205,7 @@ Think of `<legend>` as `<label>` for an input group.
 > * Leave the title and suffix fields as text boxes instead of offering drop downs. There are many possible titles and suffixes; text boxes accommodate them all.
 
 - [18F on form templates][]
+- [W3C WAI on forms][]
 
 Scripts
 -------
@@ -470,9 +473,11 @@ Unless required by specificity, stick to the [`ISO 639-1` language format][iso].
 [hreflang]: https://support.google.com/webmasters/answer/189077?hl=en
 [18F on alerts]: https://playbook.cio.gov/designstandards/alerts/
 [figure]: http://www.w3.org/WAI/tutorials/page-structure/content/#figures
+[W3C WAI on images]: https://www.w3.org/WAI/tutorials/images/
 [aria-describedby]: https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-describedby_attribute
 [18F on form controls]: https://playbook.cio.gov/designstandards/form-controls/
 [18F on form templates]: https://playbook.cio.gov/designstandards/form-templates/
+[W3C WAI on forms]: https://www.w3.org/WAI/tutorials/forms/
 [srihash.org]: https://srihash.org
 [a-d]: https://stackoverflow.com/a/10731231
 [scripting]: https://html.spec.whatwg.org/#scripting-2
