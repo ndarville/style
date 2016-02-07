@@ -65,6 +65,39 @@ Grouping and Atomizing Commits
 
 2. Squash related commits into one.
 
+Security and Signing
+--------------------
+[Impersonating other users][impersonation] is possible with Git. In most cases, it won’t be of consequence, but you can sign commits and tags (ie releases).
+
+First you set up signing by finding the key you want, and making it a part of your Git config:
+
+```sh
+$ gpg --list-secret-keys
+$ git config --global user.signingkey XXXXXXXX
+```
+
+Then you can sign commits or tags at your own leisure:
+
+```sh
+$ git commit -S -m "Update README"   # Uppercase "S"
+$ git tag -s v1.0 -m "Final version" # Lowercase "s"
+```
+
+You can also set up Git to always sign commits:
+
+```sh
+$ git config --global commit.gpgsign true
+```
+
 Further Reading
 ---------------
 * <http://chris.beams.io/posts/git-commit/>
+* [“Automatically Signing Your Git Commits”][signing-guide]
+* [“Using a GPG Key to Sign-Off Git Commits and Emails”][gpg-signing]
+* [“Git Tools - Signing Your Work”][signing-docs]
+
+
+[impersonation]: https://news.ycombinator.com/item?id=11053078
+[signing-guide]: http://harryrschwartz.com/2014/11/01/automatically-signing-your-git-commits.html
+[gpg-signing]: https://driesvints.com/blog/using-a-gpg-key-to-sign-off-git-commits-and-emails
+[signing-docs]: http://git-scm.com/book/ch7-4.html
