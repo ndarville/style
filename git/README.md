@@ -18,7 +18,7 @@ Example:
 1. Limit subject text to **50** characters
 2. Limit body text to **72** characters
 3. Use subject and body sections divided by a blank line
-    - Use `CTRL + Shift + P` + `commit` from the Git package for this
+    - Use `CTRL + Shift + P` + `commit` from the Git Sublime Text package for this
 
 I don’t think you should *always* lead with an imperative verb; ten commits in a row starting with “Add”, “Fix” or “Change” wreaks havoc on the readability of your commit log, as you’ll have to scan the second word in the messages. Rather, the rule is not to always use the imperative verb, but to use it in place of the past participle.
 
