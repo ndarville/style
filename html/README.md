@@ -61,10 +61,13 @@ Use HTML5 containers like
 
 * `<main role="main">`
 * `<header role="banner">`
-* `<section role="region">`
+* `<article role="article">`*
+* `<section role="region">`*
 * `<nav role="navigation">`
 * `<footer role="contentinfo">`
 * `<aside role="complementary">`
+
+\* `article` and `region` are not ARIA landmarks.
 
 ### Navigation ###
 
