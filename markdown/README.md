@@ -91,7 +91,7 @@ Footnotes are only supported by select Markdown parsers like Kramdown, as eviden
     New paragraph[^bar]. Includes another sentence after the annotation.
     ```
 
-([Footnote-syntax support][fn-support].)
+([Footnote syntax support][fn-support].)
 
 ### Blockquotes ###
 
