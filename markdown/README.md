@@ -2,6 +2,7 @@ Style Guide for Markdown
 ========================
 * [Elements][]
     - [Links][]
+    - [Footnotes][]
     - [Blockquotes][]
     - [`<pre>`][pre]
     - [Unordered Lists][ul]
@@ -12,6 +13,7 @@ Style Guide for Markdown
 
 [elements]: https://github.com/ndarville/style/tree/master/markdown#elements
 [links]: https://github.com/ndarville/style/tree/master/markdown#links
+[footnotes]: https://github.com/ndarville/style/tree/master/markdown#footnotes
 [blockquotes]: https://github.com/ndarville/style/tree/master/markdown#blockquotes
 [pre]: https://github.com/ndarville/style/tree/master/markdown#pre
 [ul]: https://github.com/ndarville/style/tree/master/markdown#unordered-lists
@@ -26,9 +28,6 @@ Element   | Right       | Wrong
 ----------|-------------|----------
 Emphasis  | `**Foo**`   | `_Foo_`
 Strong    | `*Foo**`    | `__Foo__`
-Footnote* | `Foo[^bar]` | `Foo[^1]`
-
-([Footnote-syntax support][fn-support].)
 
 ### Links ###
 
@@ -49,6 +48,50 @@ Links are straightforward, but follow these guidelines:
     ```
 
 ([Syntax support][link-support].)
+
+### Footnotes ###
+
+Footnotes are only supported by select Markdown parsers like Kramdown, as evidenced by this [footnote code example][fn-support]; the Preview pane is the most illustrative.
+
+* Use words instead of numbers for footnotes, as numbers will be impossible to review in the long term:
+
+    Good:
+
+    ```md
+    In his book[^book] (...)
+    ```
+
+    Bad:
+
+    ```md
+    In his book[^1] (...)
+    ```
+
+* Feel free to place footnotes below the respective paragraph or by the end of the document above the collection of links.
+* As with links, separate your footnote collection from other blocks with two spaces.
+
+    Footnotes go first—because they, too, can contain links.
+
+    ```md
+    [Lorem ipsum][] dolor sit [amet][].[^foo]
+
+
+    [^foo]: Bar.
+
+
+    [Lorem ipsum]: http://example.com
+    [amet]: http://example.com
+    ```
+
+* Place your footnote in-sentence, unless the sentence ends the paragraph. In that event, place it *after* the sentence and full stop.
+
+    ```md
+    This is a sentence by the end of a paragraph.[^foo]
+
+    New paragraph[^bar]. Includes another sentence after the annotation.
+    ```
+
+([Footnote-syntax support][fn-support].)
 
 ### Blockquotes ###
 
