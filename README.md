@@ -119,6 +119,13 @@ Linter Rules
 * (golint)
 * (govet)
 
+Continuous Integration (CI)
+---------------------------
+* [Travis CI][]
+* [Percy][]
+* [Linthub][]
+* [Hound][]
+
 Status
 ------
 - [x] SASS linter
@@ -137,10 +144,6 @@ Status
     - [ ] Personal linter
 - [x] Shell linter
 - [x] YAML linter
-
-Related Services
-----------------
-- [linthub][]: automates linting for pull requests.
 
 Examples
 --------
@@ -175,6 +178,9 @@ My website [ndarville.com][] and project at [Hafnia Times][] try to conform to t
 [mdl]: https://github.com/mivok/markdownlint/blob/master/docs/RULES.md
 [pep8]: https://www.python.org/dev/peps/
 
+[travis ci]: https://travis-ci.org
+[percy]: https://percy.io
 [linthub]: https://linthub.io
+[hound]: https://houndci.com
 
 [ndarville.com]: https://ndarville.com
