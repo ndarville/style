@@ -89,6 +89,48 @@ You can also set up Git to always sign commits:
 $ git config --global commit.gpgsign true
 ```
 
+### Using with GitHub ###
+
+On April 5, GitHub announced [official support for GPG signing][gpg].
+
+#### Verified E-mail Addresses ####
+
+If your GPG key is associated with a **verified** (primary) e-mail address, setting this up is very simple:
+
+1. Go to your [keys settings page][github-keys]
+2. Copy-paste your public GPG key to the GPG field
+3. The corresponding signed commits and tags should not be verified
+
+#### Unverified E-mail Addresses ####
+
+If your GPG key is associated with an **unverified** (primary) e-mail address that GitHub can’t send an e-mail to such as [Keybase][], you have to go through some more steps to add a verified, or verifiable, e-mail address to your key.
+
+If the e-mail address is unverified, but can receive e-mail, just add it to your [e-mail page][].
+
+##### Adding an E-mail Address to Your Key #####
+
+Because GitHub can’t send an e-mail to verify your e-mail address, you will have to add one to your key that *does* receive e-mails.
+
+This is how you update your key on OS X in **GPG Keychain**, using [the official GPG guide][gpg-guide]:
+
+1. Open GPG Keychain
+2. Double-click on the relevant key
+3. Go to User IDs (UIDs) and add your second e-mail address
+4. Set your new e-mail address to be the primary one
+5. Go back to the overview screen, right-click your key and click “Send public key to keyserver”
+    - (5a) With Keybase, I had to update my profile key with my updated on from GPG Keychain. You can copy your public key to your clipboard by right-clicking your key in the key overview and click “Copy”.
+7. Go to your [keys settings page][github-keys]
+8. Copy-paste your public GPG key to the GPG field
+9. The corresponding signed commits and tags should not be verified
+
+It will take some time for this to propagate, so give it 15 minutes, before your commits and tags are shown as verified.
+
+It is possible that steps **4** and **5a** are unnecessary; I went through those steps in setting up GPG on GitHub.
+
+You unverifiable key will still be shown as “Unverified”, which is fine, since your new e-mail serves to verify that the GPG key is yours.
+
+You will now see a green “Verified” next to your signed commits and tags.
+
 Further Reading
 ---------------
 * <http://chris.beams.io/posts/git-commit/>
@@ -98,6 +140,11 @@ Further Reading
 
 
 [impersonation]: https://news.ycombinator.com/item?id=11053078
+[github-signing]: https://github.com/blog/2144-gpg-signature-verification
+[github-keys]: https://github.com/settings/keys
+[keybase]: https://keybase.io
+[e-mail page]: https://github.com/settings/emails
+[gpg-guide]: https://gpgtools.tenderapp.com/kb/how-to/add-more-email-addresses-user-ids-to-your-existing-key
 [signing-guide]: http://harryrschwartz.com/2014/11/01/automatically-signing-your-git-commits.html
 [gpg-signing]: https://driesvints.com/blog/using-a-gpg-key-to-sign-off-git-commits-and-emails
 [signing-docs]: http://git-scm.com/book/ch7-4.html
