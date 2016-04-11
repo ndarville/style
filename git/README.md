@@ -114,11 +114,22 @@ Because GitHub can’t send an e-mail to verify your e-mail address, you will ha
 This is how you update your key on OS X in **GPG Keychain**, using [the official GPG guide][gpg-guide]:
 
 1. Open GPG Keychain
+    - Alternatively, you can change your key through the CLI:
+
+        ```sh
+        $ gpg --edit-key username@keybase.io
+        $ adduid
+        ```
+
+        And so on.
+
 2. Double-click on the relevant key
 3. Go to User IDs (UIDs) and add your second e-mail address
 4. Set your new e-mail address to be the primary one
 5. Go back to the overview screen, right-click your key and click “Send public key to keyserver”
-    - (5a) With Keybase, I had to update my profile key with my updated on from GPG Keychain. You can copy your public key to your clipboard by right-clicking your key in the key overview and click “Copy”.
+    - (5a) With Keybase, I had to copy my updated key from GPG Keychain to Keybase.
+
+        You can copy your public key to your clipboard by right-clicking your key in the key overview and click “Copy”.
 7. Go to your [keys settings page][github-keys]
 8. Copy-paste your public GPG key to the GPG field
 9. The corresponding signed commits and tags should not be verified
