@@ -7,6 +7,10 @@ Tables
 > * Complex tables are tables with more than two levels of headers. Each header should be given a unique id and each data cell should have a headers attribute with each related header cell’s id listed.
 
 - [18F on tables][]
+
+* Use `<caption>` or `<figure>` with `<figcaption>` if the table is not preceded by a header explaining the table explicitly. [#][table-accessibility]
+* Always use `<thead>` and `<tbody>`.
+
 - [W3C WAI on tables][]
 
 Buttons
@@ -125,6 +129,7 @@ You can also use [Miro Converter][] to convert the WebM file to MP4 and OGG.
 
 [18F on tables]: https://playbook.cio.gov/designstandards/tables/
 [W3C WAI on tables]: https://www.w3.org/WAI/tutorials/tables/
+[table-accessibility]: http://www.w3.org/WAI/tutorials/tables/caption-summary/
 [mdn]: https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_button_role
 [csstricks-buttons]: https://css-tricks.com/use-button-element
 [davidwalsh-buttons]: http://davidwalsh.name/html5-buttons
