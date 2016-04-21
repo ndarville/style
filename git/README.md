@@ -142,6 +142,10 @@ You unverifiable key will still be shown as “Unverified”, which is fine, sin
 
 You will now see a green “Verified” next to your signed commits and tags.
 
+### Signing releases ###
+
+For more on this, read this [external guide on signing GitHub releases][release-signing].
+
 Further Reading
 ---------------
 * <http://chris.beams.io/posts/git-commit/>
@@ -156,6 +160,7 @@ Further Reading
 [keybase]: https://keybase.io
 [e-mail page]: https://github.com/settings/emails
 [gpg-guide]: https://gpgtools.tenderapp.com/kb/how-to/add-more-email-addresses-user-ids-to-your-existing-key
+[release-signing]: https://wiki.debian.org/Creating%20signed%20GitHub%20releases
 [signing-guide]: http://harryrschwartz.com/2014/11/01/automatically-signing-your-git-commits.html
 [gpg-signing]: https://driesvints.com/blog/using-a-gpg-key-to-sign-off-git-commits-and-emails
 [signing-docs]: http://git-scm.com/book/ch7-4.html
