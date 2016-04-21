@@ -14,6 +14,7 @@ Overview of Packages for Each Language
  CSS/SASS | `npm install stylelint`
  JS       | `npm install jscs && npm install jshint`
  Markdown | `gem install mdl`
+ Prose    | `npm install proselint`
  Python   | `pip install pep8`
  CSV      | `gem install csvlint`
  Shell    | `brew install shellcheck`
@@ -48,6 +49,7 @@ wget https://raw.githubusercontent.com/ndarville/style/master/javascript/.jscsrc
 wget https://raw.githubusercontent.com/ndarville/style/master/javascript/.jshintrc
 wget https://raw.githubusercontent.com/ndarville/style/master/python/.pep8
 wget https://raw.githubusercontent.com/ndarville/style/master/markdown/.mdlrc
+wget https://raw.githubusercontent.com/ndarville/style/master/prose/.proselintrc
 ```
 
 To install tidy  the HTML5 linter, which is only tentatively supported for now:
@@ -87,8 +89,8 @@ Sublime Text Packages
 * [SublimeLinter-jshint][]
 * [SublimeLinter-contrib-htmlhint][]
 * [SublimeLinter-html-tidy][]
-* [SublimeLinter-contrib-write-good][]
 * [SublimeLinter-pep8][]
+* [SublimeLinter-contrib-proselint][]
 * [SublimeLinter-shellcheck][]
 * (SublimeLinter-contrib-govet)
 * (SublimeLinter-contrib-golint)
@@ -102,6 +104,7 @@ Linter Rules
 * [jshint][jshint]
 * [tidy][]
 * [mdl][]
+* proselint
 * [pep8][pep8]
 * (golint)
 * (govet)
@@ -128,6 +131,7 @@ Status
 - [ ] Markdown linter
     - [x] mdl
     - [ ] Personal linter
+- [ ] Prose
 - [x] Shell linter
 - [x] YAML linter
 
@@ -149,7 +153,7 @@ My website [ndarville.com][] and project at [Hafnia Times][] try to conform to t
 [SublimeLinter-jshint]: https://github.com/SublimeLinter/SublimeLinter-jshint
 [SublimeLinter-contrib-htmlhint]: https://github.com/mmaday/SublimeLinter-contrib-htmlhint
 [SublimeLinter-html-tidy]: https://github.com/SublimeLinter/SublimeLinter-html-tidy
-[SublimeLinter-contrib-write-good]: https://github.com/ckaznocha/SublimeLinter-contrib-write-good
+[SublimeLinter-contrib-proselint]: https://github.com/amperser/SublimeLinter-contrib-proselint
 [SublimeLinter-pep8]: https://github.com/SublimeLinter/SublimeLinter-pep8
 [SublimeLinter-shellcheck]: https://github.com/SublimeLinter/SublimeLinter-shellcheck
 
