@@ -10,6 +10,7 @@ env:
     - HTML_EXCLUDES=""
     - STYLE_FOLDER="static/css"
     - CSS_FILES="static/css/style.css"
+    - SCSS_FILES="static/css/style.scss"
     - CSS_EXCLUDES=""
     - JS_FOLDER="static/js/"
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # Speeds up htmlproof
