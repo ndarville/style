@@ -73,7 +73,7 @@ rules:
 
     declaration-block-no-duplicate-properties:
         - true
-        - ignore: ["consecutive-duplicates"]
+        - ignore: [consecutive-duplicates]
     declaration-block-no-shorthand-property-overrides: true
     # declaration-block-properties-order: [http://stylelint.io/user-guide/rules/declaration-block-properties-order/]
     declaration-block-semicolon-newline-after: always # | always-multi-line
@@ -150,7 +150,9 @@ rules:
 
     indentation: 4
     max-empty-lines: 2 # | 1
-    max-line-length: 78
+    max-line-length:
+        - 78
+        - ignore: [non-comments]
     max-nesting-depth: null
     no-browser-hacks: null
     no-descending-specificity: null # | true
