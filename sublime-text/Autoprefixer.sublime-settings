@@ -1,6 +1,6 @@
 
 {
-    "browsers": ["last 2 versions", "> 20%", "ie 9"],
+    "browsers": ["> 5%", "last 2 versions", "ie 9"],
     "cascade": true,
     "remove": false
 }
