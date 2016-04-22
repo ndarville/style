@@ -43,7 +43,7 @@ rules:
     unit-whitelist: null
 
     value-no-vendor-prefix: null
-    value-keyword-case: lower
+    value-keyword-case: null
 
     value-list-comma-newline-after: null
     value-list-comma-newline-before: never-multi-line
