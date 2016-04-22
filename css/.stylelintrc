@@ -73,7 +73,7 @@ rules:
 
     declaration-block-no-duplicate-properties:
         - true
-        - ignore: [consecutive-duplicates]
+        - ignore: ["consecutive-duplicates"]
     declaration-block-no-shorthand-property-overrides: true
     # declaration-block-properties-order: [http://stylelint.io/user-guide/rules/declaration-block-properties-order/]
     declaration-block-semicolon-newline-after: always # | always-multi-line
@@ -165,4 +165,5 @@ rules:
     no-unsupported-browser-features:
         - true
         - browsers: "> 5%, last 2 versions, ie 9"
-#   stylelint-disable-reason: null
+        - ignore: ["unicode-range"] # Doesn't work
+    # stylelint-disable-reason: null
