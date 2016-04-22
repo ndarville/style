@@ -279,10 +279,11 @@ Typefaces
          local("EBGaramond");
 }
     src: url("EB-Garamond-regular.eot"); // IE9 compat mode
-    src: url("EB-Garamond-regular.eot?") format("embedded-opentype"), // "?" for IE6-IE8
-         url("EB-Garamond-regular.ttf") format("truetype"),
-         url("EB-Garamond-regular.woff2") format("woff2"),
-         url("EB-Garamond-regular.woff") format("woff");
+    src:
+        url("EB-Garamond-regular.eot?") format("embedded-opentype"), // "?" for IE6-IE8
+        url("EB-Garamond-regular.ttf") format("truetype"),
+        url("EB-Garamond-regular.woff2") format("woff2"),
+        url("EB-Garamond-regular.woff") format("woff");
     unicode-range: // Optional for limiting characters
         U+0061-007A, // a-z
         U+0041-005A, // A-Z
@@ -304,9 +305,9 @@ body { font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Ari
 To this:
 
 ```diff
-- body { font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; }
-+ body { font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; }
-+ .fonts-loaded body { font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+- body { font-family: Raleway, HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif; }
++ body { font-family: HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif; }
++ .fonts-loaded body { font-family: Raleway, HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif; }
 ```
 
 At the bottom of the HTML body, add the following using [Font Face Observer][]:
