@@ -1,5 +1,6 @@
 ignoreFiles:
     - "*.min.css"
+syntax: scss
 rules:
     color-hex-case: upper # | lower
     color-hex-length: short
@@ -18,8 +19,10 @@ rules:
     function-comma-space-after: never
     function-comma-space-before: never
     function-linear-gradient-no-nonstandard-direction: true
+    function-name-case: lower
     function-parentheses-newline-inside: never-multi-line
     function-parentheses-space-inside: never
+    function-url-data-uris: null
     function-url-quotes: double
     function-whitelist: null
     function-whitespace-after: always
@@ -35,9 +38,12 @@ rules:
     time-no-imperceptible: true
 
     unit-blacklist: null
+    unit-case: lower
+    unit-no-unknown: true
     unit-whitelist: null
 
     value-no-vendor-prefix: null
+    value-keyword-case: lower
 
     value-list-comma-newline-after: null
     value-list-comma-newline-before: never-multi-line
@@ -47,7 +53,10 @@ rules:
     custom-property-no-outside-root: true
     custom-property-pattern: null
 
+    shorthand-property-no-redundant-values: true
+
     property-blacklist: null
+    property-case: lower
     property-no-vendor-prefix: null
     property-unit-blacklist: null
     property-unit-whitelist: null
@@ -62,7 +71,9 @@ rules:
     declaration-colon-space-before: never
     declaration-no-important: true # | null
 
-    declaration-block-no-duplicate-properties: true
+    declaration-block-no-duplicate-properties:
+        - true
+        - ignore: ["consecutive-duplicates"]
     declaration-block-no-shorthand-property-overrides: true
     # declaration-block-properties-order: [http://stylelint.io/user-guide/rules/declaration-block-properties-order/]
     declaration-block-semicolon-newline-after: always # | always-multi-line
@@ -83,6 +94,7 @@ rules:
     block-opening-brace-space-after: always-single-line
     block-opening-brace-space-before: always
 
+    selector-attribute-brackets-space-inside: never
     selector-class-pattern: null
     selector-combinator-space-after: null # | always
     selector-combinator-space-before: null # | always
@@ -94,6 +106,9 @@ rules:
     selector-no-type: null
     selector-no-universal: true
     selector-no-vendor-prefix: true
+    selector-pseudo-class-case: lower
+    selector-pseudo-class-parentheses-space-inside: null # |
+    selector-pseudo-element-case: lower
     selector-pseudo-element-colon-notation: single
     selector-root-no-composition: null # | true
     selector-type-case: lower
@@ -131,6 +146,7 @@ rules:
 
     comment-empty-line-before: null
     comment-whitespace-inside: always
+    comment-word-blacklist: null # |
 
     indentation: 4
     max-empty-lines: 2 # | 1
