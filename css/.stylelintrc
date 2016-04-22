@@ -39,7 +39,7 @@ rules:
 
     unit-blacklist: null
     unit-case: lower
-    unit-no-unknown: true
+    unit-no-unknown: null # | true ## Breaks variable operators in SCSS
     unit-whitelist: null
 
     value-no-vendor-prefix: null
