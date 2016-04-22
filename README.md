@@ -44,6 +44,7 @@ go get -u github.com/golang/lint/golint
 wget https://raw.githubusercontent.com/ndarville/style/master/html/.htmlhintrc
 wget https://raw.githubusercontent.com/ndarville/style/master/html/.tidyrc
 wget https://raw.githubusercontent.com/ndarville/style/master/css/.stylelintrc
+wget https://raw.githubusercontent.com/ndarville/style/master/css/.stylelintignore
 wget https://raw.githubusercontent.com/ndarville/style/master/javascript/.jscsrc
 wget https://raw.githubusercontent.com/ndarville/style/master/javascript/.jshintrc
 wget https://raw.githubusercontent.com/ndarville/style/master/python/.pep8
