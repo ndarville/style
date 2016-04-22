@@ -12,7 +12,7 @@ Overview of Packages for Each Language
 :---------|:-----------------------------------------
  HTML     | `npm install htmlhint` && `brew install tidy-html5`
  CSS/SASS | `npm install stylelint stylefmt`
- JS       | `npm install jscs && npm install jshint`
+ JS       | `npm install eslint eslint-formatter-pretty`
  Markdown | `gem install mdl`
  Python   | `pip install pep8`
  CSV      | `gem install csvlint`
@@ -45,8 +45,7 @@ wget https://raw.githubusercontent.com/ndarville/style/master/html/.htmlhintrc
 wget https://raw.githubusercontent.com/ndarville/style/master/html/.tidyrc
 wget https://raw.githubusercontent.com/ndarville/style/master/css/.stylelintrc
 wget https://raw.githubusercontent.com/ndarville/style/master/css/.stylelintignore
-wget https://raw.githubusercontent.com/ndarville/style/master/javascript/.jscsrc
-wget https://raw.githubusercontent.com/ndarville/style/master/javascript/.jshintrc
+wget https://raw.githubusercontent.com/ndarville/style/master/javascript/.eslintrc.yml
 wget https://raw.githubusercontent.com/ndarville/style/master/python/.pep8
 wget https://raw.githubusercontent.com/ndarville/style/master/markdown/.mdlrc
 ```
@@ -84,9 +83,7 @@ Sublime Text Packages
 
 * [SublimeLinter-contrib-stylelint][]
     - [sublime-stylefmt][]
-* [SublimeLinter-jscs][]
-    - [JSCS-Formatter][]
-* [SublimeLinter-jshint][]
+* [SublimeLinter-eslint][]
 * [SublimeLinter-contrib-htmlhint][]
 * [SublimeLinter-html-tidy][]
 * [SublimeLinter-contrib-write-good][]
@@ -95,13 +92,10 @@ Sublime Text Packages
 * (SublimeLinter-contrib-govet)
 * (SublimeLinter-contrib-golint)
 
-`jscs` now has [auto-fixing support][jscs-formatter]. You can using by either running the command with the `-x` option or by installing the ST3 jscs-formatter listed above.
-
 Linter Rules
 ------------
 * [stylelint][]
-* [jscs][]
-* [jshint][jshint]
+* [eslint][]
 * [tidy][]
 * [mdl][]
 * [pep8][pep8]
@@ -119,8 +113,6 @@ Status
 ------
 - [x] SASS/CSS linter
 - [x] JavaScript linter
-    - [x] jscs
-    - [x] jshint
 - [x] HTML (tentative)
 - [x] Python linter
 - [x] CSV linter
@@ -147,20 +139,15 @@ My website [ndarville.com][] and project at [Hafnia Times][] try to conform to t
 
 [SublimeLinter-contrib-stylelint]: https://github.com/kungfusheep/SublimeLinter-contrib-stylelint
 [sublime-stylefmt]: https://github.com/dmnsgn/sublime-stylefmt
-[SublimeLinter-jscs]: https://github.com/SublimeLinter/SublimeLinter-jscs
-[JSCS-Formatter]: https://github.com/TheSavior/SublimeJSCSFormatter
-[SublimeLinter-jshint]: https://github.com/SublimeLinter/SublimeLinter-jshint
+[SublimeLinter-eslint]: https://github.com/roadhump/SublimeLinter-eslint
 [SublimeLinter-contrib-htmlhint]: https://github.com/mmaday/SublimeLinter-contrib-htmlhint
 [SublimeLinter-html-tidy]: https://github.com/SublimeLinter/SublimeLinter-html-tidy
 [SublimeLinter-contrib-write-good]: https://github.com/ckaznocha/SublimeLinter-contrib-write-good
 [SublimeLinter-pep8]: https://github.com/SublimeLinter/SublimeLinter-pep8
 [SublimeLinter-shellcheck]: https://github.com/SublimeLinter/SublimeLinter-shellcheck
 
-[jscs-formatter]: https://github.com/jscs-dev/node-jscs/releases/tag/v1.12.0
-
 [stylelint]: http://stylelint.io/user-guide/rules/
-[jscs]: http://jscs.info/rules
-[jshint]: http://jshint.com/docs/options
+[eslint]: http://eslint.org/docs/rules/
 [tidy]: http://www.html-tidy.org/quickref
 [mdl]: https://github.com/mivok/markdownlint/blob/master/docs/RULES.md
 [pep8]: https://www.python.org/dev/peps/
