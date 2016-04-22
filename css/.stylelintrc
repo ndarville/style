@@ -162,8 +162,8 @@ rules:
     no-invalid-double-slash-comments: true
     no-missing-eof-newline: true
     no-unknown-animations: true
-    no-unsupported-browser-features:
-        - true
-        - browsers: "> 5%, last 2 versions, ie 9"
-        - ignore: ["unicode-range"] # Doesn't work
+    # no-unsupported-browser-features:
+    #     - true
+    #     - browsers: "> 5%, last 2 versions, ie 9"
+    #     - ignore: ["unicode-range"] # Doesn't work
     # stylelint-disable-reason: null
