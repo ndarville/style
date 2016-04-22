@@ -11,7 +11,7 @@ Overview of Packages for Each Language
  Format   | Linter
 :---------|:-----------------------------------------
  HTML     | `npm install htmlhint` && `brew install tidy-html5`
- CSS/SASS | `npm install stylelint`
+ CSS/SASS | `npm install stylelint stylefmt`
  JS       | `npm install jscs && npm install jshint`
  Markdown | `gem install mdl`
  Python   | `pip install pep8`
@@ -82,6 +82,7 @@ Sublime Text Packages
 ### Linters ###
 
 * [SublimeLinter-contrib-stylelint][]
+    - [sublime-stylefmt][]
 * [SublimeLinter-jscs][]
     - [JSCS-Formatter][]
 * [SublimeLinter-jshint][]
@@ -144,6 +145,7 @@ My website [ndarville.com][] and project at [Hafnia Times][] try to conform to t
 [ghosttext]: http://christiannaths.com/#code-pen-plus-sublime-text
 
 [SublimeLinter-contrib-stylelint]: https://github.com/kungfusheep/SublimeLinter-contrib-stylelint
+[sublime-stylefmt]: https://github.com/dmnsgn/sublime-stylefmt
 [SublimeLinter-jscs]: https://github.com/SublimeLinter/SublimeLinter-jscs
 [JSCS-Formatter]: https://github.com/TheSavior/SublimeJSCSFormatter
 [SublimeLinter-jshint]: https://github.com/SublimeLinter/SublimeLinter-jshint
