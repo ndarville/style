@@ -10,7 +10,7 @@ Overview of Packages for Each Language
 --------------------------------------
  Format   | Linter
 :---------|:--------------------------------------------
- HTML     | `npm install htmlhint` && `gem install html-proofer` && `brew install tidy-html5`
+ HTML     | `npm install htmlhint && gem install html-proofer && brew install tidy-html5`
  CSS/SASS | `npm install stylelint stylefmt`
  JS       | `npm install jscs && npm install jshint`
  Markdown | `gem install markdownlint-cli`
