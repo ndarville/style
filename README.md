@@ -48,7 +48,7 @@ wget https://raw.githubusercontent.com/ndarville/style/master/css/.stylelintigno
 wget https://raw.githubusercontent.com/ndarville/style/master/javascript/.jscsrc
 wget https://raw.githubusercontent.com/ndarville/style/master/javascript/.jshintrc
 wget https://raw.githubusercontent.com/ndarville/style/master/python/.pep8
-wget https://raw.githubusercontent.com/ndarville/style/master/markdown/.mdlrc
+wget https://raw.githubusercontent.com/ndarville/style/master/markdown/.markdownlintrc
 ```
 
 To install tidy  the HTML5 linter, which is only tentatively supported for now:
