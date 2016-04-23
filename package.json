@@ -1,6 +1,6 @@
 {
   "name": "style",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Linting and guidelines for webdev workflow.",
   "keywords": [
     "linting"
@@ -20,6 +20,15 @@
     "write-good" : "~0.9.1",
     "hicat"      : "*"
   },
+  "scripts": {
+    "check-html" : "htmlproof --check-html --ignore-script-embeds --only-4xx",
+    "lint-html"  : "htmlhint",
+    "lint-css"   : "stylelint",
+    "lint-scss"  : "stylelint --syntax scss",
+    "lint-bash"  : "shellcheck",
+    "percy-snap" : "percy snapshot",
+    "percy-snap-multi": "percy snapshot --widths '320, 768, 1080' _site/"
+   },
   "license": "MIT",
   "private": true
 }

@@ -13,10 +13,11 @@ env:
     - SCSS_FILES="static/css/style.scss"
     - CSS_EXCLUDES=""
     - JS_FOLDER="static/js/"
+    - BASH_FILES="sample.sh"
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # Speeds up htmlproof
 
 install:
-  - bundle install --verbose
+  - bundle install --quiet
   - npm install
   - sudo pip install --verbose -r requirements.txt
 # - brew update && brew tap homebrew/dupes && brew install homebrew/dupes/tidy --HEAD
@@ -26,9 +27,17 @@ before_script:
 
 script:
   - echo "Build your files here"
+# - jekyll build --profile
 
 after_script:
   - echo "Run your linters on the files"
+# - npm run check-html -- $HTML_FOLDER
+# - npm run lint-html -- $HTML_FOLDER
+# - npm run lint-css -- $CSS_FILES # Requires config file
+# - npm run lint-scss -- $SCSS_FILES # Requires config file
+# - jscs $JS_FOLDER # Requires config file
+# - jshint $JS_FOLDER
+# - npm run lint-bash -- $BASH_FILES
 
 notifications:
   email:
