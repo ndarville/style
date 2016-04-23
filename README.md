@@ -12,7 +12,7 @@ Overview of Packages for Each Language
 :---------|:--------------------------------------------
  HTML     | `npm install htmlhint && gem install html-proofer && brew install tidy-html5`
  CSS/SASS | `npm install stylelint stylefmt`
- JS       | `npm install jscs && npm install jshint`
+ JS       | `npm install jscs jshint`
  Markdown | `gem install markdownlint-cli`
  Python   | `pip install pep8`
  CSV      | `gem install csvlint`
