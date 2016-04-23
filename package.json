@@ -1,6 +1,6 @@
 {
   "name": "style",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Linting and guidelines for webdev workflow.",
   "keywords": [
     "linting"
@@ -21,7 +21,7 @@
     "hicat"      : "*"
   },
   "scripts": {
-    "check-html" : "htmlproof --check-html --ignore-script-embeds --only-4xx",
+    "check-html" : "htmlproofer --check-html --only-4xx",
     "lint-html"  : "htmlhint",
     "lint-css"   : "stylelint",
     "lint-scss"  : "stylelint --syntax scss",
