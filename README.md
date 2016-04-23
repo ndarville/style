@@ -13,7 +13,7 @@ Overview of Packages for Each Language
  HTML     | `npm install htmlhint` && `gem install html-proofer` && `brew install tidy-html5`
  CSS/SASS | `npm install stylelint stylefmt`
  JS       | `npm install jscs && npm install jshint`
- Markdown | `gem install mdl`
+ Markdown | `gem install markdownlint-cli`
  Python   | `pip install pep8`
  CSV      | `gem install csvlint`
  Shell    | `brew install shellcheck`
@@ -103,7 +103,7 @@ Linter Rules
 * [jscs][]
 * [jshint][jshint]
 * [tidy][]
-* [mdl][]
+* [markdownlint][]
 * [pep8][pep8]
 * (golint)
 * (govet)
@@ -131,7 +131,7 @@ Status
     - [ ] golint
     - [ ] govet
 - [ ] Markdown linter
-    - [x] mdl
+    - [x] markdownlint
     - [ ] Personal linter
 - [x] Shell linter
 - [x] YAML linter
@@ -165,7 +165,7 @@ My website [ndarville.com][] and project at [Hafnia Times][] try to conform to t
 [jscs]: http://jscs.info/rules
 [jshint]: http://jshint.com/docs/options
 [tidy]: http://www.html-tidy.org/quickref
-[mdl]: https://github.com/mivok/markdownlint/blob/master/docs/RULES.md
+[markdownlint]: https://github.com/DavidAnson/markdownlint#rules--aliases
 [pep8]: https://www.python.org/dev/peps/
 
 [travis ci]: https://travis-ci.org

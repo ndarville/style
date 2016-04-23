@@ -35,19 +35,12 @@ GEM
       yell (~> 2.0)
     i18n (0.7.0)
     json (1.8.3)
-    kramdown (1.10.0)
-    mdl (0.3.1)
-      kramdown (~> 1.8, >= 1.8.0)
-      mixlib-cli (~> 1.5, >= 1.5.0)
-      mixlib-config (~> 2.1, >= 2.1.0)
     mercenary (0.3.6)
     mime-types (3.0)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0221)
     mini_portile2 (2.0.0)
     minitest (5.8.4)
-    mixlib-cli (1.5.0)
-    mixlib-config (2.2.1)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
     open_uri_redirections (0.2.1)
@@ -67,7 +60,6 @@ PLATFORMS
 DEPENDENCIES
   csvlint (~> 0.3.0)
   html-proofer (~> 3.0.5)
-  mdl (~> 0.3.1)
 
 BUNDLED WITH
    1.11.2

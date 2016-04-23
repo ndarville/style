@@ -14,6 +14,7 @@ env:
     - CSS_EXCLUDES=""
     - JS_FOLDER="static/js/"
     - BASH_FILES="sample.sh"
+    - MARKDOWN_FILES="_posts/*.markdown"
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # Speeds up htmlproof
 
 install:
@@ -38,6 +39,7 @@ after_script:
 # - jscs $JS_FOLDER # Requires config file
 # - jshint $JS_FOLDER
 # - npm run lint-bash -- $BASH_FILES
+# - npm run lint-md -- $MARKDOWN_FILES  # Requires config file
 
 notifications:
   email:
