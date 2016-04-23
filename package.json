@@ -27,9 +27,7 @@
     "lint-css"   : "stylelint",
     "lint-scss"  : "stylelint --syntax scss",
     "lint-bash"  : "shellcheck",
-    "lint-md"    : "markdownlint",
-    "percy-snap" : "percy snapshot",
-    "percy-snap-multi": "percy snapshot --widths '320, 768, 1080' _site/"
+    "lint-md"    : "markdownlint"
    },
   "license": "MIT",
   "private": true
