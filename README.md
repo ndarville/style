@@ -14,7 +14,7 @@ Overview of Packages for Each Language
  CSS/SASS | `npm install stylelint stylefmt`
  JS       | `npm install jscs && npm install jshint`
  Markdown | `gem install markdownlint-cli`
- Python   | `pip install pep8`
+ Python   | `pip install pep8`
  CSV      | `gem install csvlint`
  Shell    | `brew install shellcheck`
  YAML     | `gem install kwalify`
