@@ -9,8 +9,8 @@ If you want an example project, check out [Hafnia Times][].
 Overview of Packages for Each Language
 --------------------------------------
  Format   | Linter
-:---------|:-----------------------------------------
- HTML     | `npm install htmlhint` && `brew install tidy-html5`
+:---------|:--------------------------------------------
+ HTML     | `npm install htmlhint` && `gem install html-proofer` && `brew install tidy-html5`
  CSS/SASS | `npm install stylelint stylefmt`
  JS       | `npm install jscs && npm install jshint`
  Markdown | `gem install mdl`
@@ -122,6 +122,9 @@ Status
     - [x] jscs
     - [x] jshint
 - [x] HTML (tentative)
+    - [x] htmlhint
+    - [x] htmlproofer
+    - [ ] tidy
 - [x] Python linter
 - [x] CSV linter
 - [ ] Go linter
