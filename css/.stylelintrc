@@ -74,6 +74,7 @@ rules:
     declaration-block-no-duplicate-properties:
         - true
         - ignore: ["consecutive-duplicates"]
+    declaration-block-no-ignored-properties: true
     declaration-block-no-shorthand-property-overrides: true
     # declaration-block-properties-order: [http://stylelint.io/user-guide/rules/declaration-block-properties-order/]
     declaration-block-semicolon-newline-after: always # | always-multi-line
