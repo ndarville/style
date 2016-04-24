@@ -1,6 +1,16 @@
 Style Guide for Sublime Text
 ----------------------------
 
+### Installation ###
+
+On **OS X**, move the files in this folder to
+
+    ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
+
+On **Windows**, move the files in this folder to
+
+    %APPDATA%\Sublime Text 3\Packages\User\
+
 ### Autoprefixer and Browser Strings ###
 
 To test your browser string, download `browserslist`:
