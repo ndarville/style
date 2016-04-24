@@ -30,7 +30,7 @@ First, install the packages. You can do this using the command line like so:
 # Install NPM packages
 npm install ndarville/style
 
-# Instal Ruby packages
+# Install Ruby packages
 wget https://raw.githubusercontent.com/ndarville/style/master/Gemfile
 bundle install
 
