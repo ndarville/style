@@ -24,7 +24,7 @@ Installation
 ------------
 Install the packages and download the linter rules using the command line:
 
-### Direct Download and Installation ###
+### Direct Download and Installation (Recommended) ###
 
 ```sh
 # ( Go to the root of your project; code for doing this not included )
