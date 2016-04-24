@@ -142,7 +142,7 @@ You unverifiable key will still be shown as “Unverified”, which is fine, sin
 
 You will now see a green “Verified” next to your signed commits and tags.
 
-### Signing releases ###
+### Signing Releases ###
 
 For more on this, read this [external guide on signing GitHub releases][release-signing].
 
