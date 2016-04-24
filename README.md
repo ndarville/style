@@ -84,7 +84,6 @@ You can access the linter rules that were downloaded to
 * node_modules/style/master/javascript/.jshintrc
 * node_modules/style/master/python/.pep8
 * node_modules/style/master/markdown/.markdownlintrc
-```
 
 ### tidy ###
 
