@@ -36,6 +36,7 @@ npm install ndarville/style
 
 # Install Python packages
 wget https://raw.githubusercontent.com/ndarville/style/master/requirements.txt
+pip requirements -r requirements.txt
 
 # Install Go packages
 go get -u github.com/golang/lint/golint
