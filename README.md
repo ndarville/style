@@ -27,12 +27,12 @@ First, install the packages. You can do this using the command line like so:
 ```sh
 # ( Go to the root of your project; code for doing this not included )
 
+# Install NPM packages
+npm install ndarville/style
+
 # Instal Ruby packages
 wget https://raw.githubusercontent.com/ndarville/style/master/Gemfile
 bundle install
-
-# Install NPM packages
-npm install ndarville/style
 
 # Install Python packages
 wget https://raw.githubusercontent.com/ndarville/style/master/requirements.txt
