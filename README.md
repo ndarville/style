@@ -74,7 +74,7 @@ Sublime Text Packages
 * Emmet
 * cobalt2
 * Markdown Extended
-* Advanved CSV
+* Advanced CSV
 * Babel
 * Autoprefixer
 * [GhostText][]
