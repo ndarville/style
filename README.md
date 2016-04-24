@@ -52,7 +52,7 @@ wget https://raw.githubusercontent.com/ndarville/style/master/python/.pep8
 wget https://raw.githubusercontent.com/ndarville/style/master/markdown/.markdownlintrc
 ```
 
-To install tidy  the HTML5 linter, which is only tentatively supported for now:
+To install tidy, the HTML5 linter, which is only tentatively supported for now:
 
 ```sh
 brew tap homebrew/dupes
