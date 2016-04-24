@@ -66,20 +66,20 @@ Afterwards, download the required Sublime Text 3 packages:
 Sublime Text Packages
 ---------------------
 * Package Control
-* Bracket Highlighter
-* SCSS
 * SublimeLinter
-* GitCommitMsg
-* Modific
+* Bracket Highlighter
 * Emmet
 * cobalt2
 * Markdown Extended
 * Advanced CSV
 * Babel
-* Autoprefixer
-* [GhostText][]
-* Git
 * ColorConvert
+* [GhostText][]
+* SCSS
+- Autoprefixer
+* Git
+- GitCommitMsg
+- Modific
 
 ### Linters ###
 
