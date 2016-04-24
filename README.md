@@ -24,10 +24,12 @@ Installation
 ------------
 Install the packages and download the linter rules using the command line:
 
+### Direct Download and Installation ###
+
 ```sh
 # ( Go to the root of your project; code for doing this not included )
 
-# Install NPM packages
+# Install NPM packages and download repo to node_modules/style
 npm install ndarville/style
 
 # Install Ruby packages
@@ -40,7 +42,9 @@ pip requirements -r requirements.txt
 
 # Install Go packages
 go get -u github.com/golang/lint/golint
+```
 
+```sh
 # Download linter rules to your project folder
 wget https://raw.githubusercontent.com/ndarville/style/master/html/.htmlhintrc
 wget https://raw.githubusercontent.com/ndarville/style/master/html/.tidyrc
@@ -51,6 +55,38 @@ wget https://raw.githubusercontent.com/ndarville/style/master/javascript/.jshint
 wget https://raw.githubusercontent.com/ndarville/style/master/python/.pep8
 wget https://raw.githubusercontent.com/ndarville/style/master/markdown/.markdownlintrc
 ```
+
+### Download and Installation with `node_modules/` ###
+
+```sh
+# ( Go to the root of your project; code for doing this not included )
+
+# Install NPM packages and download repo to node_modules/style
+npm install ndarville/style
+
+# Install Ruby packages from node_modules/style
+bundle install node_modules/style/Gemfile
+
+# Install Python packages from node_modules/style
+pip requirements -r node_modules/style/requirements.txt
+
+# Install Go packages
+go get -u github.com/golang/lint/golint
+```
+
+You can access the linter rules that were downloaded to
+
+* node_modules/style/master/html/.htmlhintrc
+* node_modules/style/master/html/.tidyrc
+* node_modules/style/master/css/.stylelintrc
+* node_modules/style/master/css/.stylelintignore
+* node_modules/style/master/javascript/.jscsrc
+* node_modules/style/master/javascript/.jshintrc
+* node_modules/style/master/python/.pep8
+* node_modules/style/master/markdown/.markdownlintrc
+```
+
+### tidy ###
 
 To install tidy, the HTML5 linter, which is only tentatively supported for now:
 
