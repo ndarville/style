@@ -22,7 +22,7 @@ Overview of Packages for Each Language
 
 Installation
 ------------
-First, install the packages. You can do this using the command line like so:
+Install the packages and download the linter rules using the command line:
 
 ```sh
 # ( Go to the root of your project; code for doing this not included )
