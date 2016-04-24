@@ -76,14 +76,14 @@ go get -u github.com/golang/lint/golint
 
 You can access the linter rules that were downloaded to
 
-* node_modules/style/master/html/.htmlhintrc
-* node_modules/style/master/html/.tidyrc
-* node_modules/style/master/css/.stylelintrc
-* node_modules/style/master/css/.stylelintignore
-* node_modules/style/master/javascript/.jscsrc
-* node_modules/style/master/javascript/.jshintrc
-* node_modules/style/master/python/.pep8
-* node_modules/style/master/markdown/.markdownlintrc
+* `node_modules/style/master/html/.htmlhintrc`
+* `node_modules/style/master/html/.tidyrc`
+* `node_modules/style/master/css/.stylelintrc`
+* `node_modules/style/master/css/.stylelintignore`
+* `node_modules/style/master/javascript/.jscsrc`
+* `node_modules/style/master/javascript/.jshintrc`
+* `node_modules/style/master/python/.pep8`
+* `node_modules/style/master/markdown/.markdownlintrc`
 
 ### tidy ###
 
