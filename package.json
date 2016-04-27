@@ -21,6 +21,8 @@
     "write-good" : "~0.9.1",
     "hicat"      : "*"
   },
+  "engineStrict": true,
+  "engines": {"node": ">= 6.0.0"},
   "scripts": {
     "check-html" : "htmlproofer --check-html --only-4xx",
     "lint-html"  : "htmlhint",
