@@ -1,8 +1,8 @@
 sudo: true
 
-language: ruby
-rvm:
-  - 2.2.0-dev
+language: node_js
+node_js:
+  - 5.10.1
 
 env:
   global:
@@ -16,6 +16,9 @@ env:
     - BASH_FILES="sample.sh"
     - MARKDOWN_FILES="_posts/*.markdown"
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # Speeds up htmlproof
+
+before_install:
+  - rvm install 2.2.0-dev
 
 install:
   - bundle install --quiet
