@@ -113,7 +113,7 @@ Sublime Text Packages
 * SCSS
 - Autoprefixer
 * Git
-- GitCommitMsg
+- GitCommitMsg (Not supported by ST3, looks like)
 - Modific
 
 ### Linters ###
