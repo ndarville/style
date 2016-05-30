@@ -8,7 +8,7 @@ rules:
     color-no-hex: null
     color-no-invalid-hex: true
 
-    font-family-name-quotes: double-where-recommended
+    font-family-name-quotes: always-where-recommended
 
     font-weight-notation: null # | numeric | named-where-possible
 
