@@ -20,3 +20,6 @@ Remember to put `github.com` before `*`, if you don’t want to get an error.
 Testing
 -------
 Test your configuration with [Filippo Valsorda’s tool][tool] by typing `ssh whoami.filippo.io` in your terminal. If you aren’t identified, you’ve set up your configuration correctly
+
+
+[tool]: https://blog.filippo.io/ssh-whoami-filippo-io/
