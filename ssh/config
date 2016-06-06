@@ -1,0 +1,7 @@
+Host github.com
+  PubkeyAuthentication yes
+  IdentityFile ~/.ssh/id_rsa
+Host *
+  UseRoaming no
+  PubkeyAuthentication no
+  IdentitiesOnly yes
