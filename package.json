@@ -1,6 +1,6 @@
 {
   "name": "style",
-  "version": "2.2.8",
+  "version": "2.2.9",
   "description": "Linting and guidelines for webdev workflow.",
   "keywords": [
     "linting"
@@ -11,14 +11,14 @@
   },
   "repository": "ndarville/style",
   "devDependencies": {
-    "stylefmt"   : "3.3.0",
-    "stylelint"  : "6.5.0",
-    "htmlhint"   : "0.9.6",
-    "jshint"     : "2.9.1",
-    "jscs"       : "3.0.3",
+    "stylefmt"   : "~3.3.0",
+    "stylelint"  : "~6.5.0",
+    "htmlhint"   : "~0.9.6",
+    "jshint"     : "~2.9.1",
+    "jscs"       : "~3.0.3",
     "esprima-fb" : "*",
-    "markdownlint-cli" : "0.1.0",
-    "write-good" : "0.9.1",
+    "markdownlint-cli" : "~0.1.0",
+    "write-good" : "~0.9.1",
     "hicat"      : "*",
     "n"          : "*"
   },
