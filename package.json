@@ -1,6 +1,6 @@
 {
   "name": "style",
-  "version": "2.2.11",
+  "version": "2.2.12",
   "description": "Linting and guidelines for webdev workflow.",
   "keywords": [
     "linting"
