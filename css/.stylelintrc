@@ -27,10 +27,10 @@ rules:
     function-whitelist: null
     function-whitespace-after: always
 
+    length-zero-no-unit: true
     number-leading-zero: never
     number-max-precision: null
     number-no-trailing-zeros: true
-    number-zero-length-no-unit: true
 
     string-no-newline: true
     string-quotes: double
@@ -156,11 +156,14 @@ rules:
     media-query-list-comma-space-after: always
     media-query-list-comma-space-before: never
 
+    at-rule-blacklist: null # |
     at-rule-empty-line-before: null # |
     # at-rule-name-case: lower
+    at-rule-name-newline-after: null
     at-rule-name-space-after: always
     at-rule-no-vendor-prefix: null
     at-rule-semicolon-newline-after: always
+    at-rule-whitelist: null
 
     comment-empty-line-before: null
     comment-whitespace-inside: always
