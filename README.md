@@ -49,7 +49,6 @@ go get -u github.com/golang/lint/golint
 wget https://raw.githubusercontent.com/ndarville/style/master/html/.htmlhintrc
 wget https://raw.githubusercontent.com/ndarville/style/master/html/.tidyrc
 wget https://raw.githubusercontent.com/ndarville/style/master/css/.stylelintrc
-# Or use `stylelint --config node_modules/style/css/.stylelintrc`
 wget https://raw.githubusercontent.com/ndarville/style/master/javascript/.jscsrc
 wget https://raw.githubusercontent.com/ndarville/style/master/javascript/.jshintrc
 wget https://raw.githubusercontent.com/ndarville/style/master/python/.pep8
@@ -77,12 +76,18 @@ go get -u github.com/golang/lint/golint
 You can access the linter rules that were downloaded to
 
 * `node_modules/style/master/html/.htmlhintrc`
+    - `htmlhint -c node_modules/style/html/.htmlhintrc`
 * `node_modules/style/master/html/.tidyrc`
 * `node_modules/style/master/css/.stylelintrc`
+    - `stylelint --config node_modules/style/css/.stylelintrc`
 * `node_modules/style/master/javascript/.jscsrc`
+    - `jscs --config node_modules/style/javascript/.jscsrc`
 * `node_modules/style/master/javascript/.jshintrc`
+    - `jshint --config node_modules/style/javascript/.jshintrc`
 * `node_modules/style/master/python/.pep8`
+    - `pep8 --config node_modules/style/python/.pep8`
 * `node_modules/style/master/markdown/.markdownlintrc`
+    - `markdownlint --config node_modules/style/markdown/.markdownlintrc`
 
 ### tidy ###
 
