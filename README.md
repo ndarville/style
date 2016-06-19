@@ -30,7 +30,7 @@ Install the packages and download the linter rules using the command line:
 # ( Go to the root of your project; code for doing this not included )
 
 # Install NPM packages and download repo to node_modules/style
-npm install ndarville/style
+npm cache clean && npm install --silent ndarville/style
 
 # Install Ruby packages
 wget https://raw.githubusercontent.com/ndarville/style/master/Gemfile
@@ -49,7 +49,7 @@ go get -u github.com/golang/lint/golint
 wget https://raw.githubusercontent.com/ndarville/style/master/html/.htmlhintrc
 wget https://raw.githubusercontent.com/ndarville/style/master/html/.tidyrc
 wget https://raw.githubusercontent.com/ndarville/style/master/css/.stylelintrc
-wget https://raw.githubusercontent.com/ndarville/style/master/css/.stylelintignore
+# Or use `stylelint --config node_modules/style/css/.stylelintrc`
 wget https://raw.githubusercontent.com/ndarville/style/master/javascript/.jscsrc
 wget https://raw.githubusercontent.com/ndarville/style/master/javascript/.jshintrc
 wget https://raw.githubusercontent.com/ndarville/style/master/python/.pep8
@@ -62,7 +62,7 @@ wget https://raw.githubusercontent.com/ndarville/style/master/markdown/.markdown
 # ( Go to the root of your project; code for doing this not included )
 
 # Install NPM packages and download repo to node_modules/style
-npm install ndarville/style
+npm cache clean && npm install --silent ndarville/style
 
 # Install Ruby packages from node_modules/style
 bundle install node_modules/style/Gemfile
@@ -79,7 +79,6 @@ You can access the linter rules that were downloaded to
 * `node_modules/style/master/html/.htmlhintrc`
 * `node_modules/style/master/html/.tidyrc`
 * `node_modules/style/master/css/.stylelintrc`
-* `node_modules/style/master/css/.stylelintignore`
 * `node_modules/style/master/javascript/.jscsrc`
 * `node_modules/style/master/javascript/.jshintrc`
 * `node_modules/style/master/python/.pep8`
