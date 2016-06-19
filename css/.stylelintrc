@@ -23,7 +23,7 @@ rules:
     function-parentheses-newline-inside: never-multi-line
     function-parentheses-space-inside: never
     function-url-data-uris: null
-    function-url-quotes: double
+    function-url-quotes: always
     function-whitelist: null
     function-whitespace-after: always
 
