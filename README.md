@@ -76,7 +76,7 @@ go get -u github.com/golang/lint/golint
 You can access the linter rules that were downloaded to
 
 * `node_modules/style/master/html/.htmlhintrc`
-    - `htmlhint -c node_modules/style/html/.htmlhintrc`
+    - `htmlhint --config node_modules/style/html/.htmlhintrc`
 * `node_modules/style/master/html/.tidyrc`
 * `node_modules/style/master/css/.stylelintrc`
     - `stylelint --config node_modules/style/css/.stylelintrc`
