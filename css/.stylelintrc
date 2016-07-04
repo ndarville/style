@@ -80,7 +80,76 @@ rules:
         - ignore: ["consecutive-duplicates"]
     declaration-block-no-ignored-properties: true
     declaration-block-no-shorthand-property-overrides: true
-    # declaration-block-properties-order: [http://stylelint.io/user-guide/rules/declaration-block-properties-order/]
+    declaration-block-properties-order: # May not be working
+        - font
+        - font-family
+        - src
+        - font-size
+        - line-height
+        - font-weight
+        - font-style
+        - font-variant
+        - text-transform
+        - text-decoration
+        - color
+        - background
+        - background-color
+        - background-image
+        - background-size
+        - opacity
+        - filter
+        # SVG
+        - fill
+        - stroke
+        - stroke-width
+        - stroke-dasharray
+        - shape-rendering
+        # Display types and positioning
+        - content
+        - list-style
+        - display
+        - float
+        - clear
+        - text-align
+        - vertical-align
+        - position
+        - top
+        - right
+        - bottom
+        - left
+        # Spacing
+        - margin
+        - margin-top
+        - margin-right
+        - margin-bottom
+        - margin-left
+        - padding
+        - padding-top
+        - padding-right
+        - padding-bottom
+        - padding-left
+        - text-indent
+        # Dimensions
+        - height
+        - width
+        - max-width
+        - min-width
+        # Box decoration
+        - border
+        - border-collapse
+        - border-spacing
+        - box-shadow
+        - border-radius
+        # Print
+        - orphans
+        - widows
+        - page-break-inside
+        - page-break-after
+        # Fixes
+        - box-sizing
+        - cursor
+        - overflow
+        - visibility
     declaration-block-semicolon-newline-after: always # | always-multi-line
     # declaration-block-semicolon-newline-before: always-multi-line # | always ## Breaks variables in SCSS
     declaration-block-semicolon-space-after: null
