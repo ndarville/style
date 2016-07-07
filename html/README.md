@@ -353,7 +353,7 @@ You can explore using `dns-prefetch` as well.
 
 ##### Local #####
 
-Or load them locally using [localfont.com][].
+Or load them locally using [localfont.com][]. (Another option is [webfont-dl][], which I personally have not used.)
 
 ```html
 <!-- Delay download of font until document is loaded -->
@@ -488,6 +488,7 @@ Unless required by specificity, stick to the [`ISO 639-1` language format][iso].
 [fontface-syntax]: http://www.paulirish.com/2009/bulletproof-font-face-implementation-syntax/
 [Font Face Observer]: https://github.com/bramstein/fontfaceobserver
 [localfont.com]: http://www.localfont.com
+[webfont-dl]: https://github.com/18f/18f.gsa.gov/pull/672
 [preconnecting]: https://github.com/ndarville/goal-tracker/issues/5
 [font-issue]: https://github.com/ndarville/goal-tracker/issues/3
 [prefetch]: https://caniuse.com/#feat=link-rel-prefetch

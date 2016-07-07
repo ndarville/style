@@ -1,0 +1,8 @@
+[
+    {
+        "ignore_match": [
+            "missing <!DOCTYPE> declaration",
+            "<input> proprietary attribute \"role\""
+        ]
+    }
+]
