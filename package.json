@@ -1,6 +1,6 @@
 {
   "name": "style",
-  "version": "2.2.18",
+  "version": "2.2.19",
   "description": "Linting and guidelines for webdev workflow.",
   "keywords": [
     "linting"
@@ -21,11 +21,13 @@
     "markdownlint-cli" : "~0.1.0",
     "write-good" : "~0.9.1",
     "hicat"      : "*",
-    "n"          : "*"
+    "n"          : "*",
+    "nodemon"    : "*"
   },
   "engineStrict": true,
   "engines": {"node": ">= v5.10.1"},
   "scripts": {
+    "start"      : "nodemon",
     "check-html" : "htmlproofer --check-html --only-4xx",
     "lint-html"  : "htmlhint --config node_modules/style/html/.htmlhintrc",
     "lint-css"   : "stylelint --config node_modules/style/css/.stylelintrc",
