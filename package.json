@@ -1,6 +1,6 @@
 {
   "name": "style",
-  "version": "2.2.17",
+  "version": "2.2.18",
   "description": "Linting and guidelines for webdev workflow.",
   "keywords": [
     "linting"
@@ -13,6 +13,7 @@
   "devDependencies": {
     "stylefmt"   : "~4.1.0",
     "stylelint"  : "~6.7.1",
+    "postcss"    : "*",
     "htmlhint"   : "~0.9.6",
     "jshint"     : "~2.9.1",
     "jscs"       : "~3.0.3",
