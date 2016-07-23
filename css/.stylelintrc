@@ -83,12 +83,12 @@ rules:
     declaration-block-properties-order: # May not be working
         - font
         - font-family
-        - src
         - font-size
         - line-height
         - font-weight
         - font-style
         - font-variant
+        - src
         - text-transform
         - text-decoration
         - color
