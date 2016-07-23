@@ -80,7 +80,7 @@ rules:
         - ignore: ["consecutive-duplicates"]
     declaration-block-no-ignored-properties: true
     declaration-block-no-shorthand-property-overrides: true
-    declaration-block-properties-order: # May not be working
+    declaration-block-properties-order:
         - font
         - font-family
         - font-size
