@@ -254,7 +254,7 @@ rules:
         - true
         - severity: warning
     no-invalid-double-slash-comments: true
-    no-missing-eof-newline: true
+  # no-missing-eof-newline: true
     no-unknown-animations: true
     # no-unsupported-browser-features:
     #     - true
