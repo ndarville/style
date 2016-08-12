@@ -1,6 +1,6 @@
 {
   "name": "style",
-  "version": "2.2.20",
+  "version": "2.2.21",
   "description": "Linting and guidelines for webdev workflow.",
   "keywords": [
     "linting"
@@ -21,6 +21,7 @@
     "markdownlint-cli" : "~0.1.0",
     "write-good" : "~0.9.1",
     "hicat"      : "*",
+    "hot-server" : "*",
     "n"          : "*",
     "nodemon"    : "*"
   },
