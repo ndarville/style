@@ -127,16 +127,18 @@ Images
 ------
 
 ```html
-<picture>
-    <source
-        type="image/jpeg"
-        srcset="image.jpeg 1x, image@2x.jpeg 2x" />
-    <img
-        class="image"
-        src="image.jpeg"
-        alt="Alt text"
-        title="Title text" />
-</picture>
+<a href="https://example.com">
+    <picture>
+        <source
+            type="image/jpeg"
+            srcset="image.jpeg 1x, image@2x.jpeg 2x" />
+        <img
+            class="image"
+            src="image.jpeg"
+            alt="Alt text"
+            title="Title text" />
+    </picture>
+</a>
 ```
 
 - [W3C WAI on images][]
