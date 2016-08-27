@@ -20,6 +20,11 @@ Overview of Packages for Each Language
  YAML     | `gem install kwalify`
  Go       | `go get -u github.com/golang/lint/golint`
 
+Notifications when the job finishes:
+
+* [noti][]
+* [ntfy][]
+
 Installation
 ------------
 Install the packages and download the linter rules using the command line:
@@ -184,6 +189,9 @@ My website [ndarville.com][] and project at [Hafnia Times][] try to conform to t
 [Build Status]: https://travis-ci.org/ndarville/style.svg
 [Dependency Status]: https://gemnasium.com/ndarville/style.svg
 [devDependency Status]: https://david-dm.org/ndarville/style/dev-status.svg
+
+[noti]: https://github.com/variadico/noti
+[ntfy]: https://github.com/dschep/ntfy
 
 [Hafnia Times]: https://github.com/ndarville/style
 [ghosttext]: http://christiannaths.com/#code-pen-plus-sublime-text
