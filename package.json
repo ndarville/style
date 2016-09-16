@@ -1,6 +1,6 @@
 {
   "name": "style",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "description": "Linting and guidelines for webdev workflow.",
   "keywords": [
     "linting"
@@ -16,7 +16,7 @@
     "postcss"    : "*",
     "htmlhint"   : "~0.9.6",
     "standard"   : "~8.0.0",
-    "snazzy"     : "~8.0.0",
+    "snazzy"     : "~5.0.0",
     "esprima-fb" : "*",
     "markdownlint-cli" : "~0.2.0",
     "write-good" : "~0.9.1",
