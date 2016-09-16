@@ -12,7 +12,7 @@ Overview of Packages for Each Language
 :---------|:--------------------------------------------
  HTML     | `npm install htmlhint && gem install html-proofer && brew install tidy-html5`
  CSS/SASS | `npm install stylelint stylefmt`
- JS       | `npm install jscs jshint`
+ JS       | `npm install standard`
  Markdown | `gem install markdownlint-cli`
  Python   | `pip install pep8`
  CSV      | `gem install csvlint`
@@ -54,8 +54,6 @@ go get -u github.com/golang/lint/golint
 wget https://raw.githubusercontent.com/ndarville/style/master/html/.htmlhintrc
 wget https://raw.githubusercontent.com/ndarville/style/master/html/.tidyrc
 wget https://raw.githubusercontent.com/ndarville/style/master/css/.stylelintrc
-wget https://raw.githubusercontent.com/ndarville/style/master/javascript/.jscsrc
-wget https://raw.githubusercontent.com/ndarville/style/master/javascript/.jshintrc
 wget https://raw.githubusercontent.com/ndarville/style/master/python/.pep8
 wget https://raw.githubusercontent.com/ndarville/style/master/markdown/.markdownlintrc
 ```
@@ -85,10 +83,6 @@ You can access the linter rules that were downloaded to
 * `node_modules/style/master/html/.tidyrc`
 * `node_modules/style/master/css/.stylelintrc`
     - `stylelint --config node_modules/style/css/.stylelintrc`
-* `node_modules/style/master/javascript/.jscsrc`
-    - `jscs --config node_modules/style/javascript/.jscsrc`
-* `node_modules/style/master/javascript/.jshintrc`
-    - `jshint --config node_modules/style/javascript/.jshintrc`
 * `node_modules/style/master/python/.pep8`
     - `pep8 --config node_modules/style/python/.pep8`
 * `node_modules/style/master/markdown/.markdownlintrc`
@@ -129,24 +123,18 @@ Sublime Text Packages
 
 * [SublimeLinter-contrib-stylelint][]
     - [sublime-stylefmt][]
-* [SublimeLinter-jscs][]
-    - [JSCS-Formatter][]
-* [SublimeLinter-jshint][]
 * [SublimeLinter-contrib-htmlhint][]
 * [SublimeLinter-html-tidy][]
+* [SublimeLinter-contrib-standard][]
 * [SublimeLinter-contrib-write-good][]
 * [SublimeLinter-pep8][]
 * [SublimeLinter-shellcheck][]
 * (SublimeLinter-contrib-govet)
 * (SublimeLinter-contrib-golint)
 
-`jscs` now has [auto-fixing support][jscs-formatter]. You can using by either running the command with the `-x` option or by installing the ST3 jscs-formatter listed above.
-
 Linter Rules
 ------------
 * [stylelint][]
-* [jscs][]
-* [jshint][jshint]
 * [tidy][]
 * [markdownlint][]
 * [pep8][pep8]
@@ -164,8 +152,6 @@ Status
 ------
 - [x] SASS/CSS linter
 - [x] JavaScript linter
-    - [x] jscs
-    - [x] jshint
 - [x] HTML (tentative)
     - [x] htmlhint
     - [x] htmlproofer
@@ -198,20 +184,14 @@ My website [ndarville.com][] and project at [Hafnia Times][] try to conform to t
 
 [SublimeLinter-contrib-stylelint]: https://github.com/kungfusheep/SublimeLinter-contrib-stylelint
 [sublime-stylefmt]: https://github.com/dmnsgn/sublime-stylefmt
-[SublimeLinter-jscs]: https://github.com/SublimeLinter/SublimeLinter-jscs
-[JSCS-Formatter]: https://github.com/TheSavior/SublimeJSCSFormatter
-[SublimeLinter-jshint]: https://github.com/SublimeLinter/SublimeLinter-jshint
+[SublimeLinter-contrib-standard]: https://packagecontrol.io/packages/SublimeLinter-contrib-standard
 [SublimeLinter-contrib-htmlhint]: https://github.com/mmaday/SublimeLinter-contrib-htmlhint
 [SublimeLinter-html-tidy]: https://github.com/SublimeLinter/SublimeLinter-html-tidy
 [SublimeLinter-contrib-write-good]: https://github.com/ckaznocha/SublimeLinter-contrib-write-good
 [SublimeLinter-pep8]: https://github.com/SublimeLinter/SublimeLinter-pep8
 [SublimeLinter-shellcheck]: https://github.com/SublimeLinter/SublimeLinter-shellcheck
 
-[jscs-formatter]: https://github.com/jscs-dev/node-jscs/releases/tag/v1.12.0
-
 [stylelint]: http://stylelint.io/user-guide/rules/
-[jscs]: http://jscs.info/rules
-[jshint]: http://jshint.com/docs/options
 [tidy]: http://www.html-tidy.org/quickref
 [markdownlint]: https://github.com/DavidAnson/markdownlint#rules--aliases
 [pep8]: https://www.python.org/dev/peps/

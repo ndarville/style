@@ -53,8 +53,7 @@ after_script:
 # - npm run lint-html -- $HTML_FOLDER
 # - npm run lint-css -- $CSS_FILES # Requires config file
 # - npm run lint-scss -- $SCSS_FILES # Requires config file
-# - jscs $JS_FOLDER # Requires config file
-# - jshint $JS_FOLDER
+# - standard $JS_FOLDER | snazzy
 # - npm run lint-bash -- $BASH_FILES
 # - npm run lint-md -- $MARKDOWN_FILES  # Requires config file
 
