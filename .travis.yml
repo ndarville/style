@@ -36,7 +36,7 @@ before_install:
 
 install:
   - bundle install --quiet
-  - npm install -g yarn
+  - npm install yarn
   - yarn
   - sudo pip install --verbose -r requirements.txt
 # - brew update && brew tap homebrew/dupes && brew install homebrew/dupes/tidy --HEAD
