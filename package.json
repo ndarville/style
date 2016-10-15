@@ -1,6 +1,6 @@
 {
   "name": "style",
-  "version": "2.3.1",
+  "version": "2.3.2",
   "description": "Linting and guidelines for webdev workflow.",
   "keywords": [
     "linting"
@@ -28,15 +28,16 @@
   "engineStrict": true,
   "engines": {"node": ">= v5.10.1"},
   "scripts": {
-    "start"      : "nodemon",
-    "check-html" : "htmlproofer --check-html --only-4xx",
-    "lint-html"  : "htmlhint --config node_modules/style/html/.htmlhintrc",
-    "lint-css"   : "stylelint --config node_modules/style/css/.stylelintrc",
-    "lint-scss"  : "stylelint --config node_modules/style/css/.stylelintrc --syntax scss",
-    "lint-bash"  : "shellcheck",
-    "lint-md"    : "markdownlint --config node_modules/style/markdown/.markdownlintrc",
-    "percy-snap" : "percy snapshot",
-    "percy-snap-multi": "percy snapshot --widths '320, 768, 1080' _site/"
+    "start"         : "nodemon",
+    "check-html"    : "htmlproofer --check-html --only-4xx",
+    "lint-html"     : "htmlhint --config node_modules/style/html/.htmlhintrc",
+    "lint-css"      : "stylelint --config node_modules/style/css/.stylelintrc",
+    "lint-scss"     : "stylelint --config node_modules/style/css/.stylelintrc --syntax scss",
+    "lint-bash"     : "shellcheck",
+    "lint-md"       : "markdownlint --config node_modules/style/markdown/.markdownlintrc",
+    "list-licenses" : "yarn licenses ls > javascript/licenses.txt",
+    "percy-snap"    : "percy snapshot",
+    "percy-snap-multi" : "percy snapshot --widths '320, 768, 1080' _site/"
    },
   "license": "MIT",
   "private": true
