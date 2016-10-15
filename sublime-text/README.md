@@ -16,7 +16,7 @@ On **Windows**, move the files in this folder to
 To test your browser string, download `browserslist`:
 
 ```sh
-npm install browserslist
+yarn add browserslist
 ```
 
 You can see both the coverage of your browser string as well as the affected browsers:

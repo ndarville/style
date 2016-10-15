@@ -10,9 +10,9 @@ Overview of Packages for Each Language
 --------------------------------------
  Format   | Linter
 :---------|:--------------------------------------------
- HTML     | `npm install htmlhint && gem install html-proofer && brew install tidy-html5`
- CSS/SASS | `npm install stylelint stylefmt`
- JS       | `npm install jscs jshint`
+ HTML     | `yarn add htmlhint && gem install html-proofer && brew install tidy-html5`
+ CSS/SASS | `yarn add stylelint stylefmt`
+ JS       | `yarn add jscs jshint`
  Markdown | `gem install markdownlint-cli`
  Python   | `pip install pep8`
  CSV      | `gem install csvlint`
@@ -34,8 +34,8 @@ Install the packages and download the linter rules using the command line:
 ```sh
 # ( Go to the root of your project; code for doing this not included )
 
-# Install NPM packages and download repo to node_modules/style
-npm cache clean && npm install --silent ndarville/style
+# Install Node.js packages and download repo to node_modules/style
+yarn cache clean && yarn --silent ndarville/style
 
 # Install Ruby packages
 wget https://raw.githubusercontent.com/ndarville/style/master/Gemfile
@@ -65,8 +65,8 @@ wget https://raw.githubusercontent.com/ndarville/style/master/markdown/.markdown
 ```sh
 # ( Go to the root of your project; code for doing this not included )
 
-# Install NPM packages and download repo to node_modules/style
-npm cache clean && npm install --silent ndarville/style
+# Install Node.js packages and download repo to node_modules/style
+yarn cache clean && yarn add ndarville/style # Used to be --silent in npm
 
 # Install Ruby packages from node_modules/style
 bundle install node_modules/style/Gemfile

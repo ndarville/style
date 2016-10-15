@@ -36,7 +36,8 @@ before_install:
 
 install:
   - bundle install --quiet
-  - npm install
+  - npm install -g yarn
+  - yarn
   - sudo pip install --verbose -r requirements.txt
 # - brew update && brew tap homebrew/dupes && brew install homebrew/dupes/tidy --HEAD
 
@@ -49,14 +50,14 @@ script:
 
 after_script:
   - echo "Run your linters on the files"
-# - npm run check-html -- $HTML_FOLDER
-# - npm run lint-html -- $HTML_FOLDER
-# - npm run lint-css -- $CSS_FILES # Requires config file
-# - npm run lint-scss -- $SCSS_FILES # Requires config file
+# - yarn run check-html -- $HTML_FOLDER
+# - yarn run lint-html -- $HTML_FOLDER
+# - yarn run lint-css -- $CSS_FILES # Requires config file
+# - yarn run lint-scss -- $SCSS_FILES # Requires config file
 # - jscs $JS_FOLDER # Requires config file
 # - jshint $JS_FOLDER
-# - npm run lint-bash -- $BASH_FILES
-# - npm run lint-md -- $MARKDOWN_FILES  # Requires config file
+# - yarn run lint-bash -- $BASH_FILES
+# - yarn run lint-md -- $MARKDOWN_FILES  # Requires config file
 
 matrix:
   allow_failures:

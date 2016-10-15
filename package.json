@@ -1,6 +1,6 @@
 {
   "name": "style",
-  "version": "2.2.22",
+  "version": "2.3.0",
   "description": "Linting and guidelines for webdev workflow.",
   "keywords": [
     "linting"
@@ -23,7 +23,8 @@
     "hicat"      : "*",
     "hot-server" : "*",
     "n"          : "*",
-    "nodemon"    : "*"
+    "nodemon"    : "*",
+    "yarn"       : "*"
   },
   "engineStrict": true,
   "engines": {"node": ">= v5.10.1"},
