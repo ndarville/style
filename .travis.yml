@@ -30,6 +30,15 @@ env:
     - MARKDOWN_FILES="_posts/*.markdown"
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # Speeds up htmlproof
 
+cache:
+  bundler: true
+  pip: true
+  directories:
+    - node_modules
+    - $HOME/.yarn-cache
+before_cache:
+  - rm -f $HOME/.cache/pip/log/debug.log
+
 before_install:
   - rvm install 2.2.0-dev
 
