@@ -62,7 +62,7 @@ Here is what this would look like with videos that improve load performance vast
 
 You can also use `preload="metadata"`, if the situation calls for it.
 
-* ["HTML5 Video Preload"][]
+* ["HTML5 Video Preload"][video-preload]
 
 Failing that, here’s an image-based alternative:
 
@@ -137,6 +137,6 @@ You can also use [Miro Converter][] to convert the WebM file to MP4 and OGG.
 [mdn]: https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_button_role
 [csstricks-buttons]: https://css-tricks.com/use-button-element
 [davidwalsh-buttons]: http://davidwalsh.name/html5-buttons
-[html5 video preload]: https://www.stevesouders.com/blog/2013/04/12/html5-video-preload/
+[video-preload]: https://www.stevesouders.com/blog/2013/04/12/html5-video-preload/
 [ffmpeg guide]: https://trac.ffmpeg.org/wiki/Encode/H.264
 [Miro Converter]: http://www.mirovideoconverter.com

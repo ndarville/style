@@ -159,7 +159,7 @@ Videos
 
 You can also use `preload="metadata"`, if the situation calls for it.
 
-* ["HTML5 Video Preload"][]
+* ["HTML5 Video Preload"][video-preload]
 
 Figures
 -------
@@ -498,7 +498,7 @@ Unless required by specificity, stick to the [`ISO 639-1` language format][iso].
 [18F on alerts]: https://playbook.cio.gov/designstandards/alerts/
 [figure]: http://www.w3.org/WAI/tutorials/page-structure/content/#figures
 [W3C WAI on images]: https://www.w3.org/WAI/tutorials/images/
-[html5 video preload]: https://www.stevesouders.com/blog/2013/04/12/html5-video-preload/
+[video-preload]: https://www.stevesouders.com/blog/2013/04/12/html5-video-preload/
 [aria-describedby]: https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-describedby_attribute
 [18F on form controls]: https://playbook.cio.gov/designstandards/form-controls/
 [18F on form templates]: https://playbook.cio.gov/designstandards/form-templates/
