@@ -6,6 +6,12 @@
 * [Oceanic Next][]
     - [macOS terminal][oceanic-mac]
     - [Sublime Text][oceanic-st]
+* Predawn
+    - [Predawn Twilight][]
+        + Great colour scheme for Sublime Text
+        + Comes with useful GitGutter colouring
+    - [Predawn][]
+        + Great theme for Sublime Text
 
 Twilight and Oceanic Next complement each other as dark and light themes respectively.
 
@@ -15,3 +21,5 @@ Twilight and Oceanic Next complement each other as dark and light themes respect
 [oceanic next]: http://labs.voronianski.com/oceanic-next-color-scheme/
 [oceanic-mac]: https://github.com/robinbentley/oceanic-next-macos-terminal
 [oceanic-st]: https://github.com/voronianski/oceanic-next-color-scheme
+[predawn twilight]: https://github.com/jrnewell/predawn-twilight-theme
+[predawn]: https://github.com/jamiewilson/predawn
