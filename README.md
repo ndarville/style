@@ -123,7 +123,7 @@ Sublime Text Packages
 - Autoprefixer
 * Git
 - GitCommitMsg (Not supported by ST3, looks like)
-- Modific
+- GitGutter
 
 ### Linters ###
 
