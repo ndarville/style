@@ -131,10 +131,10 @@ Images
     <picture>
         <source
             type="image/jpeg"
-            srcset="image.jpeg 1x, image@2x.jpeg 2x" />
+            srcset="image.jpg 1x, image@2x.jpg 2x" />
         <img
             class="image"
-            src="image.jpeg"
+            src="image.jpg"
             alt="Alt text"
             title="Title text" />
     </picture>
@@ -170,10 +170,10 @@ Figures
     <picture>
         <source
             type="image/jpeg"
-            srcset="image.jpeg 1x, image@2x.jpeg 2x" />
+            srcset="image.jpg 1x, image@2x.jpg 2x" />
         <img
             class="image"
-            src="image.jpeg"
+            src="image.jpg"
             alt="Alt text"
             title="Title text" />
     </picture>
