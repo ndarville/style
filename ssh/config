@@ -1,6 +1,7 @@
 Host github.com
   PubkeyAuthentication yes
   IdentityFile ~/.ssh/id_rsa
+  AddKeysToAgent yes
 Host *
   UseRoaming no
   PubkeyAuthentication no
