@@ -1,6 +1,6 @@
 {
   "name": "style",
-  "version": "2.3.2",
+  "version": "2.4.0",
   "description": "Linting and guidelines for webdev workflow.",
   "keywords": [
     "linting"
@@ -17,6 +17,7 @@
     "htmlhint"   : "~0.9.6",
     "jshint"     : "~2.9.1",
     "jscs"       : "~3.0.3",
+    "jest"       : "~16.0.2",
     "markdownlint-cli" : "~0.2.0",
     "write-good" : "~0.9.1",
     "hicat"      : "*",
@@ -36,6 +37,7 @@
     "lint-bash"     : "shellcheck",
     "lint-md"       : "markdownlint --config node_modules/style/markdown/.markdownlintrc",
     "list-licenses" : "yarn licenses ls > javascript/licenses.txt",
+    "test-js"       : "jest --coverage",
     "percy-snap"    : "percy snapshot",
     "percy-snap-multi" : "percy snapshot --widths '320, 768, 1080' _site/"
    },

@@ -66,6 +66,7 @@ after_script:
 # - jshint $JS_FOLDER
 # - yarn run lint-bash -- $BASH_FILES
 # - yarn run lint-md -- $MARKDOWN_FILES  # Requires config file
+# - yarn run test-js
 
 matrix:
   allow_failures:
