@@ -2,7 +2,11 @@ Host github.com
   PubkeyAuthentication yes
   IdentityFile ~/.ssh/id_rsa
   AddKeysToAgent yes
+Host bitbucket.org
+  PubkeyAuthentication yes
+  IdentityFile ~/.ssh/id_rsa
+  AddKeysToAgent yes
 Host *
-  UseRoaming no
+  # UseRoaming no # Not needed in newer OpenSSL verions
   PubkeyAuthentication no
   IdentitiesOnly yes
