@@ -12,6 +12,8 @@
         + Comes with useful GitGutter colouring
     - [Predawn][]
         + Great theme for Sublime Text
+* [Dracula][]
+    - [macOS terminal][dracula-mac]
 
 Twilight and Oceanic Next complement each other as dark and light themes respectively.
 
@@ -23,3 +25,5 @@ Twilight and Oceanic Next complement each other as dark and light themes respect
 [oceanic-st]: https://github.com/voronianski/oceanic-next-color-scheme
 [predawn twilight]: https://github.com/jrnewell/predawn-twilight-theme
 [predawn]: https://github.com/jamiewilson/predawn
+[dracula]: https://draculatheme.com
+[dracula-mac]: https://draculatheme.com/terminal/
