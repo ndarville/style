@@ -43,6 +43,7 @@
     "open_files_in_new_window": false,
     "scroll_past_end": true,
     "show_encoding": true,
+    "show_errors_inline": false,
     "show_full_path": true,
     "tab_size": 4,
     "theme": "Cobalt2.sublime-theme",
