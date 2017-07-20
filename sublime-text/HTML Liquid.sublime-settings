@@ -1,3 +1,7 @@
 {
+    "extensions": [
+        "liquid",
+        "html"
+    ],
     "wrap_width": 78
 }
