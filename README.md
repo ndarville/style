@@ -121,10 +121,10 @@ Sublime Text Packages
 * ColorConvert
 * [GhostText][]
 * SCSS
-- Autoprefixer
+    - Autoprefixer
 * Git
-- GitCommitMsg (Not supported by ST3, looks like)
-- GitGutter
+    - GitCommitMsg (not supported by ST3, looks like)
+    - GitGutter
 
 ### Linters ###
 
