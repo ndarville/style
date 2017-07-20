@@ -125,6 +125,7 @@ Sublime Text Packages
 * Git
     - GitCommitMsg (not supported by ST3, looks like)
     - GitGutter
+* INI
 
 ### Linters ###
 
