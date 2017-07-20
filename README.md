@@ -117,6 +117,7 @@ Sublime Text Packages
 * cobalt2
 * Markdown Extended
 * Advanced CSV
+* [Siteleaf Liquid Syntax][liquid]
 * Babel
 * ColorConvert
 * [GhostText][]
@@ -196,6 +197,7 @@ My website [ndarville.com][] and project at [Hafnia Times][] try to conform to t
 [ntfy]: https://github.com/dschep/ntfy
 
 [Hafnia Times]: https://github.com/ndarville/style
+[liquid]: https://github.com/siteleaf/liquid-syntax-mode
 [ghosttext]: http://christiannaths.com/#code-pen-plus-sublime-text
 
 [SublimeLinter-contrib-stylelint]: https://github.com/kungfusheep/SublimeLinter-contrib-stylelint
