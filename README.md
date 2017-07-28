@@ -115,7 +115,6 @@ Sublime Text Packages
 * Bracket Highlighter
 * Emmet
 * cobalt2
-* Markdown Extended
 * Advanced CSV
 * [Siteleaf Liquid Syntax][liquid]
 * Babel
@@ -127,6 +126,7 @@ Sublime Text Packages
     - GitCommitMsg (not supported by ST3, looks like)
     - GitGutter
 * INI
+* [markdown-liquid-syntax][]
 
 ### Linters ###
 
@@ -198,6 +198,7 @@ My website [ndarville.com][] and project at [Hafnia Times][] try to conform to t
 
 [Hafnia Times]: https://github.com/ndarville/style
 [liquid]: https://github.com/siteleaf/liquid-syntax-mode
+[markdown-liquid-syntax]: https://github.com/ndarville/markdown-liquid-syntax
 [ghosttext]: http://christiannaths.com/#code-pen-plus-sublime-text
 
 [SublimeLinter-contrib-stylelint]: https://github.com/kungfusheep/SublimeLinter-contrib-stylelint
