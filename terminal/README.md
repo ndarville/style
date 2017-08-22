@@ -30,7 +30,7 @@ fi
 
 It tells bash to load the file if it exists.
 
-This way, the only thing I add to .bashrc is this:
+This way, the only thing I add to `.bashrc` is this:
 
 ```sh
 if [ -f ~/.myaliases ]; then
@@ -52,9 +52,9 @@ I don't know how people use terminals without [`z`][z].
 
 Installing z is easy:
 
-* download `z.sh`
-* put it wherever, like `~/`
-* load it from `.bashrc` with `. ~/z.sh`
+* Download `z.sh`
+* Put it wherever, like `~/`
+* Load it from `.bashrc` with `. ~/z.sh`
 
 ### macOS ###
 
