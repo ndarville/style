@@ -14,8 +14,8 @@ Overview of Packages for Each Language
  CSS/SASS | `yarn add stylelint stylefmt`
  JS       | `yarn add jscs jshint`
  Markdown | `gem install markdownlint-cli`
- Python   | `pip install pep8`
- CSV      | `gem install csvlint`
+ Python   | `pip install pep8 && brew install python3`
+ CSV      | `gem install csvlint && pip install csvkit`
  Shell    | `brew install shellcheck`
  YAML     | `gem install kwalify`
  Go       | `go get -u github.com/golang/lint/golint && go get github.com/mikefarah/yaml`
@@ -127,6 +127,7 @@ Sublime Text Packages
     - GitGutter
 * INI
 * [markdown-liquid-syntax][]
+* HTML-CSS-JS-Prettify
 
 ### Linters ###
 
