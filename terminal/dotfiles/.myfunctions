@@ -1,0 +1,260 @@
+##############
+### Tricks ###
+##############
+
+# FILENAME SLICING #
+echo before comment
+: <<'END'
+export filename="foo.bar.baz"
+
+echo $filename       => "foo.bar.baz"
+echo ${filename#*.}  => "bar.baz"
+echo ${filename##*.} => "baz"
+
+echo ${filename%%.*} => "foo"
+echo ${filename%.*}  => "foo.bar"
+
+gnu.org/software/bash/manual/html_node/Shell-Parameter-Expansion.html
+END
+echo after comment
+
+###########
+### CSV ###
+###########
+
+csv() {
+    # Note: can be piped to syntax-highlighter like hicat etc
+
+    column -s, -t <$1;
+}
+
+getcolumn() {
+    # NOTE
+    # `cut` acts differently in macOS vs Ubuntu
+    # This example is for macOS, but Ubuntu's is the better one
+    # You basically have do an inverse of the other OS version
+    # More info at ndarville.com/asides/new-computer/#h-linuss-spreadsheet
+
+    cat $1 | cut -f1 -d,;
+}
+
+addcolumn() {
+    # $1: Onput
+    # $2: Output
+    # $3: Column number
+    # $4: Value
+
+    awk -F, '{\$$3=$4 FS \$$3;}1' OFS=, $1 > $2;
+}
+
+##############
+### Images ###
+##############
+
+watermark() {
+    # req: ImageMagick
+    #
+    # $1 = input image file
+    # $2 = text
+    # $3 = font base colour, optional
+    # $4 = font shadow colour, optional
+    # $5 = typeface, optional
+    # $6 = font size, optional
+
+    convert $1 -font ${5:-Calibri} -pointsize ${6:-48} \
+        -draw "gravity northeast \
+        fill ${4:-black} text 150,162 $2 \
+        fill ${3:-white} text 152,160 $2" \
+    $1;
+}
+
+gifdiff() {
+    # req: ImageMagick
+    #
+    # $1: image file 1
+    # $2: image file 2
+
+    convert -delay 50 $1 $2 -loop 0 ${3:-diff.gif}
+}
+
+imgdiff() {
+    # req: ImageMagick
+    #
+    # $1: image file 1
+    # $2: image file 2
+
+    compare $1 $2 -metric AE -fuzz 20% -highlight-color ${3:-red} ${4:-diff.png};
+}
+
+##################
+### Conversion ###
+##################
+
+gif2webm() {
+    # req: ffmpeg
+    # cf: https://gist.github.com/ndarville/10010916
+
+    ffmpeg -i $1 \
+        -c:v libvpx \ # Video codec
+        -crf 12 \
+        -b:v 500K \ # Video bitrate
+        $2;
+}
+
+vid2gif() {
+    # req: ffmpeg
+    # cf: blog.pkh.me/p/21-high-quality-gif-with-ffmpeg.html
+    #
+    # $1: Input video
+    # $2: Width, optional
+
+    palette="/tmp/palette.png"
+    filters="fps=15,scale=${2:-640}:-1:flags=lanczos"
+
+    ffmpeg -v warning -i $1 -vf "$filters,palettegen" -y $palette
+    ffmpeg -v warning -i $1 -i $palette -lavfi "$filters [x]; [x][1:v] paletteuse" -y ${1}.gif
+}
+
+vid2mp4() {
+    # req: ffmpeg
+    # cf: https://gist.github.com/Vestride/278e13915894821e1d6f
+
+    ffmpeg -i $1 -vcodec h264 -acodec aac -strict -2 $2;
+}
+
+vid2webm() {
+    # req: ffmpeg
+    # cf: https://gist.github.com/Vestride/278e13915894821e1d6f
+
+    ffmpeg -i $1 -c:v libvpx-vp9 -pass 1 -b:v 1000K -threads 1 -speed 4 \
+        -tile-columns 0 -frame-parallel 0 -auto-alt-ref 1 -lag-in-frames 25 \
+        -g 9999 -aq-mode 0 -an -f webm /dev/null
+
+    ffmpeg -i $1 -c:v libvpx-vp9 -pass 2 -b:v 1000K -threads 1 -speed 0 \
+        -tile-columns 0 -frame-parallel 0 -auto-alt-ref 1 -lag-in-frames 25 \
+        -g 9999 -aq-mode 0 -c:a libopus -b:a 64k -f webm $2;
+}
+
+vid2webmmuted() {
+    vid2webm $1 $2
+    vidmute $2 $3;
+}
+
+web2png() {
+    # req: web2png
+    #
+    # Note: Generates both thumb and full screenshot
+
+    webkit2png --ignore-ssl-check -TF $1; # --filename or -o are optional
+}
+
+#############
+### Video ###
+#############
+
+vidformat() {
+    # req: ffmpeg
+
+    ffprobe -v error -select_streams v:0 -show_entries stream=codec_name -of default=nokey=1:noprint_wrappers=1 $1;
+}
+
+vidcrop() {
+    # req: ffmpeg
+    # cf: trac.ffmpeg.org/wiki/Seeking
+    #
+    # NOTE
+    ## For same codec/format
+    ## Put seek times first to avoid stutter at start
+    ## Use copy -c when the codec is the same
+    ## Use vidfixheaders() on same file to fix duration, but might affect quality
+    #
+    # $1: Input video file
+    # $2: Start time
+    # $3: End time
+    # $4: Output file name
+
+    ffmpeg -ss $2 -i $1 -t $3 -c copy -copyts $4;
+}
+
+vidfixheaders() {
+    # req: ffmpeg
+    # Note: has to be applied after vidcrop to fix duration metadata; otherwise breaks Twitter
+
+    ffmpeg -analyzeduration 2148M -probesize 2148M -i $1 -c copy fixed.$1; # -f format also useful
+}
+
+vidmute() {
+    # req: ffmpeg
+
+    ffmpeg -i $1 -c copy -an $2;
+}
+
+vidscreenshotsec() {
+    # req: ffmpeg
+    # cf: trac.ffmpeg.org/wiki/Create%20a%20thumbnail%20image%20every%20X%20seconds%20of%20the%20video
+
+    ffmpeg -i $1 -vf \
+        fps=1 \ # 1/s
+        out%03d.png # %03d is a three-digit string
+}
+
+vidscreenshotmin() {
+    # req: ffmpeg
+    # cf: trac.ffmpeg.org/wiki/Create%20a%20thumbnail%20image%20every%20X%20seconds%20of%20the%20video
+
+    ffmpeg -i $1 -vf \
+        fps=1/60 \ # 1/60/s
+        out%03d.png
+}
+
+vidsidebyside() {
+    # req: ffmpeg
+    # cf: scottlinux.com/2016/09/17/video-stabilization-using-vidstab-and-ffmpeg-on-linux/
+
+    ffmpeg -i $1 -i $2 -filter_complex "[0:v]setpts=PTS-STARTPTS, pad=iw*2:ih[bg]; [1:v]setpts=PTS-STARTPTS[fg]; [bg][fg]overlay=w" side_by_side.${1##*.}
+}
+
+vidstabilize() {
+    # req: ffmpeg --with vid.stab or libvidstab
+    # Installation: git.io/vQ0SA
+    # cf: scottlinux.com/2016/09/17/video-stabilization-using-vidstab-and-ffmpeg-on-linux/
+    #
+    # Note: different scripts depending on shakiness; this one is for max shakiness
+    #
+    # $1: Input video file
+    # $2: Shakiness, optional; takes values 1-10; default is 10
+    # $3: transforms.crf calibration file path, optional
+
+    ffmpeg -i $1 -vf vidstabdetect=results=${3:-"transforms.crf"}:shakiness=${2:-10}:accuracy=15 -f null -
+    ffmpeg -i $1 -vf vidstabtransform=smoothing=30:input=${3:-"transforms.crf"} stable.$1
+    rm ${3:"transforms.crf"}
+}
+
+############
+### Misc ###
+############
+
+getsubsource() {
+    # Note
+    ## Generates subsource integrity string for file
+    ## `integrity` works as a checksum to validate externally loaded scripts
+    ## If you must use external CDN JS, always use versioning
+
+    # eg
+    ## wget -q https://cdn.example.com/foo/1.3/foo.min.js
+    ##
+    ## <script <!-- or <link -->
+    ##     src="https://cdn.example.com/foo/1.3/foo.min.js"
+    ##     integrity="sha384-{{getsubresource foo.min.js}}"
+    ##     crossorigin="anonymous"></script>
+
+    cat $1 |
+    openssl dgst -sha384 -binary |
+    openssl enc -base64 -A;
+}
+
+stripmetadata() {
+    # req: exiftool
+
+    exiftool -v3 -all:all= $1;
+}

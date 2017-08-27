@@ -4,15 +4,13 @@ I use a few dotfiles and `z` on macOS and bash on Windows 10. You should too.
 
 ### Dotfiles ###
 
-I don’t rely too much on dotfiles, but a few navigational shortcut aliases come in handy.
-
 I really like [Paul Irish’s dotfiles][irish], but you kind of add a bunch of things without knowing what you’re doing. I’m currently using it with some modifications on macOS, but I wouldn’t know which part of it to recommend to you.
 
 I’ve only included the dotfile settings I use across both macOS and bash on Windows 10, since my idiosyncracies aren’t useful to anyone else.
 
 #### Installation ####
 
-Adding aliases is pretty easy.
+Adding aliases and dotfiles is pretty easy.
 
 `.bashrc` is what happens when you load your terminal. So you’ll want to add your aliases on load.
 
@@ -37,6 +35,14 @@ if [ -f ~/.myaliases ]; then
     . ~/.myaliases
 fi
 
+if [ -f ~/.myenv ]; then
+    . ~/.myenv
+fi
+
+if [ -f ~/.myfunctions ]; then
+    . ~/.myfunctions
+fi
+
 if [ -f ~/.paulirishaliases ]; then
     . ~/.paulirishaliases
 fi
@@ -45,6 +51,12 @@ if [ -f ~/z.sh ]; then
     . ~/z.sh
 fi
 ```
+
+### `.myfunctions` ###
+
+Check out [`.myfunctions`][myfunctions] in this folder for my secret recipes that will greatly improve your day-to-day scripting.
+
+I haven’t included everything, but it sure as heck is more orderly than my own dotfile.
 
 ### z.sh ###
 
@@ -78,6 +90,7 @@ Right now, I’m using [Dracula][] to great effect.
 
 
 [irish]: https://github.com/paulirish/dotfiles
+[myfunctions]: https://github.com/ndarville/style/blob/master/terminal/dotfiles/.myfunctions
 [z]: https://github.com/rupa/z
 [solarized dark]: https://github.com/tomislav/osx-terminal.app-colors-solarized
 [dracula]: https://draculatheme.com/terminal/
