@@ -39,7 +39,7 @@ getcolumn() {
 }
 
 addcolumn() {
-    # $1: Onput
+    # $1: Input
     # $2: Output
     # $3: Column number
     # $4: Value
@@ -178,6 +178,7 @@ vidcrop() {
 
 vidfixheaders() {
     # req: ffmpeg
+    #
     # Note: has to be applied after vidcrop to fix duration metadata; otherwise breaks Twitter
 
     ffmpeg -analyzeduration 2148M -probesize 2148M -i $1 -c copy fixed.$1; # -f format also useful
@@ -216,9 +217,9 @@ vidsidebyside() {
 
 vidstabilize() {
     # req: ffmpeg --with vid.stab or libvidstab
-    # Installation: git.io/vQ0SA
     # cf: scottlinux.com/2016/09/17/video-stabilization-using-vidstab-and-ffmpeg-on-linux/
     #
+    # Installation: git.io/vQ0SA
     # Note: different scripts depending on shakiness; this one is for max shakiness
     #
     # $1: Input video file
