@@ -51,22 +51,8 @@ addcolumn() {
 ### Images ###
 ##############
 
-watermark() {
     # req: ImageMagick
     #
-    # $1 = input image file
-    # $2 = text
-    # $3 = font base colour, optional
-    # $4 = font shadow colour, optional
-    # $5 = typeface, optional
-    # $6 = font size, optional
-
-    convert $1 -font ${5:-Calibri} -pointsize ${6:-48} \
-        -draw "gravity northeast \
-        fill ${4:-black} text 150,162 $2 \
-        fill ${3:-white} text 152,160 $2" \
-    $1;
-}
 
 gifdiff() {
     # req: ImageMagick
@@ -84,6 +70,23 @@ imgdiff() {
     # $2: image file 2
 
     compare $1 $2 -metric AE -fuzz 20% -highlight-color ${3:-red} ${4:-diff.png};
+}
+
+watermark() {
+    # req: ImageMagick
+    #
+    # $1 = input image file
+    # $2 = text
+    # $3 = font base colour, optional
+    # $4 = font shadow colour, optional
+    # $5 = typeface, optional
+    # $6 = font size, optional
+
+    convert $1 -font ${5:-Calibri} -pointsize ${6:-48} \
+        -draw "gravity northeast \
+        fill ${4:-black} text 150,162 $2 \
+        fill ${3:-white} text 152,160 $2" \
+    $1;
 }
 
 ##################
