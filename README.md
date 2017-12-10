@@ -128,6 +128,10 @@ Sublime Text Packages
 * INI
 * [markdown-liquid-syntax][]
 * HTML-CSS-JS-Prettify
+* [sublimetext-Pandoc][]
+* SublimePrettyJson
+* [MarkdownEditing][]
+    - Fixes default Markdown handling and highlighting
 
 ### Linters ###
 
@@ -201,6 +205,8 @@ My website [ndarville.com][] and project at [Hafnia Times][] try to conform to t
 [liquid]: https://github.com/siteleaf/liquid-syntax-mode
 [markdown-liquid-syntax]: https://github.com/ndarville/markdown-liquid-syntax
 [ghosttext]: http://christiannaths.com/#code-pen-plus-sublime-text
+[sublimetext-pandoc]: https://github.com/tbfisher/sublimetext-Pandoc
+[markdownediting]: https://github.com/SublimeText-Markdown/MarkdownEditing
 
 [SublimeLinter-contrib-stylelint]: https://github.com/kungfusheep/SublimeLinter-contrib-stylelint
 [sublime-stylefmt]: https://github.com/dmnsgn/sublime-stylefmt
