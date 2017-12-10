@@ -51,9 +51,6 @@ addcolumn() {
 ### Images ###
 ##############
 
-    # req: ImageMagick
-    #
-
 gifdiff() {
     # req: ImageMagick
     #
@@ -71,6 +68,31 @@ imgdiff() {
 
     compare $1 $2 -metric AE -fuzz 20% -highlight-color ${3:-red} ${4:-diff.png};
 }
+
+text2image() {
+    # req: ImageMagick
+    #
+    # NOTE: See all fonts with `convert -list font`
+    #
+    # $1: text
+    # $2: image size
+    # $3: typeface
+    # $4: font size
+    # $5: font colour
+    # $6: background colour
+    # $7: output image
+    # $8: font vertical offset (depends on typeface)
+
+    convert \
+        -size ${2:-320x125} \
+        xc:"#000000" \
+        -font ${3:-Impact} \
+        -pointsize ${4:-64} \
+        -fill white \
+        -gravity center \
+        -draw "text 0,${8:0} '${1:-Example}'" \
+        image.png
+    }
 
 watermark() {
     # req: ImageMagick
