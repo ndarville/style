@@ -4,7 +4,7 @@
 
 # FILENAME SLICING #
 echo before comment
-: <<'END'
+: <<"END"
 export filename="foo.bar.baz"
 
 echo $filename       => "foo.bar.baz"
@@ -57,7 +57,7 @@ gifdiff() {
     # $1: image file 1
     # $2: image file 2
 
-    convert -delay 50 $1 $2 -loop 0 ${3:-diff.gif}
+    convert -delay 50 $1 $2 -loop 0 ${3:-diff.gif};
 }
 
 imgdiff() {
@@ -91,7 +91,7 @@ text2image() {
         -fill white \
         -gravity center \
         -draw "text 0,${8:0} '${1:-Example}'" \
-        image.png
+        image.png;
     }
 
 watermark() {
@@ -152,7 +152,7 @@ vid2gif() {
     filters="fps=15,scale=${2:-640}:-1:flags=lanczos"
 
     ffmpeg -v warning -i $1 -vf "$filters,palettegen" -y $palette
-    ffmpeg -v warning -i $1 -i $palette -lavfi "$filters [x]; [x][1:v] paletteuse" -y ${1}.gif
+    ffmpeg -v warning -i $1 -i $palette -lavfi "$filters [x]; [x][1:v] paletteuse" -y ${1}.gif;
 }
 
 vid2mp4() {
@@ -236,7 +236,7 @@ vidscreenshotsec() {
 
     ffmpeg -i $1 -vf \
         fps=1 \ # 1/s
-        out%03d.png # %03d is a three-digit string
+        out%03d.png; # %03d is a three-digit string
 }
 
 vidscreenshotmin() {
@@ -245,7 +245,7 @@ vidscreenshotmin() {
 
     ffmpeg -i $1 -vf \
         fps=1/60 \ # 1/60/s
-        out%03d.png
+        out%03d.png;
 }
 
 vidsidebyside() {
@@ -268,7 +268,7 @@ vidstabilize() {
 
     ffmpeg -i $1 -vf vidstabdetect=results=${3:-"transforms.crf"}:shakiness=${2:-10}:accuracy=15 -f null -
     ffmpeg -i $1 -vf vidstabtransform=smoothing=30:input=${3:-"transforms.crf"} stable.$1
-    rm ${3:"transforms.crf"}
+    rm ${3:"transforms.crf"};
 }
 
 ############
