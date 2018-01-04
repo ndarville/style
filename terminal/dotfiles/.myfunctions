@@ -126,6 +126,21 @@ gif2webm() {
         $2;
 }
 
+vid2audio() {
+    # req: ffmpeg
+    # cf: https://trac.ffmpeg.org/wiki/audio%20types
+    #
+    # Note: Why to use WAV:
+    # * http://www.audioanimals.co.uk/news/why-wav-is-better-than-mp3
+    # * https://help.ableton.com/hc/en-us/articles/211427589-Supported-Audio-File-Formats
+    # * https://www.macxdvd.com/mac-dvd-video-converter-how-to/what-is-m4a.htm
+    #
+    # $1: Input video
+    # $2: Output name, optional
+
+    ffmpeg -i $1 -q:a 0 -map a -c:a pcm_s32le ${2:-${1%.*}}.wav;
+}
+
 vid2gif() {
     # req: ffmpeg
     # cf: blog.pkh.me/p/21-high-quality-gif-with-ffmpeg.html
