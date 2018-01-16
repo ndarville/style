@@ -1,3 +1,4 @@
 csvkit
 pep8==1.7.0
+yq
 

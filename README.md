@@ -17,8 +17,8 @@ Overview of Packages for Each Language
  Python   | `pip install pep8 && brew install python3`
  CSV      | `gem install csvlint && pip install csvkit`
  Shell    | `brew install shellcheck`
- YAML     | `gem install kwalify`
- Go       | `go get -u github.com/golang/lint/golint && go get github.com/mikefarah/yaml`
+ YAML     | `gem install kwalify && pip install yq`
+ Go       | `go get -u github.com/golang/lint/golint`
 
 Notifications when the job finishes:
 
@@ -47,7 +47,6 @@ pip requirements -r requirements.txt
 
 # Install Go packages
 go get -u github.com/golang/lint/golint
-go get github.com/mikefarah/yaml
 ```
 
 ```sh
