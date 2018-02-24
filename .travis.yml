@@ -2,19 +2,17 @@ sudo: true
 
 language: node_js
 node_js:
+  - 9
+  - 8
+  - 7
   - 6
-  - 5.10.1
-  - 5
   - 5.1
+  - 5
   - 4
   - 4.2
   - 4.1
   - 4.0
   - 0.12
-  - 0.11
-  - 0.10
-  - 0.8
-  - 0.6
   - iojs
 
 env:
@@ -70,7 +68,6 @@ after_script:
 
 matrix:
   allow_failures:
-    - node_js: 6
     - node_js: 5
     - node_js: 5.1
     - node_js: 4
@@ -78,10 +75,6 @@ matrix:
     - node_js: 4.1
     - node_js: 4.0
     - node_js: 0.12
-    - node_js: 0.11
-    - node_js: 0.10
-    - node_js: 0.8
-    - node_js: 0.6
     - node_js: iojs
 
 notifications:
