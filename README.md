@@ -63,12 +63,14 @@ wget https://raw.githubusercontent.com/ndarville/style/master/python/.pep8
 wget https://raw.githubusercontent.com/ndarville/style/master/markdown/.markdownlintrc
 ```
 
-### Download and Installation with `node_modules/` ###
+### Download and installation with `node_modules/` ###
 
 ```sh
 # ( Go to the root of your project; code for doing this not included )
 
 # Install Node.js packages and download repo to node_modules/style
+## Use yarn instead of npm, npm is a mess
+## https://yarnpkg.com/lang/en/docs/migrating-from-npm/
 yarn cache clean && yarn add ndarville/style # Used to be --silent in npm
 
 # Install Ruby packages from node_modules/style
