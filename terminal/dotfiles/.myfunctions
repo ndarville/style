@@ -263,7 +263,7 @@ vidscreenshotsec() {
 
     ffmpeg -i $1 -vf \
         fps=1 \ # 1/s
-        out%03d.png; # %03d is a three-digit string
+        out%04d.png; # %04d is a four-digit string
 }
 
 vidscreenshotmin() {
