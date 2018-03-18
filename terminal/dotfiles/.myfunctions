@@ -275,11 +275,54 @@ vidscreenshotmin() {
         out%03d.png;
 }
 
-vidsidebyside() {
+vidtile() {
     # req: ffmpeg
-    # cf: scottlinux.com/2016/09/17/video-stabilization-using-vidstab-and-ffmpeg-on-linux/
+    # cf: https://trac.ffmpeg.org/wiki/FilteringGuide
+    #
+    # $1: Input video 1
+    # $2: Input video 2
+    # $3: Output video
+    # $4: Resize width for each input video
+    # $5: Tiling: h(orizontal) vs v(ertical)
+    #
+    # NOTE
+    ## Resize to 480 width w/ auto height:
+    ##     480:-1
+    ## Resize to 480x200: w/ 200 height:
+    ##     480:200
+    ## [0:v],[1:v]:
+    ##     First and second video tracks
+    ## [v1],[v2]:
+    ##     Variable assignment; names arbitrary chosen here
+    ##     v1=[0:v] -vf scale:480:-
+    ## [v1][v2]hstack[v]: Apply hstack transformation to vids 1 and 2; save as variable `v`
+    ##
+    ## map [v]: Grab video stream, and only video stream, (ie without audio and subtitles)
+    ##
+    ## Default scale is `scale:480:-1:flags=bicubic`; try lanczos sometime
+    ##
+    ## You can overlay text on each video with `drawtext`
+    ##
+    ## You can probably optimize this with palettegen+paletteuse
 
-    ffmpeg -i $1 -i $2 -filter_complex "[0:v]setpts=PTS-STARTPTS, pad=iw*2:ih[bg]; [1:v]setpts=PTS-STARTPTS[fg]; [bg][fg]overlay=w" side_by_side.${1##*.}
+    STACK=${5:-h}
+
+    ffmpeg -i $1 -i $2 -filter_complex "\
+        [0:v]scale=${4:-800}:-1[v1];\
+        [1:v]scale=${4:-800}:-1[v2];\
+        [v1][v2]${STACK}stack[v]" \
+        -map [v] \
+        ${3:-comparison${1##*.}}
+
+    unset STACK;
+
+    # EXAMPLE
+    ## ffmpeg -i foo.mp4 -i bar.mp4 -filter_complex \
+    ##    "[0:v]scale=480:200[v1];[1:v]scale=480:200[v2];[v1][v2]hstack" comparison.mp4
+    ## ffmpeg -i foo.mp4 -i bar.mp4 -filter_complex \
+    ##    "[0:v]scale=480:200:flags=lanczos[v1];[1:v]scale=480:200:flags=lanczos[v2];[v1][v2]vstack[v]" -map [v] comparison.vertical.mp4
+    ##
+    ## Explicit height required since one video resized to 199px and another to 200px
 }
 
 vidstabilize() {
