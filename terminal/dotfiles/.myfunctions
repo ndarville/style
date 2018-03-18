@@ -56,10 +56,12 @@ addcolumn() {
 gifdiff() {
     # req: ImageMagick
     #
-    # $1: image file 1
-    # $2: image file 2
+    # $1: Input image 1
+    # $2: Input image 2
+    # $3: Output gif
+    # $4: Delay between frames
 
-    convert -delay 50 $1 $2 -loop 0 ${3:-diff.gif};
+    convert -delay ${4:-50} $1 $2 -loop 0 ${3:-diff.gif};
 }
 
 imgdiff() {
