@@ -161,9 +161,11 @@ vid2gif() {
 
 vid2mp4() {
     # req: ffmpeg
-    # cf: https://gist.github.com/Vestride/278e13915894821e1d6f
+    # cf:
+    # * https://gist.github.com/Vestride/278e13915894821e1d6f
+    # * https://twitter.com/FFmpeg/status/943266612047577089
 
-    ffmpeg -i $1 -vcodec h264 -acodec aac -strict -2 $2;
+    ffmpeg -i $1 -vcodec h264 -acodec aac $2;
 }
 
 vid2webm() {
