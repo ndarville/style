@@ -130,6 +130,24 @@ gif2webm() {
         $2;
 }
 
+img2gif() {
+    # req: ffmpeg
+    #
+    # Note: You may have to use `reserve_transparent` for transparent images
+
+    palette="/tmp/palette.png"
+
+    ffmpeg -i $1 -vf palettegen -y $palette
+    ffmpeg -i $1 -i $palette -lavfi paletteuse $2
+
+    unset palette;
+
+    # EXAMPLE
+    ## ffmpeg -i screenshots/screenshot-%04d.png animation.gif
+    ## %04d means 0000-9999; this will match screenshots/screenshots-{0000-9999}.png are matched.
+
+}
+
 vid2audio() {
     # req: ffmpeg
     # cf: https://trac.ffmpeg.org/wiki/audio%20types
