@@ -67,8 +67,8 @@ gifdiff() {
 imgdiff() {
     # req: ImageMagick
     #
-    # $1: image file 1
-    # $2: image file 2
+    # $1: Image file 1
+    # $2: Image file 2
 
     compare $1 $2 -metric AE -fuzz 20% -highlight-color ${3:-red} ${4:-diff.png};
 }
@@ -78,14 +78,14 @@ text2image() {
     #
     # NOTE: See all fonts with `convert -list font`
     #
-    # $1: text
-    # $2: image size
-    # $3: typeface
-    # $4: font size
-    # $5: font colour
-    # $6: background colour
-    # $7: output image
-    # $8: font vertical offset (depends on typeface)
+    # $1: Text
+    # $2: Image size
+    # $3: Typeface
+    # $4: Font size
+    # $5: Font colour
+    # $6: Background colour
+    # $7: Output image
+    # $8: Font vertical offset (depends on typeface)
 
     convert \
         -size ${2:-320x125} \
