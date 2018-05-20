@@ -8,5 +8,6 @@ python_version = "2.7"
 
 [packages]
 csvkit = "*"
+glom = "*"
 "pep8" = "==1.7.0"
 yq = "*"
