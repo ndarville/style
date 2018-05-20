@@ -14,7 +14,7 @@ Overview of Packages for Each Language
  CSS/SASS | `yarn add stylelint stylefmt`
  JS       | `yarn add jscs jshint`
  Markdown | `gem install markdownlint-cli`
- Python   | `pip install pep8 glom && brew install python3`
+ Python   | `pip install pep8 glom`
  CSV      | `gem install csvlint && pip install csvkit`
  Shell    | `brew install shellcheck`
  YAML     | `gem install kwalify && pip install yq`
@@ -43,13 +43,19 @@ bundle install
 
 # Install Python packages
 wget https://raw.githubusercontent.com/ndarville/style/master/requirements.txt
-pip requirements -r requirements.txt
-## Instead of pip, I recommend this workflow
-## https://jacobian.org/writing/python-environment-2018/
-## https://github.com/mitsuhiko/pipsi/issues/89
+pip install -r requirements.txt
 
 # Install Go packages
 go get -u github.com/golang/lint/golint
+```
+
+I prefer a pipsi and pipenv Python installation flow to pip’s:
+
+```sh
+# https://jacobian.org/writing/python-environment-2018/
+# https://github.com/mitsuhiko/pipsi/issues/89
+wget https://raw.githubusercontent.com/ndarville/style/master/Pipfile
+pipenv install
 ```
 
 ```sh
